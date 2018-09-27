@@ -1,0 +1,1553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dtw:DtwConversionTables
+	xmlns:dtw="http://www.microsoft.com/SqlServer/Dts/DtwTypeConversion.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	Version="1.0">
+
+    <!-- Conversion without any data lost -->
+    <dtw:ImplicitConversion>
+      
+      <!-- Convert from DT_I1 -->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_I1</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_I2-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_I2</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_I4-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_I4</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_R4-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_R4</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_R8-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_R8</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_CY-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_CY</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_DATE-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DATE</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP2"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_BOOL-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_BOOL</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_NUMERIC-->
+
+
+      <!-- Convert from DT_DECIMAL-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DECIMAL</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_UI1-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_UI1</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_UI2-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_UI2</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_UI4-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_UI4</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_I8-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_I8</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_BYTES">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BYTES"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_UI8-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_UI8</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_BYTES">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BYTES"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_GUID-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_GUID</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_BYTES">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BYTES"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_BYTES-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_BYTES</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_IMAGE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_IMAGE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_TEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_TEXT"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NTEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NTEXT"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+        
+
+      <!-- Convert from DT_STR-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_STR</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_TEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_TEXT"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+
+      <!-- Convert from DT_WSTR-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_WSTR</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_NTEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NTEXT"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+
+      <!-- Convert from DT_DBDATE-->
+      
+
+      <!-- Convert from DT_DBTIME-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DBTIME</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_DBTIME2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME2"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      
+      <!-- Convert from DT_DBTIMESTAMP-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DBTIME</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_FILETIME2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME2"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+      
+
+      <!-- Convert from DT_FILETIME-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_FILETIME</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP2"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+
+      <!-- Convert from DT_IMAGE-->
+
+
+      <!-- Convert from DT_TEXT-->
+
+
+      <!-- Convert from DT_NTEXT-->
+
+
+      <!-- Convert from DT_DBTIME2-->
+      
+
+      <!-- Convert from DT_DBTIMESTAMP2-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DBTIMESTAMP2</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+
+      <!-- Convert from DT_DBTIMESTAMPOFFSET-->
+      
+
+    </dtw:ImplicitConversion>
+
+
+    <!-- Conversion with data lost -->
+    <dtw:ExplicitConversion>
+
+      <!-- Convert from DT_I1 -->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_I1</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_I2-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_I2</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_I4-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_I4</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BYTES">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BYTES"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_R4-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_R4</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_R8-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_R8</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_CY-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_CY</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_DATE-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DATE</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMPOFFSET">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMPOFFSET"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_BOOL-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_BOOL</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_NUMERIC-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_NUMERIC</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_DECIMAL-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DECIMAL</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_UI1-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_UI1</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_UI2-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_UI2</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_UI4-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_UI4</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BYTES">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BYTES"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_I8-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_I8</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_UI8-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_UI8</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_GUID-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_GUID</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_BYTES-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_BYTES</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_GUID">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_GUID"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_STR-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_STR</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_GUID">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_GUID"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BYTES">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BYTES"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_IMAGE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_IMAGE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NTEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_WSTR-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_WSTR</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_R8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_R8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_CY">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_CY"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BOOL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BOOL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NUMERIC">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NUMERIC"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DECIMAL">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DECIMAL"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI1">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI1"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI4">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI4"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_GUID">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_GUID"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_BYTES">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BYTES"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_IMAGE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_IMAGE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_TEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_DBDATE-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DBDATE</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMPOFFSET">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMPOFFSET"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_DBTIME-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DBTIME</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMPOFFSET">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMPOFFSET"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_DBTIMESTAMP-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DBTIMESTAMP</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMPOFFSET">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMPOFFSET"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_FILETIME-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_FILETIME</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_I8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_I8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_UI8">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_UI8"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMPOFFSET">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMPOFFSET"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      <!-- Convert from DT_IMAGE-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_IMAGE</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_BYTES">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_BYTES"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_TEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_TEXT"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NTEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NTEXT"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+
+      <!-- Convert from DT_TEXT-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_TEXT</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+          <dtw:ConversionStep StepNum="2" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_IMAGE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_IMAGE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_NTEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_NTEXT"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+      
+      <!-- Convert from DT_NTEXT-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_NTEXT</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+          <dtw:ConversionStep StepNum="2" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_IMAGE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_IMAGE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_TEXT">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_TEXT"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+
+      <!-- Convert from DT_DBTIME2-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DBTIME2</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMPOFFSET">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMPOFFSET"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+      
+
+      <!-- Convert from DT_DBTIMESTAMP2-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DBTIMESTAMP2</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMPOFFSET">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMPOFFSET"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+
+
+      <!-- Convert from DT_DBTIMESTAMPOFFSET-->
+      <dtw:ConversionEntry>
+        <dtw:SourceType>DT_DBTIMESTAMPOFFSET</dtw:SourceType>
+        <dtw:DestinationType TypeName="DT_DATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_STR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_STR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_WSTR">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_WSTR"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBDATE">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBDATE"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_FILETIME">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_FILETIME"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIME2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIME2"/>
+        </dtw:DestinationType>
+        <dtw:DestinationType TypeName="DT_DBTIMESTAMP2">
+          <dtw:ConversionStep StepNum="1" ConvertToType="DT_DBTIMESTAMP2"/>
+        </dtw:DestinationType>
+      </dtw:ConversionEntry>
+      
+      
+    </dtw:ExplicitConversion>
+  
+</dtw:DtwConversionTables>
+
+ 

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.SqlServer.TransferLoginsTask</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask">
+			<summary>The <see cref="N:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask" /> namespace contains the classes and enumerations that allow you to copy one or more SQL Server logins from one instance of SQL Server to another.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists">
+			<summary>Contains values used by the <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.IfObjectExists" /> property of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask" /> to determine how to handle a transfer when the login exists at the destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists.FailTask">
+			<summary>Causes the task to fail if the same login exists at the destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists.Overwrite">
+			<summary>Overwrites the login if the same login exists at the destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists.Skip">
+			<summary>Skips the transfer of a login if the same login exists at the destination.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer">
+			<summary>Specifies which logins to transfer. </summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer.AllLogins">
+			<summary>Transfer all logins.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer.AllLoginsFromSelectedDatabases">
+			<summary>Transfer logins that have access to specific databases. The specific logins are found in the <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoginsList" />.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer.SelectedLogins">
+			<summary>Transfer only specific logins. The list is retrieved from the <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DatabasesList" /> property.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask">
+			<summary>Provides the members and enumerations that allow you to transfer SQL Server logins from one instance of SQL Server to another.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+			<summary>Passes a <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> to a task. This method is called by the runtime and is not used in code.</summary>
+			<param name="manager">The breakpoint manager specific for this task.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+			<summary>Runs the task.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration.</returns>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+			<param name="transaction">The transaction object that the container is a part of. This value can be null.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+			<summary>Initializes the properties associated with the task. This method is called by the runtime and is not used in code.</summary>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+			<param name="eventInfos">A collection that contains events to be raised during execution of the task.</param>
+			<param name="logEntryInfos">A collection of log entries.</param>
+			<param name="refTracker">An object reference tracker.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To load a package saved as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="rootNode">The node that contains the information to be loaded.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for raising events (errors, warnings, and so on) during persistence.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.ResumeExecution">
+			<summary>Resumes execution of the task after pausing. The task or container is resumed by the run-time engine. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To save a package as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="doc">The XML document to which to save the information.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for raising events (errors, warnings, and so on) during persistence.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SuspendExecution">
+			<summary>Indicates that the executable needs to suspend. This method is called by the run-time engine. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+			<summary>Verifies that the component is properly configured.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration.</returns>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.CopySids">
+			<summary>Gets or setsa Boolean indicating whether the security identifiers associated with the logins should be copied to the destination.</summary>
+			<returns>true if the security identifiers associated with the logins are copied.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DatabasesList">
+			<summary>Gets or sets a StringCollection containing the databases on the source server that contain logins to be copied to the destination server.</summary>
+			<returns>A StringCollection that lists the databases on the source server that contains the logins to be copied to the destination server.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DebugMode">
+			<summary>Indicates whether a task should check if breakpoints are enabled. This property is set by the run-time engine.</summary>
+			<returns>true if the task should check if breakpoints are enabled; false if the task can skip checking for breakpoints.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DestinationConnection">
+			<summary>Gets or sets a String containing the name of the SMO connection manager for the destination database.</summary>
+			<returns>A String that contains the SMO connection manager.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.ExecutionValue">
+			<summary>Returns an object containing the number of logins that were transferred.</summary>
+			<returns>An object that contains the number of logins that were transferred.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.IfObjectExists">
+			<summary>Gets or sets a value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" /> enumeration indicating whether the task should fail, ignore the existing login, or skip the transfer of the login, if a login of the same name exists at the destination.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" /> enumeration.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoginsList">
+			<summary>Gets or sets a StringCollection that contains the names of the logins to transfer.</summary>
+			<returns>A StringCollection that contains the names of the logins to transfer.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoginsToTransfer">
+			<summary>Gets or sets a value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" /> enumeration indicating which logins to transfer.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" /> enumeration.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SourceConnection">
+			<summary>Gets or sets a String containing the name of the SMO connection manager for the source database.</summary>
+			<returns>A String that contains the connection string of the SMO connection manager.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SuspendRequired">
+			<summary>Gets or sets a Boolean indicating whether a task should suspend when it encounters a breakpoint. This value is set by the run-time engine for the tasks and containers when a breakpoint is encountered</summary>
+			<returns>true if the task suspends when it encounters a breakpoint. </returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DtsTransferLoginsException">
+			<summary>The exception that is thrown at load time if the persisted name of the XML root node of the task is corrupt.</summary>
+		</member>
+	</members>
+</doc>

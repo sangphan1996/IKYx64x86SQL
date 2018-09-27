@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.SqlServer.TransferDatabasesTask</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask">
+			<summary>The <see cref="N:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask" /> namespace contains classes and enumerations that allow the transfer of databases between a source and a destination server using two different methods: database online, and database offline. The task requires the use of a SMO connection.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction">
+			<summary>Used by the <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Action" /> property to determine if the transfer is a copy or a move. </summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction.Copy">
+			<summary>The action is a copy.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction.Move">
+			<summary>The action is a move.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask">
+			<summary>Allows the transfer of a database between a source and a destination server using two different methods: database online, and database offline. The task requires the use of an SMO Connection Manager.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+			<summary>Runs the task. </summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration that indicates the outcome of the execution.</returns>
+			<param name="connections">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> collection for the container.</param>
+			<param name="variableDispenser">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> collection for the container.</param>
+			<param name="events">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface to raise events.</param>
+			<param name="log">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+			<param name="transaction">The transaction object that the container is a part of, depending on the value found in the <see cref="P:Microsoft.SqlServer.Dts.Runtime.DtsContainer.TransactionOption" /> property. This value can be null.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+			<summary>Initializes the properties associated with the task. This method is called by the runtime and is not used in code.</summary>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+			<param name="eventInfos">A collection that contains events to be raised during execution of the task.</param>
+			<param name="logEntryInfos">A collection of log entries.</param>
+			<param name="refTracker">An object reference tracker.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To load a package saved as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="rootNode">The XmlElement that contains the information to be loaded.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for raising events (errors, warnings, and so on) during persistence.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To save a package as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="doc">The in-memory XmlDocument to save the information to.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for raising events (errors, warnings, and so on) during persistence.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+			<summary>Verifies that the task component is correctly configured.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration.</returns>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Action">
+			<summary>Gets or sets a value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction" /> enumeration indicating whether the Transfer Database task is copying or moving databases.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferAction" /> enumeration that indicates a move or copy action.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DestinationConnection">
+			<summary>Gets or sets a String containing the name of the SMO connection manager for the destination database.</summary>
+			<returns>A String that contains the SMO connection manager.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DestinationDatabaseFiles">
+			<summary>Gets or sets a String containing the name of the database files for the destination database.</summary>
+			<returns>A String that contains the name of the data and log files for the destination database.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DestinationDatabaseName">
+			<summary>Gets or sets a String containing the name of the database at the destination.</summary>
+			<returns>A String that contains the name of the database at the destination.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DestinationOverwrite">
+			<summary>Gets or sets a Boolean indicating whether the destination database can be overwritten if it exists.</summary>
+			<returns>true indicates that the existing database at the destination is overwritten during the transfer.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.ExecutionValue">
+			<summary>Returns the result of the task execution.</summary>
+			<returns>A user-defined object. The task always returns 1.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.Method">
+			<summary>Gets or sets a value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod" /> enumeration indicating whether to use Online or Offline transfer method.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod" /> enumeration.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.ReattachSourceDatabase">
+			<summary>A Boolean indicating whether the database should be reattached or not.</summary>
+			<returns>true if the database reattaches; false if the database does not reattach. </returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.SourceConnection">
+			<summary>Gets or sets a String containing the name of the SMO connection manager for the source database.</summary>
+			<returns>A String that contains the connection string of the SMO connection manager.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.SourceDatabaseFiles">
+			<summary>Gets or sets a String containing the names of the source database files to transfer. </summary>
+			<returns>A String that contains the names of the data and log files to transfer from the source database. If multiple files are specified, they are delimited with a semi-colon.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.SourceDatabaseName">
+			<summary>Gets or sets a String containing the name of the source database to transfer.</summary>
+			<returns>A String that contains the name of the source database to transfer.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask.DtsTransferDBException">
+			<summary>The exception that is thrown at load time if the persisted name of the XML root node of the task is corrupt.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod">
+			<summary>Used by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferDatabaseTask" /> to determine whether the move or copy will occur in online mode or offline mode.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod.DatabaseOffline">
+			<summary>The database files are copied or moved to the specified location in Offline mode.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferDatabaseTask.TransferMethod.DatabaseOnline">
+			<summary>The database files are copied or moved in Online mode using the SMO transfer object.</summary>
+		</member>
+	</members>
+</doc>

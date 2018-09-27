@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<dtm:DataTypeMappings
+	xmlns:dtm="http://www.microsoft.com/SqlServer/Dts/DataTypeMapping.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	SourceType="SSIS Data Flow" 
+	MinSourceVersion="10.*" 
+	MaxSourceVersion="*" 
+	DestinationType="IBMDDADB2" 
+	MinDestinationVersion="*" 
+	MaxDestinationVersion="*">
+
+	<!-- DT_I1 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_I1</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>SMALLINT</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_I2 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_I2</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>SMALLINT</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DT_I4 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_I4</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>INTEGER</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_I8 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_I8</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>BIGINT</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_UI1 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_UI1</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>SMALLINT</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_UI2 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_UI2</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>INTEGER</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_UI4 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_UI4</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>BIGINT</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_UI8 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_UI8</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>DECIMAL</dtm:DataTypeName>
+				<dtm:Precision>20</dtm:Precision>
+				<dtm:SkipScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_R4 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_R4</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>REAL</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DT_R8 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_R8</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>DOUBLE</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_CY -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_CY</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>DECIMAL</dtm:DataTypeName>
+				<dtm:Precision>19</dtm:Precision>
+				<dtm:Scale>4</dtm:Scale>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_BOOL -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_BOOL</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>SMALLINT</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_GUID -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_GUID</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>CHAR</dtm:DataTypeName>
+				<dtm:Length>38</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DT_BYTES -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_BYTES</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>BLOB</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DT_IMAGE -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_IMAGE</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>BLOB</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DT_TEXT -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_TEXT</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>CLOB</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_NTEXT -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_NTEXT</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>DBCLOB</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_STR -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_STR</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>VARCHAR</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DT_WSTR -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_WSTR</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>VARGRAPHIC</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DT_DECIMAL -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_DECIMAL</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>DECIMAL</dtm:DataTypeName>
+				<dtm:Precision>28</dtm:Precision>
+				<dtm:UseSourceScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DT_NUMERIC -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_NUMERIC</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>DECIMAL</dtm:DataTypeName>
+				<dtm:UseSourcePrecision/>
+				<dtm:UseSourceScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DT_DBTIMESTAMP -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_DBTIMESTAMP</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>TIMESTAMP</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_DBTIMESTAMP2 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_DBTIMESTAMP2</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>TIMESTAMP</dtm:DataTypeName>
+				<dtm:SkipPrecision/>
+				<dtm:UseSourceScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_DBTIMESTAMPOFFSET 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_DBTIMESTAMPOFFSET</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>TIMESTAMP</dtm:DataTypeName>
+				<dtm:SkipPrecision/>
+				<dtm:UseSourceScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_DATE -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_DATE</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>TIMESTAMP</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_DBDATE -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_DBDATE</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>DATE</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_DBTIME -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_DBTIME</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>TIMESTAMP</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_DBTIME2 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_DBTIME2</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>TIME</dtm:DataTypeName>
+				<dtm:SkipPrecision/>
+				<dtm:UseSourceScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- DT_FILETIME -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DT_FILETIME</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>TIMESTAMP</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+</dtm:DataTypeMappings>

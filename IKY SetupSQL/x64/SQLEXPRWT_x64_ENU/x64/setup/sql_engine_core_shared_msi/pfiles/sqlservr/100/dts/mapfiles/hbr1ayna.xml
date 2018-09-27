@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<dtm:DataTypeMappings
+	xmlns:dtm="http://www.microsoft.com/SqlServer/Dts/DataTypeMapping.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	SourceType="MSDAORA;System.Data.OracleClient.OracleConnection" 
+	MinSourceVersion="*" 
+	MaxSourceVersion="*" 
+	DestinationType="SSIS Data Flow" 
+	MinDestinationVersion="10.*" 
+	MaxDestinationVersion="*">
+	
+	<!-- NUMBER -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>NUMBER</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_NUMERIC</dtm:DataTypeName>
+				<dtm:Length>31</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- FLOAT -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>FLOAT</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_R8</dtm:DataTypeName>
+				<dtm:Length>24</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- REAL -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>REAL</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_R8</dtm:DataTypeName>
+				<dtm:Length>24</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- INT -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>INT</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>DT_NUMERIC</dtm:DataTypeName>
+				<dtm:Precision>38</dtm:Precision>
+				<dtm:SkipScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- RAW -->
+	<dtm:DataTypeMapping>
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>RAW</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_BYTES</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- LONG RAW -->
+	<dtm:DataTypeMapping>
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>LONG RAW</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_IMAGE</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- BLOB -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>BLOB</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_IMAGE</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- LOBLOCATOR -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>LOBLOCATOR</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_IMAGE</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- BFILE -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>BFILE</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_IMAGE</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- VARGRAPHIC -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>VARGRAPHIC</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_IMAGE</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- LONG VARGRAPHIC -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>LONG VARGRAPHIC</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_IMAGE</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- TIMESTAMP 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>timestamp</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>DT_DBTIMESTAMP2</dtm:DataTypeName>
+				<dtm:SkipPrecision/>
+				<dtm:UseSourceScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- TIMESTAMP WITH TIME ZONE 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>TIMESTAMP WITH TIME ZONE</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>DT_DBTIMESTAMPOFFSET</dtm:DataTypeName>
+				<dtm:SkipPrecision/>
+				<dtm:UseSourceScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- CLOB -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>CLOB</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_NTEXT</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- CHAR -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>char</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_WSTR</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- ROWID -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>ROWID</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_WSTR</dtm:DataTypeName>
+				<dtm:Length>18</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- VARCHAR2 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>VARCHAR2</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_WSTR</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- NVARCHAR2 -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>NVARCHAR2</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_WSTR</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- LONG -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>LONG</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_NTEXT</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- NCHAR -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>NCHAR</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_WSTR</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- NCLOB -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>NCLOB</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_NTEXT</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DATE 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DATE</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>DT_DBDATE</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>
+
+	<!-- INTERVAL -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>INTERVAL</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_DBTIMESTAMP</dtm:DataTypeName>
+				<dtm:Length>30</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DBTypes for NChar, NVarChar, Text -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>130</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_NTEXT</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DBTypes for user defined types -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>13</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_IMAGE</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+</dtm:DataTypeMappings>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<dtm:DataTypeMappings
+	xmlns:dtm="http://www.microsoft.com/SqlServer/Dts/DataTypeMapping.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	SourceType="Microsoft.Jet.OLEDB;Microsoft.ACE.OLEDB" 
+	MinSourceVersion="*" 
+	MaxSourceVersion="*" 
+	DestinationType="SSIS Data Flow" 
+	MinDestinationVersion="09.*" 
+	MaxDestinationVersion="*">
+	
+	<!-- Short -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>Short</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_I2</dtm:DataTypeName>
+				<dtm:Length>6</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- Long -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>Long</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_I4</dtm:DataTypeName>
+				<dtm:Length>11</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- Single -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>Single</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_R4</dtm:DataTypeName>
+				<dtm:Length>24</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- Double -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>Double</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_R8</dtm:DataTypeName>
+				<dtm:Length>24</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- Currency -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>Currency</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_CY</dtm:DataTypeName>
+				<dtm:Length>22</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+
+	<!-- Bit -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>Bit</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_BOOL</dtm:DataTypeName>
+				<dtm:Length>10</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- Byte -->
+	<dtm:DataTypeMapping>
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>Byte</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_UI1</dtm:DataTypeName>
+				<dtm:Length>3</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- GUID -->	
+	<dtm:DataTypeMapping>
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>GUID</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_GUID</dtm:DataTypeName>
+				<dtm:Length>39</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- BigBinary -->
+	<dtm:DataTypeMapping>
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>BigBinary</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_BYTES</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- LongBinary -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>LongBinary</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_IMAGE</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- VarBinary -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>VarBinary</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_BYTES</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- LongText -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>LongText</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_NTEXT</dtm:DataTypeName>
+				<dtm:Length>255</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- VarChar -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>VarChar</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_WSTR</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- Decimal -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>Decimal</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_NUMERIC</dtm:DataTypeName>
+				<dtm:Length>31</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- DateTime -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>DateTime</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>DT_DBTIMESTAMP</dtm:DataTypeName>
+				<dtm:Length>30</dtm:Length>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+</dtm:DataTypeMappings>

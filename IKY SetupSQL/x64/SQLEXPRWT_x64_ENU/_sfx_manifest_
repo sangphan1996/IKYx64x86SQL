@@ -1,0 +1,2 @@
+[options] 
+ Command=%_SFX_CAB_EXE_PATH%\setup.exe /hideconsole %_SFX_CAB_EXE_PARAMETERS% 

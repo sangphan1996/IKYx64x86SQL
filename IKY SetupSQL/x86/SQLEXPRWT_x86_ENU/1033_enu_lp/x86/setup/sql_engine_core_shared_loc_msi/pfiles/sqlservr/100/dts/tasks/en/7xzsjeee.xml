@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.SqlServer.TransferJobsTask</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask">
+			<summary>The <see cref="N:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask" /> namespace contains the classes and enumerations that allow you to copy SQL Server Agent jobs from one instance of SQL Server to another.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists">
+			<summary>Contains values used by the <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.IfObjectExists" /> property of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask" /> to determine how to handle a transfer when the job exists at the destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists.FailTask">
+			<summary>Causes the task to fail if the same job exists at the destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists.Overwrite">
+			<summary>Overwrites the job if the same job exists at the destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists.Skip">
+			<summary>Skips the transfer of a job if the same job exists at the destination.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask">
+			<summary>Provides the methods and properties to transfer SQL Server Agent jobs from one instance of SQL Server to another.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+			<summary>Called by the run-time engine when a task or container is created, and is passed a <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> to enable the task to create, remove, and check the status of breakpoints. This method is called by the runtime and is not used in code.</summary>
+			<param name="manager">The breakpoint manager specific to this task.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+			<summary>Runs the task. </summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration.</returns>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+			<param name="transaction">The transaction object that the container is a part of. This value can be null.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+			<summary>Initializes the properties associated with the task. This method is called by the runtime and is not used in code.</summary>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+			<param name="eventInfos">A collection that contains events to be raised during execution of the task.</param>
+			<param name="logEntryInfos">A collection of log entries.</param>
+			<param name="refTracker">An object reference tracker.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To load a package saved as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="rootNode">The XmlElement that contains the information to be loaded.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for raising events (errors, warnings, and so on) during persistence.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.ResumeExecution">
+			<summary>Resumes execution of the task after pausing. The task or container is resumed by the run-time engine. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To save a package as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method. </summary>
+			<param name="doc">The XML document to save the information to.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for raising events (errors, warnings, and so on) during persistence.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.SuspendExecution">
+			<summary>Indicates that the executable needs to suspend. This method is called by the run-time engine. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+			<summary>Verifies that the task is correctly configured.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration.</returns>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.DebugMode">
+			<summary>Gets or sets a Boolean indicating whether a task should determine whether breakpoints are enabled. </summary>
+			<returns>true if the task should determine whether breakpoints are enabled; false if the task can ignore all breakpoints.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.DestinationConnection">
+			<summary>Gets or sets a String containing the name of the SMO connection manager for the destination database.</summary>
+			<returns>A String containing the SMO connection manager.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.EnableJobsAtDestination">
+			<summary>Gets or sets a Boolean indicating whether the jobs created at the destination should be enabled.</summary>
+			<returns>true indicates that the jobs created are enabled. false is disabled.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.ExecutionValue">
+			<summary>Returns an object containing the number of jobs transfered.</summary>
+			<returns>An object containing the number of jobs successfully transferred to the destination.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.IfObjectExists">
+			<summary>Gets or sets a value from the <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.IfObjectExists" /> enumeration indicating indicating if the task should fail, overwrite the existing job, or skip the transfer of the job if a job with the same name exists at the destination. </summary>
+			<returns>A value from the <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.IfObjectExists" /> enumeration indicating whether the task should fail, ignore the existing job, or skip the transfer of the job, if a job of the same name exists at the destination.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.JobsList">
+			<summary>Gets or sets a StringCollection containing the names of the jobs to transfer. </summary>
+			<returns>A StringCollection containing a list of comma-delimited job names.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.SourceConnection">
+			<summary>Gets or sets a String containing the name of the SMO connection manager for the source database.</summary>
+			<returns>A String that contains the connection string of the SMO connection manager.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.SuspendRequired">
+			<summary>Gets or sets a Boolean indicating whether tasks should suspend when they encounter a breakpoint. This value is set by the run-time engine for tasks and containers when a breakpoint is encountered.</summary>
+			<returns>true if the task suspends when it encounters a breakpoint.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.TransferAllJobs">
+			<summary>Gets or sets a Boolean indicating if some or all jobs are transferred.</summary>
+			<returns>true indicates that all jobs are transferred; false indicates that only those jobs listed in the <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.JobsList" /> property are transferred.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.TransferJobsTask.DtsTransferJobsException">
+			<summary>The exception that is thrown at load time if the persisted name of the XML root node of the task is corrupt.</summary>
+		</member>
+	</members>
+</doc>

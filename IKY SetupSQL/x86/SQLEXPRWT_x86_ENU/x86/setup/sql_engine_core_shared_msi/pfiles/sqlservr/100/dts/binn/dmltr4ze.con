@@ -1,0 +1,10 @@
+<configuration>
+    <startup>
+        <requiredRuntime version="v2.0.50727"/>
+    </startup>
+    <runtime>
+        <gcServer enabled="true"/>
+        <disableCommitThreadStack enabled="true"/>
+        <generatePublisherEvidence enabled="false"/>
+    </runtime>
+</configuration>

@@ -1,0 +1,7 @@
+VSWIZARD 7.0
+Wizard=Microsoft.SqlServer.Management.UI.WizardManager10
+Param="EngineAssemblyName=Microsoft.DataTransformationServices.Wizards"
+Param="Engine=Microsoft.DataTransformationServices.Wizards.EtlProjectWizardEngine"
+Param="InitializerAssemblyName=Microsoft.DataTransformationServices.Wizards"
+Param="Initializer=Microsoft.DataTransformationServices.Wizards.EtlProjectInteractiveWizardInitializer"
+

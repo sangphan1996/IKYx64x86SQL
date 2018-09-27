@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<dtm:DataTypeMappings
+	xmlns:dtm="http://www.microsoft.com/SqlServer/Dts/DataTypeMapping.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	SourceType="SQLOLEDB;SQLNCLI;SQLNCLI10" 
+	MinSourceVersion="10.*" 
+	MaxSourceVersion="*" 
+	DestinationType="SQLOLEDB;SQLNCLI;System.Data.SqlClient.SqlConnection" 
+	MinDestinationVersion="09.*" 
+	MaxDestinationVersion="09.*">
+	
+	<!-- smallint -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>smallint</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>smallint</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- int -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>int</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>int</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- real -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>real</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>real</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- float -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>float</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>FLOAT</dtm:DataTypeName>
+                <dtm:UseSourcePrecision/>
+                <dtm:SkipScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- smallmoney -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>smallmoney</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>smallmoney</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+
+	<!-- money -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>money</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>money</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- bit -->
+	<dtm:DataTypeMapping>
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>bit</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>bit</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- tinyint -->	
+	<dtm:DataTypeMapping>
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>tinyint</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>tinyint</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- bigint -->
+	<dtm:DataTypeMapping>
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>bigint</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>bigint</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- uniqueidentifier -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>uniqueidentifier</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>uniqueidentifier</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- varbinary -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>varbinary</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>varbinary</dtm:DataTypeName>
+                <dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+    <!-- varbinary (max) -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>varbinarymax</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>image</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- timestamp -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>timestamp</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>timestamp</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- binary -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>binary</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>binary</dtm:DataTypeName>
+                <dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- image -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>image</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>image</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- text -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>text</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>text</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- char -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>char</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>char</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- varchar -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>varchar</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>varchar</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+    <!-- varchar (max) -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>varcharmax</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>varcharmax</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+    
+	<!-- nchar -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>nchar</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>nchar</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- nvarchar -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>nvarchar</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:CharacterStringType>
+				<dtm:DataTypeName>nvarchar</dtm:DataTypeName>
+				<dtm:UseSourceLength/>
+			</dtm:CharacterStringType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- nvarchar (max) -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>nvarcharmax</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>nvarcharmax</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+    
+    <!-- xml -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>XML</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>XML</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+	<!-- ntext -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>ntext</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>ntext</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- decimal -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>decimal</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>decimal</dtm:DataTypeName>
+				<dtm:UseSourcePrecision/>
+				<dtm:UseSourceScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- numeric -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>numeric</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:NumericType>
+				<dtm:DataTypeName>numeric</dtm:DataTypeName>
+				<dtm:UseSourcePrecision/>
+				<dtm:UseSourceScale/>
+			</dtm:NumericType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- datetime -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>datetime</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>datetime</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- datetime2 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>datetime2</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>datetime</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- datetimeoffset 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>datetimeoffset</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>datetime</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- time 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>time</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>datetime</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- date 10.* -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>date</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>datetime</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- smalldatetime -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>smalldatetime</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>smalldatetime</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+
+	<!-- sql_variant -->
+	<dtm:DataTypeMapping >
+		<dtm:SourceDataType>
+			<dtm:DataTypeName>sql_variant</dtm:DataTypeName>
+		</dtm:SourceDataType>
+		<dtm:DestinationDataType>
+			<dtm:SimpleType>
+				<dtm:DataTypeName>sql_variant</dtm:DataTypeName>
+			</dtm:SimpleType>
+		</dtm:DestinationDataType>
+	</dtm:DataTypeMapping>	
+	
+</dtm:DataTypeMappings>

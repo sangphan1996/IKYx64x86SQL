@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.SqlServer.WMIEWTask</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask">
+			<summary>The <see cref="N:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask" /> namespace contains the interfaces and classes used for the WMI Event Watcher Task, which uses Windows Management Instrumentation (WMI) to return information about WMI events that occur on a computer system. For more information about the WMI Event Watcher Task, see WMI Event Watcher Task.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent">
+			<summary>Determines the action taken by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> when the task receives the specified Windows Management Instrumentation (WMI) event.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent.LogTheEvent">
+			<summary>Logs the event notification and the status specified in <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterEvent" /> to the specified log.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent.LogTheEventAndFireDTSEvent">
+			<summary>Raises a custom DTS event indicating that the WMI event occurred and providing any information associated with the WMI event in Managed Object Format (MOF), and then logs the event notification and the status specified in <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterEvent" /> to the specified log.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout">
+			<summary>Determines how the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> responds when the task times out without receiving the specified Windows Management Instrumentation (WMI) event.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout.LogTimeout">
+			<summary>Logs the timeout and the status specified in <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterTimeout" /> to the specified log.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout.LogTimeoutAndFireDTSEvent">
+			<summary>Raises a custom DTS event indicating that the WMI event timed out, and then logs the timeout and the status specified in <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterTimeout" /> to the specified log.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent">
+			<summary>Determines how the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> responds when the task receives the specified Windows Management Instrumentation (WMI) event.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.ReturnWithFailure">
+			<summary>Logs that the user chose to treat the event notification as a failure, and stops waiting for the logged event. This is the default value.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.ReturnWithSuccess">
+			<summary>Logs that the user chose to treat the event notification as a success, and stops waiting for the logged event.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.WatchfortheEventAgain">
+			<summary>Logs that the user chose to continue waiting for the event.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout">
+			<summary>Determines how the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> responds when the task times out without receiving the specified Windows Management Instrumentation (WMI) event.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.ReturnWithFailure">
+			<summary>Logs that the user chose to treat the timeout as a failure, and stops waiting for the logged event. This is the default value.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.ReturnWithSuccess">
+			<summary>Logs that the user chose to treat the timeout as a success, and stops waiting for the logged event.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.WatchfortheEventAgain">
+			<summary>Logs that the user chose to continue waiting for the event.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType">
+			<summary>Determines the source type of the <see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> property, which provides the Windows Management Instrumentation Query Language (WQL) query to be executed by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> class.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.DirectInput">
+			<summary><see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" />  contains the WQL query.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.FileConnection">
+			<summary><see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> contains the name of a file connection from which to retrieve the WQL query.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.Variable">
+			<summary><see cref="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource" /> contains the name of a variable from which to retrieve the WQL query.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask">
+			<summary>Contains the members used to configure and run a WMI Event Watcher task, which runs Windows Management Instrumentation (WMI) queries and returns WMI data about a computer system. This class cannot be inherited. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+			<summary>Passes a <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> reference to the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> task. This method is called by the runtime and is not used in code.</summary>
+			<param name="manager">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> reference to be passed.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+			<summary>Runs the task.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> that indicates the outcome of the execution.</returns>
+			<param name="connections">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> collection for the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> collection for the task.</param>
+			<param name="events">A reference to an object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />  interface for raising events. </param>
+			<param name="log">A reference to an object that implements <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />.</param>
+			<param name="transaction">The transaction object that the task is part of, depending on the value found in the TransactionOption property. This value can be set to a null reference (Nothing in Visual Basic).</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+			<summary>Initializes the properties associated with the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> task. This method is called by the runtime and is not used in code.</summary>
+			<param name="connections">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> collection for the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for receiving events.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface for logging events.</param>
+			<param name="eventInfos">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" /> object.</param>
+			<param name="logEntryInfos">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" /> object. </param>
+			<param name="refTracker">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" /> object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To load a package saved as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="rootNode">The XML element that contains the information to load.</param>
+			<param name="events">An object that implements <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ResumeExecution">
+			<summary>Resumes execution of the task after pausing. The task or container is resumed by the runtime engine. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To save a package as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="doc">The XML document that contains the XML element representing the task.</param>
+			<param name="events">An object that implements <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.SuspendExecution">
+			<summary>Indicates that the executable needs to suspend. This method is called by the runtime engine.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+			<summary>Verifies that the task is properly configured.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> that indicates the outcome of the validation.</returns>
+			<param name="connections">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> collection for the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for receiving events.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface for logging events.</param>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ActionAtEvent">
+			<summary>Determines how the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> responds when the task receives a Windows Management Instrumentation (WMI) event.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent" /> value. The default value is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtEvent.LogTheEventAndFireDTSEvent" />.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ActionAtTimeout">
+			<summary>Determines how the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> responds when the task times out without receiving the specified Windows Management Instrumentation (WMI) event.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout" /> value. The default value is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.ActionAtTimeout.LogTimeoutAndFireDTSEvent" />.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterEvent">
+			<summary>Determines how the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> responds when the task receives the specified Windows Management Instrumentation (WMI) event.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent" /> value. The default value is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterEvent.ReturnWithSuccess" />.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.AfterTimeout">
+			<summary>Determines how the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> responds when the task times out without receiving the specified Windows Management Instrumentation (WMI) event.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout" /> value. The default value is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.AfterTimeout.ReturnWithFailure" />.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.DebugMode">
+			<summary>A Boolean indicating whether <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> should check if breakpoints are enabled. </summary>
+			<returns>true if the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> task should check for enabled breakpoints; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.ExecutionValue">
+			<summary>Gets an Object that contains the results of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> task.</summary>
+			<returns>An Object that contains the results of the task.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.NumberOfEvents">
+			<summary>Gets or sets the number of Windows Management Instrumentation (WMI) events for which the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> should watch.</summary>
+			<returns>An Integer containing the number of WMI events for which the task should watch. The default value is 1.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.SuspendRequired">
+			<summary>Gets or sets a Boolean that indicates if tasks should suspend when they encounter a breakpoint. This value is set by the runtime engine for tasks and containers when a breakpoint is encountered.</summary>
+			<returns>true if the task suspends when it encounters a breakpoint.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.Timeout">
+			<summary>Gets or sets the number of seconds the task should wait to receive a Windows Management Instrumentation (WMI) event before timing out.</summary>
+			<returns>An Integer containing the number of seconds the task should wait to receive a WMI event before timing out. If set to zero (0), the task waits indefinitely. The default value is zero (0).</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WmiConnection">
+			<summary>Gets or sets the name of the <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> class used by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" /> task.</summary>
+			<returns>The name of the <see cref="T:Microsoft.SqlServer.Dts.ManagedConnections.WMIConn" /> class associated with the task.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySource">
+			<summary>Gets or sets the source of the Windows Management Instrumentation Query Language (WQL) query to be executed by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />.</summary>
+			<returns>A String containing the source of the WQL query.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask.WqlQuerySourceType">
+			<summary>Gets or sets a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" /> value that indicates the source type, such as file connection or a variable, of the Windows Management Instrumentation Query Language (WQL) query to be executed by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.WmiEventWatcherTask" />.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType" /> value. The default is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WmiEventWatcherTask.QuerySourceType.DirectInput" />.</returns>
+		</member>
+	</members>
+</doc>

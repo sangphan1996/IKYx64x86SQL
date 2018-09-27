@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+
+    <Page
+    ID="RunGlobalRules">
+      <Title ResourceID="SystemConfigurationCheckTitle"></Title>
+      <Subtitle ResourceID="SystemConfigurationCheckSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>  
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunScenarioGlobalRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+        <HelpGUID>168c0445-5651-42fc-91f4-d9f27d9e2281</HelpGUID>
+    </Page>
+
+      <Page
+      ID="InstallType">
+          <Title ResourceID="PrepareImageInstallTypeTitle"></Title>
+          <Subtitle ResourceID="PrepareImageInstallTypeDescription"></Subtitle>
+          <Buttons>
+              <Button ID="Back" Enabled="false"/>
+              <Button ID="Finish" Visible="false"/>
+          </Buttons>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstallTypeController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>b61a6d14-eabb-4b09-ab18-683a037f8ca4</HelpGUID>
+      </Page>      
+
+    <Page
+      ID="EULAPid" PageType="Page" >
+      <Title ResourceID="PrepareImageEULAPidTitle"></Title>
+      <Subtitle ResourceID="PrepareImageEULAPidSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.EulaPidVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Help" Visible="true"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.EULAPidController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>08dd739d-5817-4418-bcff-74ab7f8bbd33</HelpGUID>
+    </Page>
+
+    <Page
+    ID="FeatureTree">
+      <Title ResourceID="PrepareImageFeatureSelectionTitle"></Title>
+      <Subtitle ResourceID="PrepareImageFeatureSelectionSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstallFeatureTreeController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>73182088-153b-4634-a060-d14d1fd23b70</HelpGUID>
+      <PageLeftEmbeddedAction>CALCULATESCENARIO</PageLeftEmbeddedAction>
+    </Page>
+
+    <Page
+      ID="InstanceName">
+      <Title ResourceID="PrepareImageInstanceNameTitle"></Title>
+      <Subtitle ResourceID="PrepareImageInstanceNameSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstanceNameController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>5bf822fc-6dec-4806-a153-e200af28e9a5</HelpGUID>
+      <PageLeftEmbeddedAction>CALCULATESCENARIO</PageLeftEmbeddedAction>
+    </Page>
+
+    <Page
+      ID="DiskCost">
+      <Title ResourceID="PrepareImageDiskCostTitle"></Title>
+      <Subtitle ResourceID="PrepareImageDiskCostSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.DiskUsageController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>b9dc1b0a-1717-4e3e-b3d7-69397131c77a</HelpGUID>
+    </Page>
+
+    <Page
+      ID="RunInstallRules">
+      <Title ResourceID="RunPrepareImageRulesTitle"></Title>
+      <Subtitle ResourceID="RunPrepareImageRulesSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunFeatureSpecificRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>609a7c06-9527-4ef5-8e75-0c44e1958c5a</HelpGUID>
+    </Page>
+
+    <Page
+      ID="Summary" PageType="Summary">
+      <Title ResourceID="PrepareImageSummaryTitle"></Title>
+      <Subtitle ResourceID="PrepareImageSummarySubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Next">
+          <Text ResourceID="PrepareImageButton"></Text>
+        </Button>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.SummaryController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>a19342a0-cd90-4825-aec5-d7c54275cc98</HelpGUID>
+    </Page>
+
+    <Page
+      ID="InstallationProgressPage"  PageType="Progress">
+      <Title ResourceID="PrepareImageProgressPageTitle"></Title>
+      <Subtitle ResourceID="PrepareImageProgressPageSubTile"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false "/>
+        <Button ID="Next" Visible ="true" Enabled="false"/>
+        <Button ID="Cancel" Visible="true" Enabled="true"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ExecutionProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>a0539190-a0cd-4d05-97a4-659d9f949952</HelpGUID>
+    </Page>
+
+    <Page
+      ID="PostInstall" PageType="Finish" >
+      <Title ResourceID="PostInstallTitle"></Title>
+      <Subtitle ResourceID="PostInstallSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false"/>
+        <Button ID="Next" Visible ="false"/>
+        <Button ID="Cancel">
+          <Text ResourceID="CloseButton"></Text>
+        </Button>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PostInstallController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>766fca7b-6cef-4ce4-97ee-6854f8034717</HelpGUID>
+    </Page>
+  </Pages>
+
+  <Appearance>
+    <Title ResourceID="PrepareImageWizardTitle"></Title>
+    <Icon>
+      <Name>Install</Name>
+      <ResourceType>Microsoft.SqlServer.Configuration.InstallWizard.Resources, Microsoft.SqlServer.Configuration.InstallWizard</ResourceType>
+    </Icon>    
+  </Appearance>
+</UIHost>

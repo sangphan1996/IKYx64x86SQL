@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+
+    <Page
+    ID="RunGlobalRules">
+      <Title ResourceID="SystemConfigurationCheckTitle"></Title>
+      <Subtitle ResourceID="SystemConfigurationCheckSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>  
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunScenarioGlobalRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+        <HelpGUID>168c0445-5651-42fc-91f4-d9f27d9e2281</HelpGUID>
+    </Page>
+     
+      <Page
+      ID="InstallType">
+          <Title ResourceID="InstallTypeTitle"></Title>
+          <Subtitle ResourceID="InstallTypeDescription"></Subtitle>
+          <Buttons>
+              <Button ID="Back" Enabled="false"/>
+              <Button ID="Finish" Visible="false"/>
+          </Buttons>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstallTypeController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>0420c555-7a3b-42b9-8651-0b4f5bcb0008</HelpGUID>
+      </Page>      
+
+    <Page
+      ID="PIDValidation">
+      <Title ResourceID="PIDValidationTitle"></Title>
+      <Subtitle  ResourceID="PIDValidationSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.EulaPidVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PidValidationController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>2e39bd3f-6246-4b60-9774-0a427ba2a26c</HelpGUID>
+    </Page>
+
+    <Page
+      ID="EULAPid" PageType="Page" >
+      <Title ResourceID="EULAPidTitle"></Title>
+      <Subtitle ResourceID="EULAPidSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.EulaPidVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Help" Visible="true"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.EULAPidController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>08dd739d-5817-4418-bcff-74ab7f8bbd33</HelpGUID>
+    </Page>
+
+    <Page
+      ID="RoleSelectionOption">
+          <Title ResourceID="RoleSelectionTitle"></Title>
+          <Subtitle ResourceID="RoleSelectionSubtitle"></Subtitle>
+          <VisibleAttributes>
+            <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.RequiresApplicableSetupRoleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+          </VisibleAttributes>
+          <Buttons>
+              <Button ID="Finish" Visible="false"/>
+          </Buttons>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RoleSelectionController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>c7e9db15-89f2-4d4d-8860-1e64c5821c4d</HelpGUID>
+	  <PageLeftEmbeddedAction>ROLEDEFAULTSETTINGS</PageLeftEmbeddedAction>
+    </Page>      
+
+
+    <Page
+    ID="FeatureTree">
+      <Title ResourceID="FeatureSelectionTitle"></Title>
+      <Subtitle ResourceID="FeatureSelectionSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstallFeatureTreeController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>73182088-153b-4634-a060-d14d1fd23b70</HelpGUID>
+      <PageLeftEmbeddedAction>CALCULATESCENARIO</PageLeftEmbeddedAction>
+      <PageLeftActionOnForwardNavigationOnly>true</PageLeftActionOnForwardNavigationOnly>
+      <LoadDataOnForwardNavigationOnly>true</LoadDataOnForwardNavigationOnly>
+      <SaveDataOnForwardNavigationOnly>true</SaveDataOnForwardNavigationOnly>
+    </Page>
+
+    <Page
+      ID="RunInstallRules">
+      <Title ResourceID="RunInstallRulesTitle"></Title>
+      <Subtitle ResourceID="RunInstallRulesSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunFeatureSpecificRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>cb87c511-c5ca-48c9-a866-4d15a04bb879</HelpGUID>
+    </Page>
+
+
+    <Page
+      ID="InstanceName">
+      <Title ResourceID="InstanceNameTitle"></Title>
+      <Subtitle ResourceID="InstanceNameSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstanceNameController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>5bf822fc-6dec-4806-a153-e200af28e9a5</HelpGUID>
+      <PageLeftEmbeddedAction>CALCULATESCENARIO</PageLeftEmbeddedAction>
+      <PageLeftActionOnForwardNavigationOnly>true</PageLeftActionOnForwardNavigationOnly>
+    </Page>
+
+    <Page
+      ID="NewFarmConfiguration">
+          <Title ResourceID="NewFarmConfigurationTitle"></Title>
+          <Subtitle ResourceID="NewFarmConfigurationSubtitle"></Subtitle>          
+          <VisibleAttributes>
+            <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.RequiresNewFarmAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+          </VisibleAttributes>
+          <Buttons>
+              <Button ID="Finish" Visible="false"/>
+          </Buttons>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.SharePointFarmConfigurationController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>74d1d278-42b9-4391-aaae-e323c6660602</HelpGUID>
+    </Page>      
+
+
+    <Page
+           ID="DiskCost">
+      <Title ResourceID="DiskCostTitle"></Title>
+      <Subtitle ResourceID="DiskCostSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.DiskUsageController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>b9dc1b0a-1717-4e3e-b3d7-69397131c77a</HelpGUID>
+    </Page>
+
+    <Page
+      ID="ServerConfiguration" PageType="TabbedPage">
+      <Title ResourceID="ServerConfigurationTitle"></Title>
+      <Subtitle ResourceID="ServerConfigurationSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <SubPages>
+        <Page
+          ID="ServiceConfiguration">
+          <Title ResourceID="ServiceConfigurationTitle"></Title>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ServicesController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>c283702d-ab20-4bfa-9272-f0c53c31cb9f</HelpGUID>
+        </Page>
+        <Page
+          ID="Collation">
+          <Title ResourceID="CollationTitle"></Title>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.CollationController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>e3986870-5be4-458b-b671-5ff12a27b022</HelpGUID>
+        </Page>        
+      </SubPages>
+    </Page>
+
+    <Page
+      ID="DatabaseEngineConfiguration" PageType="TabbedPage">
+      <Title ResourceID="DatabaseEngineConfigurationTitle"></Title>
+      <Subtitle ResourceID="DatabaseEngineConfigurationSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <SubPages>
+        <Page
+           ID="AccountProvisioning">
+          <Title ResourceID="AccountProvisioningTitle"></Title>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.DatabaseEngineConfigController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>834b26bc-49de-4033-88d5-6aa7b1609720</HelpGUID>
+        </Page>
+        <Page
+           ID="DataDirectories">
+          <Title ResourceID="DataDirectoriesTitle"></Title>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.DatabaseEngineConfigDataDirectoryController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>9b1fa0fc-623b-479a-afc3-4f13bd850487</HelpGUID>
+        </Page>
+        <Page
+           ID="Ranu">
+          <Title ResourceID="RanuTitle"></Title>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RANUController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>dfc27c1e-0fe2-4221-bed5-f52667ddd3c8</HelpGUID>
+        </Page>
+        <Page
+           ID="FileStream">
+          <Title ResourceID="FileStreamTitle"></Title>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.FileStreamController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>641a10a1-ae52-4d26-8f1c-a032a4aeff02</HelpGUID>
+        </Page>
+      </SubPages>
+    </Page>
+
+    <Page
+      ID="AnalysisServicesConfiguration" PageType="TabbedPage">
+      <Title ResourceID="AnalysisServicesConfigurationTitle"></Title>
+      <Subtitle ResourceID="AnalysisServicesConfigurationSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <SubPages>
+        <Page
+           ID="AccountProvisioning">
+          <Title ResourceID="AccountProvisioningTitle"></Title>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ASConfigAccountProvisionController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>169b1af2-6fe2-467f-8ca4-919f24c620ce</HelpGUID>
+        </Page>
+        <Page
+           ID="DataDirectories">
+          <Title ResourceID="DataDirectoriesTitle"></Title>
+          <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ASConfigDataDirectoriesController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+          <HelpGUID>ef732855-b7af-4f40-a619-5573c1c354bb</HelpGUID>
+        </Page>
+      </SubPages>
+    </Page>
+
+    <Page
+      ID="ReportingServicesConfiguration" PageType="Page">
+      <Title ResourceID="ReportingServicesConfigurationTitle"></Title>
+      <Subtitle ResourceID="ReportingServicesConfigurationSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Help" Visible="true"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ReportingServicesConfigController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>e4561f6c-bc7f-467e-821a-cde8e5cd7391</HelpGUID>
+    </Page>
+
+    <Page
+      ID="ErrorUsageReporting" PageType="Page">
+      <Title ResourceID="ErrorUsageReportingTitle"></Title>
+      <Subtitle ResourceID="ErrorUsageReportingSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ErrorUsageReportController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>e72c43b6-a2bd-4545-9aff-79c83b21180d</HelpGUID>
+    </Page>
+
+    <Page
+      ID="RunInstallConfigRules">
+      <Title ResourceID="RunInstallConfigRulesTitle"></Title>
+      <Subtitle ResourceID="RunInstallConfigRulesSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunFeatureSpecificConfigRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>cb87c511-c5ca-48c9-a866-4d15a04bb879</HelpGUID>
+    </Page>
+
+    <Page
+      ID="Summary" PageType="Summary">
+      <Title ResourceID="InstallSummaryTitle"></Title>
+      <Subtitle ResourceID="InstallSummarySubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Next">
+          <Text ResourceID="InstallButton"></Text>
+        </Button>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.SummaryController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>4dd5d5b7-01b7-4b51-9589-764f69bdb7ae</HelpGUID>
+    </Page>
+
+    <Page
+      ID="InstallationProgressPage"  PageType="Progress">
+      <Title ResourceID="InstallationProgressPageTitle"></Title>
+      <Subtitle ResourceID="InstallationProgressPageSubTile"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false "/>
+        <Button ID="Next" Visible ="true" Enabled="false"/>
+        <Button ID="Cancel" Visible="true" Enabled="true"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ExecutionProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>326f675a-bead-48d3-9088-539e9f9c3fc9</HelpGUID>
+    </Page>
+
+    <Page
+      ID="PostInstall" PageType="Finish" >
+      <Title ResourceID="PostInstallTitle"></Title>
+      <Subtitle ResourceID="PostInstallSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false"/>
+        <Button ID="Next" Visible ="false"/>
+        <Button ID="Cancel">
+          <Text ResourceID="CloseButton"></Text>
+        </Button>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PostInstallController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>eb7ddb23-12d0-4c81-9609-4046ccaca7d2</HelpGUID>
+    </Page>
+  </Pages>
+
+  <Appearance>
+    <Title ResourceID="InstallWizardTitle"></Title>
+    <Icon>
+      <Name>Install</Name>
+      <ResourceType>Microsoft.SqlServer.Configuration.InstallWizard.Resources, Microsoft.SqlServer.Configuration.InstallWizard</ResourceType>
+    </Icon>    
+  </Appearance>
+</UIHost>

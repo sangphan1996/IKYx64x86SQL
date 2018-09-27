@@ -1,0 +1,616 @@
+﻿<html DIR="LTR" xmlns:tool="http://www.microsoft.com/tooltip" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>Microsoft SQL Server 2008 R2 Readme</title>
+    
+    
+    
+    <style TYPE="text/css">
+body
+{
+background: #FFFFFF;
+color: #000000;
+font-family:    Verdana;
+font-size: medium;
+font-style: normal;
+font-weight: normal;
+margin-top: 0;
+margin-bottom:  0;
+margin-left:    0;
+margin-right:   0;
+width:  100%;
+}
+
+div.#mainSection
+{
+font-size: 70%;
+width: 100%;
+padding-left:    10;
+margin-right: 10;
+}
+
+div.#mainBody
+{
+font-size: 90%;
+margin-top: 10;
+padding-bottom: 20;
+}
+
+div.#header
+{
+background-color: #D2D2D2;
+padding-top:    0;
+padding-bottom: 0;
+padding-left:   10;
+padding-right:  0;
+width:          100%;
+}
+
+div.#header table
+{
+border-bottom-color: #C8CDDE;
+border-bottom-style: solid;
+border-bottom-width: 1;
+width:  100%;
+}
+
+span.#runningHeaderText
+{
+color: #003399;
+font-size: 90%;
+}
+
+span.#nsrTitle
+{
+/*    color: #003399;*/
+font-size: 120%;
+font-weight: 600;
+}
+
+div.#header table td
+{
+color: #000000;
+font-size: 70%;
+margin-top: 0;
+margin-bottom:  0;
+padding-right: 20;
+}
+
+div.#header table tr.#headerTableRow3 td
+{
+padding-bottom: 2;
+padding-top: 5;
+}
+
+div.#header table.#bottomTable
+{
+border-top-color: #FFFFFF;
+border-top-style: solid;
+border-top-width: 1;
+text-align: left;
+}
+
+div.#footer
+{
+font-size: 90%;
+margin-top: 0;
+margin-bottom:  0;
+margin-left:    -5;
+margin-right:   0;
+padding-top:    2;
+padding-bottom: 2;
+padding-left:   0;
+padding-right:  0;
+width:  100%;
+}
+
+hr.#footerHR
+{
+border-bottom-color: #EEEEFF;
+border-bottom-style: solid;
+border-bottom-width: 1;
+border-top-color: C8CDDE;
+border-top-style: solid;
+border-top-width: 1;
+height: 3;
+color: #D2D2D2;
+}
+
+div.section
+{
+padding-top:    2;
+padding-bottom: 2;
+padding-right:  15;
+width:  100%;
+}
+
+.heading
+{
+color:          #000000;
+font-weight:    bold;
+margin-top:     18;
+margin-bottom:  8;
+}
+
+h1.heading
+{
+color: #000000;
+font-size:  150%;
+}
+
+.subHeading
+{
+color:          #000000;
+font-weight:    bold;
+font-size:      150%;
+margin-bottom:  4;
+}
+
+h2.subHeading
+{
+color:          #000000;
+font-weight:    bold;
+font-size:      130%;
+}
+h3.subHeading
+{
+color:  #000000;
+font-size: 125%;
+font-weight: bold;
+}
+
+h4.subHeading
+{
+color: #000000;
+font-size: 110%;
+font-weight: bold;
+}
+
+h4.procedureHeading
+{
+color: #000080;
+font-size: 110%;
+font-weight: bold;
+}
+
+h5.subHeading
+{
+color: #000000;
+font-size: 100%;
+font-weight: bold;
+}
+
+img
+{
+padding-bottom: 10;
+}
+
+img.toggle
+{
+border: 0;
+margin-right: 5;
+padding-bottom: 10;
+}
+
+img.copyCodeImage
+{
+border: 0;
+margin: 1;
+margin-right: 3;
+padding-bottom: 10;
+}
+
+img.downloadCodeImage
+{
+border: 0;
+margin-right: 3;
+padding-bottom: 10;
+}
+
+img.viewCodeImage
+{
+border: 0;
+margin-right: 3;
+padding-bottom: 10;
+}
+
+img.note
+{
+border: 0;
+margin-right: 3;
+padding-bottom: 10;
+}
+
+img.#membersOptionsFilterImage
+{
+border: 0;
+margin-left: 10;
+vertical-align: middle;
+padding-bottom: 10;
+}
+
+img.#toggleAllImage
+{
+margin-left: 4;
+vertical-align: middle;
+padding-bottom: 10;
+}
+
+div.#mainSection table
+{
+border: 0;
+font-size: 100%;
+width:  100%;
+margin-top: 5px;
+margin-bottom: 15px;
+}
+
+div.#mainSection table tr
+{
+vertical-align: top;
+}
+
+div.#mainSection table th
+{
+text-align: left;
+background: #D8D8D8;
+border-bottom-color: #D8D8D8;
+border-bottom-style: solid;
+border-bottom-width: 1;
+color: #000000;
+padding-left: 5;
+padding-right: 5;
+}
+
+div.#mainSection table td
+{
+background: #F2F2F2;
+border-top-color: #D8D8D8;
+border-top-style: solid;
+border-top-width: 1;
+padding-left: 5;
+padding-right: 5;
+}
+
+div.#mainSection table td.imageCell
+{
+white-space: nowrap;
+}
+
+div.code
+{
+width: 98%;
+}
+
+div.code table
+{
+border: 0;
+font-size: 95%;
+margin-bottom: 5;
+width: 100%
+}
+
+div.code table th
+{
+text-align: left;
+background: #D8D8D8;
+border-bottom-color: #D8D8D8;
+border-bottom-style: solid;
+border-bottom-width: 1;
+color: #000000;
+font-weight: bold;
+padding-left: 5;
+padding-right: 5;
+}
+
+div.code table td
+{
+background: #CCCCCC;
+border-top-color: #D8D8D8;
+border-top-style: solid;
+border-top-width: 1;
+padding-left: 5;
+padding-right: 5;
+padding-top: 5;
+}
+
+div.alert
+{
+margin-left: 10;
+width: 98%;
+}
+
+div.alert table
+{
+border: 1;
+font-size: 100%;
+width:  100%;
+border: solid 1 #DEDFEF;
+}
+
+div.alert table th
+{
+text-align: left;
+background: #D8D8D8;
+border-bottom-width: 0;
+color: #000000;
+padding-left: 5;
+padding-right: 5;
+border: solid 1 #DEDFEF;
+}
+
+div.alert table td
+{
+background: #FFFFFF;
+border-top-color: #D8D8D8;
+border-top-style: solid;
+border-top-width: 1;
+padding-left: 5;
+padding-right: 5;
+border: solid 1 #DEDFEF;
+}
+
+span.copyCode
+{
+color: #0000ff;
+font-size: 90%;
+font-weight: normal;
+cursor: hand;
+float: right;
+display: inline;
+text-align: right;
+}
+
+.downloadCode
+{
+color: #0000ff;
+font-size: 90%;
+font-weight: normal;
+cursor: hand;
+}
+
+.viewCode
+{
+color: #0000ff;
+font-size: 90%;
+font-weight: normal;
+cursor: hand;
+}
+
+div.code pre
+{
+font-family:    Monospace, Courier New, Courier;
+font-size: 105%;
+color:  #000000;
+}
+
+code
+{
+font-family:    Monospace, Courier New, Courier;
+font-size: 105%;
+color:  #000000;
+}
+
+dl
+{
+margin-top: 0;
+padding-left:   1;
+}
+
+dd
+{
+margin-bottom:  0;
+margin-left:    0;
+padding-left:   20;
+}
+
+dd p
+{
+margin-top: 5;
+}
+
+ul
+{
+margin-left: 17;
+list-style-type: disc;
+}
+
+ul ul
+{
+margin-bottom: 4;
+margin-left: 17;
+margin-top: 3;
+list-style-type: disc;
+}
+
+ol
+{
+margin-left: 24;
+list-style-type: decimal;
+}
+
+ol ol
+{
+margin-left: 24;
+margin-top: 3;
+list-style-type: lower-alpha;
+}
+
+li
+{
+margin-top: 0;
+margin-bottom: 0;
+padding-bottom: 0;
+padding-top: 0;
+margin-left: 5;
+}
+
+p
+{
+margin-bottom: 15;
+}
+
+.tip
+{
+color:  #0000FF;
+font-style: italic;
+cursor:hand;
+text-decoration:underline;
+}
+
+.math
+{
+font-family: Times New Roman;
+font-size: 125%
+}
+.sourceCodeList
+{
+font-family: Verdana;
+font-size: 90%;
+}
+
+pre.viewCode
+{
+width: 100%;
+overflow: auto;
+}
+
+li:hover table, li.over table
+{
+background-color: #C0C0C0;
+}
+
+li:hover ul, li.over ul
+{
+background-color: #d2d2d2;
+border: 1px solid #000;
+display: block;
+}
+            </style>
+  </head>
+  <body>
+    <!--Topic built:01/11/2010 14:02:00-->
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="header">
+      <table width="100%" id="topTable"><tr>
+          <td align="left">
+            <span id="nsrTitle">Microsoft SQL Server 2008 R2 Readme</span>
+          </td>
+          <td align="right">
+            <span id="headfb" class="feedbackhead">
+            </span>
+          </td>
+        </tr></table>
+      
+      
+      
+    </div>
+    <div id="mainSection">
+      <div id="mainBody"><p> 01/11/2010 14:02:00</p>
+        
+        <font color="DarkGray"> </font><p /> 
+        <span id="changeHistory">
+        </span>
+    <p>This Readme document contains important information to read before installing Microsoft SQL Server 2008 R2. It describes how to find installation assistance in Books Online, how to find supplemental product information in the Release Notes, and copyright attributions for the product.</p>
+    <p>This Readme file is available on your installation media at &lt;drive&gt;:\, as well as from the <a href="http://go.microsoft.com/fwlink/?LinkId=155103" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Readme download page</linkText></a>. </p>
+  <h1 class="heading">What's New</h1><div id="sectionSection0" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+      <p xmlns="">For information about the new features in SQL Server 2008 R2, see <a href="http://go.microsoft.com/fwlink/?LinkID=154144" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">What's New in SQL Server 2008 R2</linkText></a>.</p>
+    </content></div><h1 class="heading">Use Books Online for Installation Assistance</h1><div id="sectionSection1" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    </content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+      <h3 class="subHeading" xmlns="">Find Books Online</h3><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+          <p xmlns="">
+            SQL Server Books Online is the primary documentation for getting assistance with installing SQL Server. You can obtain Books Online in the following ways:</p>
+          <ul xmlns=""><li>
+              Install Books Online by selecting the SQL Server Books Online feature in this release of SQL Server. After installing, update to the latest version, which is available from the <a href="http://go.microsoft.com/fwlink/?LinkId=154887" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Books Online download page</linkText></a>.<br />
+            </li><li>
+              View Books Online on <a href="http://go.microsoft.com/fwlink/?LinkId=154888" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">MSDN</linkText></a>.<br />
+            </li><li>
+              Download a stand-alone version from the <a href="http://go.microsoft.com/fwlink/?LinkId=154887" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Books Online download page</linkText></a>.<br />
+            </li></ul>
+          <p xmlns="">To view the Books Online installation documentation without accessing Books Online, you can open the s10ch_setup.chm file from the installation media or from your computer using the following paths:</p>
+          <ul xmlns=""><li>
+              To open s10ch_setup.chm from the installation media, open &lt;<i>drive&gt;</i>:\[x86] | [x64] | [ia64]\help\1033\s10ch_setup.chm.<br />
+            </li><li>
+              To open s10ch_setup.chm on your computer, open &lt;drive&gt;:\Program Files\Microsoft SQL Server\100\Setup Bootstrap\SQLServer2008R2\1033_ENU_LP\x86\1033\help\s10ch_setup.chm.<br />
+            </li></ul>
+        </content></div>
+      <h3 class="subHeading" xmlns="">Find Installation Information in Books Online</h3><div class="subSection" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+          <p xmlns="">The following Books Online topics on MSDN contain important information about installing SQL Server 2008 R2. These topics are also in the installed versions of Books Online and in the s10ch_setup.chm file.</p>
+          <div class="alert" xmlns=""><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">Note: </th></tr><tr><td>
+            Installing SQL Server 2008 R2 Books Online upgrades your existing SQL Server 2008 version of Books Online. If you upgrade, be aware that the content and help topics now describe tools and features of SQL Server 2008 R2. To reinstall SQL Server 2008 Books Online, you must first uninstall SQL Server 2008 R2 Books Online. Because SQL Server 2008 and SQL Server 2008 R2 share components, you cannot have side-by-side installations of Books Online on the same computer.<p />
+          </td></tr></table><p /></div>
+          <ul xmlns=""><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=154143" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">SQL Server Installation</linkText></a> <br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=154144" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">What’s New</linkText></a> <br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=141682" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Hardware and Software Requirements</linkText></a> <br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=154145" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">How to: Install SQL Server 2008 R2</linkText></a> <br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=148477" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">How to Install SQL Server 2008 R2 Using SysPrep</linkText></a>
+              <br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=154146" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">How to: Upgrade to SQL Server 2008 R2</linkText></a> <br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=154147" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Backward Compatibility</linkText></a> <br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=154148" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">How to: Install SQL Server 2008 R2 from the Command Prompt</linkText></a> <br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=154149" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Side by Side Instances of SQL Server 2008 R2 and SQL Server 2008</linkText></a>.<br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=148475" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">How to: Create a New SQL Server 2008 Failover Cluster</linkText></a> <br />
+            </li><li>
+              
+                <a href="http://go.microsoft.com/fwlink/?LinkId=154150" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">How to: Uninstall an Existing Instance of SQL Server (Setup)</linkText></a> <br />
+            </li></ul>
+        </content></div>
+    </sections></div><h1 class="heading">Analyze Your Upgrade with Upgrade Advisor</h1><div id="sectionSection2" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+      <p xmlns="">The Upgrade Advisor tool analyzes your current instance of SQL Server and provides important information you should know before upgrading. For more information about SQL Server 2008 R2 Upgrade Advisor, see the <a href="http://go.microsoft.com/fwlink/?LinkId=164554" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Upgrade Advisor</linkText></a> Web site.</p>
+    </content></div><h1 class="heading">Read the Release Notes for the Latest Product Information</h1><div id="sectionSection3" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+      <p xmlns="">The Release Notes provide supplemental information about product behaviors that apply only to this release or that are not documented in this release of Books Online. The Release Notes document is available from the <a href="http://go.microsoft.com/fwlink/?LinkId=155801" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Release Notes page</linkText></a>.</p>
+    </content></div><h1 class="heading">Copyright Attributions</h1><div id="sectionSection4" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+      <ol xmlns=""><li>
+          This product contains software derived from the Xerox Secure Hash Function.<br />
+        </li><li>
+          This product includes software from the 'zlib' general purpose compression library.<br />
+        </li><li>
+          Portions of this software are based in part on the work of RSA Data Security, Inc. Because Microsoft has included the RSA Data Security, Inc., software in this product, Microsoft is required to include the text below that accompanied such software: <br />
+            <br />
+          Copyright © 1990, RSA Data Security, Inc. All rights reserved.<br />
+          License to copy and use this software is granted provided that it is identified as the "RSA Data Security, Inc., MD5 Message-Digest Algorithm" in all material mentioning or referencing this software or this function. License is also granted to make and use derivative works provided that such works are identified as "derived from the RSA Data Security, Inc., MD5 Message-Digest Algorithm" in all material mentioning or referencing the derived work.<br />
+          RSA Data Security, Inc., makes no representations concerning either the merchantability of this software or the suitability of this software for any particular purpose. It is provided "as is" without express or implied warranty of any kind.<br />
+          These notices must be retained in any copies of any part of this documentation and/or software.<br />
+        </li><li>
+          The Reporting Services mapping feature uses data from TIGER/Line Shapefiles provided courtesy of the U.S. Census Bureau (<a href="http://go.microsoft.com/fwlink/?LinkId=179079" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">http://www.census.gov/</linkText></a>). TIGER/Line Shapefiles are an extract of selected geographic and cartographic information from the Census MAF/TIGER database. TIGER/Line Shapefiles are available without charge from the U.S. Census Bureau. To obtain more information about the TIGER/Line shapefiles, go to <a href="http://go.microsoft.com/fwlink/?LinkId=179080" alt=""><linkText xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">http://www.census.gov/geo/www/tiger</linkText></a>. The boundary information in the TIGER/Line Shapefiles is for statistical data collection and tabulation purposes only; its depiction and designation for statistical purposes does not constitute a determination of jurisdictional authority, rights of ownership, or entitlement, and does not reflect legal land descriptions. Census TIGER and TIGER/Line are registered trademarks of the U.S. Bureau of the Census.<br />
+        </li></ol>
+    </content></div><!--[if gte IE 5]>
+			<tool:tip element="seeAlsoToolTip" avoidmouse="false"/><tool:tip element="languageFilterToolTip" avoidmouse="false"/><tool:tip element="roleInfoSpan" avoidmouse="false"/>
+		<![endif]--></div>
+      <div id="footer">
+			
+			© 2010 Microsoft Corporation. All rights reserved.
+		</div>
+    </div>
+  </body>
+</html>

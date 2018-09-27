@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.microsoft.com/sql/slp/Package.xsd" xmlns="http://www.microsoft.com/sql/slp/Package.xsd" xmlns:pkg="http://www.microsoft.com/sql/slp/Package.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation>
+        This document describes the schema for the chainer package XML.  This XML is generated
+        at build time and added to a package containing an installer.  There are several types
+        of installers (RTM, Service Pack, QFE) that all use this XML.
+        
+        ISSUES LIST:
+          * Currently the MSI, Configuration, and Upgrade extension data is at the root package
+            level.  In order to generalize the package XML they should probably be moved to
+            an extension subnode.
+
+        @Owner: scottkon
+    </xs:documentation>
+  </xs:annotation>
+  <!--
+    Configuration workflows values are used to define order how cofiguration are sheduled
+    and what result they update
+  -->
+  <xs:simpleType name="Configuration">
+    <xs:union memberTypes="xs:string ">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="validation" />
+          <xs:enumeration value="premsi" />
+          <xs:enumeration value="postmsi" />
+          <xs:enumeration value="downtime" />
+          <xs:enumeration value="startup" />
+          <xs:enumeration value="preuninstall" />
+          <xs:enumeration value="uninstall" />
+          <xs:enumeration value="finalize" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+  <!--
+    Product enumeration
+  -->
+  <xs:simpleType name="Product">
+    <xs:union memberTypes="xs:string ">
+      <xs:simpleType id="Products">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Sql" />
+          <xs:enumeration value="As" />
+          <xs:enumeration value="Rs" />
+          <xs:enumeration value="Dts" />
+          <xs:enumeration value="Tools" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+  <!--
+    Package is the top level element in the document.
+  -->
+  <xs:element name="Package">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Properties" type="pkg:PropertiesType" />
+        <xs:element name="Datastore" type="pkg:DatastoreType" />
+        <xs:element name="Extensions" type="pkg:ExtensionsType" />
+        <xs:element name="MsiPatches" type="pkg:MsiPatchesType" minOccurs="0" />
+        <xs:element name="RuleGroups" type="pkg:RuleGroupsType" />
+        <xs:element name="Sequences" type="pkg:SequencesType" />
+        <xs:any namespace="##other" processContents="lax">
+          <xs:annotation>
+            <xs:documentation>
+              Extensibility point in the Package XML Schema.  Elements from other namespaces can be inserted into the document.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:any>
+      </xs:choice>
+    </xs:complexType>
+    <!--
+      Key Constraints for Extensions
+      Every extension name must be in the extension list
+    -->
+    <xs:key name="ExtensionID">
+      <xs:selector xpath=".//pkg:Extension" />
+      <xs:field xpath="@Id" />
+    </xs:key>
+    <!--
+      Key Constraints for MSIs
+      Every MSI used in the MSIFeatures must be in the MSI list
+    -->
+    <xs:key name="MSIID">
+      <xs:selector xpath=".//pkg:MSIPackage" />
+      <xs:field xpath="@Id" />
+    </xs:key>
+    <xs:keyref name="MSIFeatureMSIRef" refer="pkg:MSIID">
+      <xs:selector xpath=".//pkg:MSIInstall" />
+      <xs:field xpath="@Msi" />
+    </xs:keyref>
+    <!--
+      Key Constraints for MSI Features
+      Every MSI Feature used in the MSIFeatures must be in the list of features for the MSI
+      
+      BUGBUG: Currently this constraint works across all MSI features.  Need to constrain the
+      selector to only the MSI package
+    -->
+    <xs:key name="MSIFeatureID">
+      <xs:selector xpath=".//pkg:MSIPackage/pkg:MSIFeatures/pkg:MSIFeature" />
+      <xs:field xpath="@Id" />
+    </xs:key>
+    <xs:keyref name="MSIFeatureMSIFeatureRef" refer="pkg:MSIFeatureID">
+      <xs:selector xpath=".//pkg:MSIInstall" />
+      <xs:field xpath="@Feature" />
+    </xs:keyref>
+    <!--
+      Key Constraints for FeatureDependencies
+      Every Feature used in the FeatureDependencies must be in the Feature list
+    -->
+<!-- FeatureID is duplicated between extension and sequences right now - remove comment when extension features have been removed.
+    <xs:key name="FeatureID">
+      <xs:selector xpath=".//pkg:Feature" />
+      <xs:field xpath="@Id" />
+    </xs:key>
+    <xs:keyref name="FeatureFromRef" refer="pkg:FeatureID">
+      <xs:selector xpath=".//pkg:Dependency" />
+      <xs:field xpath="@From" />
+    </xs:keyref>
+    <xs:keyref name="FeatureToRef" refer="pkg:FeatureID">
+      <xs:selector xpath=".//pkg:Dependency" />
+      <xs:field xpath="@To" />
+    </xs:keyref>
+-->
+    <!--
+      Key Constraints for Packages
+    -->
+    <xs:key name="MSIPackageID">
+      <xs:selector xpath=".//pkg:MsiPackage" />
+      <xs:field xpath="@Id" />
+    </xs:key>
+    <xs:keyref name="FeatureRefMSIPackageID" refer="pkg:MSIPackageID">
+      <xs:selector xpath=".//pkg:FeatureRef" />
+      <xs:field xpath="@PackageId" />
+    </xs:keyref>
+    <xs:keyref name="ProductFeatureTypeMSIPackageID" refer="pkg:MSIPackageID">
+      <xs:selector xpath=".//pkg:ProductFeature" />
+      <xs:field xpath="@KeyFeaturePackageId" />
+    </xs:keyref>
+  </xs:element>
+  <!--
+    Name value attribute group
+  -->
+  <xs:attributeGroup name="NameValuePair">
+    <xs:attribute name="Id" type="xs:string" use="required" />
+    <xs:attribute name="Value" type="xs:string" use="required" />
+  </xs:attributeGroup>
+  <!--
+    Property name value attribute group
+  -->
+  <xs:attributeGroup name="PropertyNameValuePair">
+    <xs:attribute name="Id" type="xs:string" use="required" />
+    <xs:attribute name="Value" type="xs:string" use="required" />
+    <xs:attribute name="HideSummaryLog" type="xs:boolean" use="optional" />
+  </xs:attributeGroup>
+  <!--
+    Package properties contain name/value pairs that specify build time variables.
+  -->
+  <xs:complexType name="PropertiesType">
+    <xs:sequence>
+      <xs:element name="Property" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attributeGroup ref="pkg:PropertyNameValuePair" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!--
+    Extension XML allows the registration of .NET assemblies with the chainer
+  -->
+  <xs:complexType name="ExtensionsType">
+    <xs:sequence>
+      <xs:element name="Extension" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attribute name="Id" type="xs:string" use="required"/>
+          <xs:attribute name="Assembly" type="xs:string" use="required" />
+          <xs:attribute name="Strongname" type="xs:string" use="optional" />
+          <xs:attribute name="Path" type="xs:string" use="required" />
+        </xs:complexType>
+        <xs:unique name="ExtensionIdIsUnique">
+          <xs:selector xpath="Extension"/>
+          <xs:field xpath="@Id"/>
+        </xs:unique>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!--
+    The feature tree describes a hierarchical list of features and the components that
+    make them up.
+  -->
+  <xs:complexType name="FeatureTreeType">
+    <xs:sequence>
+      <xs:element name="ProductFeature" type="pkg:ProductFeatureType" minOccurs="1" maxOccurs="unbounded">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!--
+    A ProductFeature element contains units shown up in UI.
+        Attribute Definitions:
+        KeyFeature - specifies the associated MSI feature that will be used by SQLDiscover to determine
+                      the state of a ProductFeature such as Installed, NotInstalled, Patched and etc.
+
+        ExcludeFromSku - specifies a list of SKUs that doesn't apply to the given feature.  For example,
+                          Replication doesn't apply to Express SKU.
+                          To UI function, it means that if the SKU is Express, this feature won't be shown up.
+                          The elements are sperated by comma in the list.
+                          If a parent contains "ExcludeFromSku", all children follow the same ExcludeFromSku.
+
+        NameResourceId - specifies the name of ProductFeature that is shown in UI.
+
+        DescriptionResourceId - specifies the description
+        ComponentUpdateOnly - should product feature be listed in CU UI only
+
+  -->
+  <xs:complexType name="ProductFeatureType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="ProductFeature" type="pkg:ProductFeatureType" />
+    </xs:choice>
+    <xs:attribute name="Id" type="xs:string" />
+    <xs:attribute name="KeyFeature" type="xs:string" />
+    <xs:attribute name="KeyFeaturePackageId" type="xs:string" />
+    <xs:attribute name="ExcludeFromSku" type="xs:string" use="optional"/>
+    <xs:attribute name="NameResourceId" type="xs:string" />
+    <xs:attribute name="DescriptionResourceId" type="xs:string" />
+    <xs:attribute name="ComponentUpdateOnly" type="xs:boolean" use="optional" />
+  </xs:complexType>
+  <!--
+    The feature result after execution
+  -->
+  <xs:element name="FeatureResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Feature" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Action" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                  </xs:sequence>
+                  <xs:attribute name="Id" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="ActionTypeType" use="required" />
+                  <xs:attribute name="Result" type="ResultType" use="required " />
+                  <xs:attribute name="ResultNode" type="ResultNodeType" use="required " />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Id" type="xs:string" use="required " />
+            <xs:attribute name="Result" type="ResultType" />
+            <xs:attribute name="ValidateResult" type="ResultType" />
+            <xs:attribute name="UpgradeResult" type="ResultType" />
+            <xs:attribute name="CleanupResult" type="ResultType" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="ActionTypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="config" />
+      <xs:enumeration value="msi" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ResultType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="pending" />
+      <xs:enumeration value="success" />
+      <xs:enumeration value="fail" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ResultNodeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Result" />
+      <xs:enumeration value="ValidateResult" />
+      <xs:enumeration value="UpgradeResult" />
+      <xs:enumeration value="CleanupResult" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--
+    RuleGroups type
+  -->
+  <xs:complexType name="RuleGroupsType">
+    <xs:sequence>
+      <xs:element name="RuleGroup" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Rule" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:attribute name="Id" type="xs:string" />
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attribute name="Id" type="xs:string" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!--
+    Sequences define chainer workflows
+  -->
+  <xs:complexType name="SequencesType">
+    <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <xs:any namespace="http://www.microsoft.com/sql/setup/chainer/2007/04" processContents="lax">
+        <xs:annotation>
+          <xs:documentation>
+            Extensibility point in the Package XML Schema.  Elements from other namespaces can be inserted into the document.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:any>
+    </xs:choice>
+  </xs:complexType>
+  <!--
+    Datastore defines a set of XML files to load into the datastore at startup
+  -->
+  <xs:complexType name="DatastoreType">
+    <xs:sequence>
+      <xs:element name="Object" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence />
+          <xs:attribute name="Type" type="xs:string" use="required" />
+          <xs:attribute name="Features" type="xs:string" use="required" />
+          <xs:attribute name="Filename" type="xs:string" use="required"/>
+          <xs:attribute name="SchemaFilename" type="xs:string" use="optional"/>
+          <xs:attribute name="NamespacePrefix" type="xs:string" use="optional"/>
+          <xs:attribute name="NamespaceUri" type="xs:string" use="optional"/>
+          <xs:attribute name="Namespace" type="xs:string" use="optional"/>
+          <xs:attribute name="ExtensionId" type="xs:string" use="optional"/>
+          <xs:attribute name="ResouceNamespace" type="xs:string" use="optional"/>
+          <xs:attribute name="DatastorePath" type="xs:string" use="optional"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!--
+    The MSP Package list contains the information needed to install patch MSPs.
+    <MsiPatches> and <MsiPatch> are new elements. When you generate the data structure "package.cs"
+    by running generatecs.bat, make sure you also add the mapping names in fixupconfig.ini as following:
+
+        MsiPatchesType=MsiPatches
+        MsiPatchesTypeMsiPatch=MsiPatch
+
+    Without it, generatecs.bat would generate unmatched names, and XML deserialization would fail
+    with error:
+
+        "There is an error in XML document {1, 2}"
+  -->
+  <xs:complexType name="MsiPatchesType">
+    <xs:sequence>
+      <xs:element name="MsiPatch" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <!-- Id is the same value from Package.xml where it is specified in
+               the node <MsiPackage Id="something">
+          -->
+          <xs:attribute name="Id" type="xs:string" use="required" />
+          <!-- FileName is patch file name, e.g., "SqlRun_Sql.msp" -->
+          <xs:attribute name="FileName" type="xs:string" use="required" />
+          <!-- Path is the relative path under CD media, e.g., ".\InstallPatch" -->
+          <xs:attribute name="Path" type="xs:string" use="required" />
+          <xs:attribute name="DescriptionResourceId" type="xs:string" use="optional" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

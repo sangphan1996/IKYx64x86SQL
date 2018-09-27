@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<assembly xmlns:xe="http://schemas.microsoft.com/SQL/2007/01/events" xmlns="http://www.w3.org/TR/xhtml1/strict" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<instrumentation>
+<events><event guid="{a8ce3832-727c-473b-8fb9-c5ad4730f8de}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<ex_terminator_called>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<is_stack_unwind>%Boolean;</is_stack_unwind>
+</ex_terminator_called>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{55f88a80-610f-413e-96c9-335f2a2cd9c0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<crt_signal_abort_called>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<signal>%Int32;</signal>
+</crt_signal_abort_called>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{b7ec9427-8992-4593-8006-4a9f151f12c2}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<process_killed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<exit_code>%UInt32;</exit_code>
+</process_killed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{55ec41f4-16b0-476a-a26d-30e3ae3908c0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<task_enqueued>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<task_address>%Pointer;</task_address>
+<worker_address>%Pointer;</worker_address>
+<scheduler_id>%UInt32;</scheduler_id>
+</task_enqueued>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{427634d9-4f4e-4632-9fa9-ae70e9a97156}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<thread_attached>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+</thread_attached>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{26f8bb92-2150-4629-a240-ed74745a4519}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<thread_detached>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+</thread_detached>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{048430d1-a438-44d9-b983-fe63c3a7573d}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_created>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<node_id>%UInt16;</node_id>
+<worker_type>%UInt32;</worker_type>
+<priority>%UInt32;</priority>
+<affinity_mask>%UInt64;</affinity_mask>
+<ideal_worker_limit>%UInt32;</ideal_worker_limit>
+<is_hidden>%Boolean;</is_hidden>
+</scheduler_created>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{048430d1-a438-44d9-b983-fe63c3a7573d}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<scheduler_created>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<node_id>%UInt16;</node_id>
+<worker_type>%UInt32;</worker_type>
+<priority>%UInt32;</priority>
+<affinity_mask>%UInt64;</affinity_mask>
+<ideal_worker_limit>%UInt32;</ideal_worker_limit>
+<is_hidden>%Boolean;</is_hidden>
+</scheduler_created>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9e16b755-c55b-4fdd-a996-c37356f82a94}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_destroyed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+</scheduler_destroyed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{ea770d34-e522-4ea1-8bcb-7929775f9ffc}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<async_io_requested>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<offset>%UInt64;</offset>
+<file_handle>%Pointer;</file_handle>
+<completion_routine_pointer>%Pointer;</completion_routine_pointer>
+<user_data_pointer>%Pointer;</user_data_pointer>
+</async_io_requested>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{7302ee63-3c3a-4395-8993-c27be2c17bf1}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<async_io_completed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<offset>%UInt64;</offset>
+<file_handle>%Pointer;</file_handle>
+<completion_routine_pointer>%Pointer;</completion_routine_pointer>
+<user_data_pointer>%Pointer;</user_data_pointer>
+</async_io_completed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{5e029a26-b868-4989-b3e0-305fe9407a3f}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<malloc_spy_memory_allocated>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<size>%UInt64;</size>
+<tag>%Byte;</tag>
+<allocation_stamp>%UInt32;</allocation_stamp>
+<pmo_address>%Pointer;</pmo_address>
+<pmo_type>%UInt64;</pmo_type>
+</malloc_spy_memory_allocated>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{e2c0ca0c-21cc-48cb-9ef0-a180ba28f7b8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<malloc_spy_memory_freed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<size>%UInt64;</size>
+<tag>%Byte;</tag>
+<allocation_stamp>%UInt32;</allocation_stamp>
+<pmo_address>%Pointer;</pmo_address>
+<pmo_type>%UInt64;</pmo_type>
+</malloc_spy_memory_freed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{67e195b5-c172-4b1b-b82f-0d9388cef797}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<malloc_spy_corrupted_memory_detected>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+</malloc_spy_corrupted_memory_detected>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{b47f903a-dda3-463c-86c2-5ad2764ded69}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<page_heap_memory_allocated>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<size>%UInt64;</size>
+<pmo_address>%Pointer;</pmo_address>
+<pmo_type>%UInt64;</pmo_type>
+</page_heap_memory_allocated>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8c9c2701-f7c1-4168-8895-3fa088bf9830}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<page_heap_memory_freed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<pmo_address>%Pointer;</pmo_address>
+<pmo_type>%UInt64;</pmo_type>
+</page_heap_memory_freed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8926a6cf-11cc-4f77-8be5-9082c03cb240}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<resource_monitor_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<memory_utilization_pct>%UInt32;</memory_utilization_pct>
+<total_physical_memory_kb>%UInt64;</total_physical_memory_kb>
+<available_physical_memory_kb>%UInt64;</available_physical_memory_kb>
+<total_page_file_kb>%UInt64;</total_page_file_kb>
+<available_page_file_kb>%UInt64;</available_page_file_kb>
+<total_virtual_address_space_kb>%UInt64;</total_virtual_address_space_kb>
+<available_virtual_address_space_kb>%UInt64;</available_virtual_address_space_kb>
+<available_extended_virtual_address_space_kb>%UInt64;</available_extended_virtual_address_space_kb>
+<memory_node_id>%Int32;</memory_node_id>
+<reserved_kb>%UInt64;</reserved_kb>
+<committed_kb>%UInt64;</committed_kb>
+<shared_committed_kb>%UInt64;</shared_committed_kb>
+<awe_kb>%UInt64;</awe_kb>
+<single_pages_kb>%UInt64;</single_pages_kb>
+<multiple_pages_kb>%UInt64;</multiple_pages_kb>
+<notification>%UInt32;</notification>
+<process_indicators>%UInt32;</process_indicators>
+<system_indicators>%UInt32;</system_indicators>
+<node_id>%UInt32;</node_id>
+<apply_low_pm>%UInt32;</apply_low_pm>
+<apply_high_pm>%UInt32;</apply_high_pm>
+<revert_high_pm>%UInt32;</revert_high_pm>
+<call_stack>%CountedString;</call_stack>
+</resource_monitor_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{faa6dd00-3d81-4c94-bef6-8141d021166b}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<memory_broker_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<delta_time>%UInt32;</delta_time>
+<memory_ratio>%Int64;</memory_ratio>
+<new_target>%Int64;</new_target>
+<overall>%Int64;</overall>
+<rate>%Int64;</rate>
+<currently_predicated>%Int64;</currently_predicated>
+<currently_allocated>%Int64;</currently_allocated>
+<previously_allocated>%Int64;</previously_allocated>
+<broker>%String;</broker>
+<notification>%String;</notification>
+<call_stack>%CountedString;</call_stack>
+</memory_broker_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{a22ce15e-710e-4280-8558-25622bb11d68}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<scheduler_address>%Pointer;</scheduler_address>
+<ticks>%UInt64;</ticks>
+<source_worker>%Pointer;</source_worker>
+<target_worker>%Pointer;</target_worker>
+<worker_signal_time>%UInt64;</worker_signal_time>
+<disk_io_completed>%UInt32;</disk_io_completed>
+<timer_expired>%UInt32;</timer_expired>
+<action>%String;</action>
+<call_stack>%CountedString;</call_stack>
+</scheduler_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{98fb4794-0497-42d1-b20f-4d2a2b94af46}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<exception_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<task_address>%Pointer;</task_address>
+<error>%Int32;</error>
+<severity>%Int32;</severity>
+<state>%Int32;</state>
+<user_defined>%Boolean;</user_defined>
+<call_stack>%CountedString;</call_stack>
+</exception_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{7aae9df9-93e7-40bf-a16a-398a8f3240d7}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_non_yielding_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<scheduler>%UInt32;</scheduler>
+<worker>%Pointer;</worker>
+<yields>%UInt64;</yields>
+<worker_utilization>%UInt32;</worker_utilization>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_non_yielding_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{7aae9df9-93e7-40bf-a16a-398a8f3240d7}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_non_yielding_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<scheduler>%UInt32;</scheduler>
+<worker>%Pointer;</worker>
+<yields>%UInt64;</yields>
+<worker_utilization>%UInt32;</worker_utilization>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_non_yielding_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{196da8f1-9652-4b34-92be-7e31faf31aa2}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_deadlock_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_deadlock_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{196da8f1-9652-4b34-92be-7e31faf31aa2}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_deadlock_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_deadlock_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{5a280226-c02b-4522-baf7-4976eb7b09ae}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_system_health_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_system_health_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9b42d932-057a-44cd-aa50-85e6251b119d}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_non_yielding_iocp_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<worker>%Pointer;</worker>
+<yields>%UInt64;</yields>
+<worker_utilization>%UInt32;</worker_utilization>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_non_yielding_iocp_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9b42d932-057a-44cd-aa50-85e6251b119d}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_non_yielding_iocp_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<worker>%Pointer;</worker>
+<yields>%UInt64;</yields>
+<worker_utilization>%UInt32;</worker_utilization>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_non_yielding_iocp_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{db2ecaae-0ea3-4033-8dd5-59a87bc5bb13}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_non_yielding_rm_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<worker>%Pointer;</worker>
+<yields>%UInt64;</yields>
+<worker_utilization>%UInt32;</worker_utilization>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<memory_allocated>%Int64;</memory_allocated>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_non_yielding_rm_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{db2ecaae-0ea3-4033-8dd5-59a87bc5bb13}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_non_yielding_rm_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<worker>%Pointer;</worker>
+<yields>%UInt64;</yields>
+<worker_utilization>%UInt32;</worker_utilization>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<memory_allocated>%Int64;</memory_allocated>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_non_yielding_rm_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{384f0289-4265-4459-936d-537d9e3a9695}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<spinlock_backoff>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<spinlock_address>%Pointer;</spinlock_address>
+<worker>%Pointer;</worker>
+<backoffs>%UInt32;</backoffs>
+<duration>%UInt32;</duration>
+<type>%UInt64;</type>
+</spinlock_backoff>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{c500feaf-dd92-4177-a9ab-5813b759f090}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<set_abort_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<task_address>%Pointer;</task_address>
+</set_abort_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{7d8e980c-d523-4955-934d-879742fbff2c}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<non_yielding_scheduler_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<task_address>%Pointer;</task_address>
+</non_yielding_scheduler_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{579e97b9-8ac6-4ed2-b2a2-b9f55d179a28}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<deadlock_scheduler_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<waited_resource>%UInt64;</waited_resource>
+</deadlock_scheduler_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{579e97b9-8ac6-4ed2-b2a2-b9f55d179a28}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<deadlock_scheduler_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<waited_resource>%UInt64;</waited_resource>
+</deadlock_scheduler_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{129c3a64-2e29-4a34-be88-745b7cf866ed}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<non_yielding_iocp_listener_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<task_address>%Pointer;</task_address>
+</non_yielding_iocp_listener_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9d9c2853-5513-4bd3-b7d8-e7c7f587a243}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<idle_server_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<wake_up_reason>%UInt32;</wake_up_reason>
+<interval>%UInt32;</interval>
+</idle_server_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{a406e6d9-5f58-4e0e-9578-45587e01ade5}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<memory_utilization_effect_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<working_set>%UInt64;</working_set>
+<commited>%UInt64;</commited>
+<utilization>%UInt32;</utilization>
+<effect>%UInt32;</effect>
+<effect_duration>%UInt32;</effect_duration>
+<effect_state>%Byte;</effect_state>
+<effect_reversed_indicator>%Boolean;</effect_reversed_indicator>
+</memory_utilization_effect_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{74446815-875a-4ac8-93d2-fc1b36d8be25}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<non_yielding_rm_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<task_address>%Pointer;</task_address>
+</non_yielding_rm_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{3f8c60d7-6eb1-4e6c-bf47-a7ddea45352f}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<exit_routine_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<exit_code>%UInt32;</exit_code>
+</exit_routine_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{23d5cbfe-c510-46af-93a2-088649c0aa05}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<dump_exception_routine_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<exception_code>%UInt32;</exception_code>
+<exception_address>%Pointer;</exception_address>
+</dump_exception_routine_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{70570f1b-0b14-4c83-91e2-16b1634da56c}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<crt_out_of_memory_routine_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<size>%UInt64;</size>
+</crt_out_of_memory_routine_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{da39d5f8-d63d-4f8d-a087-82aad7a1fd81}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<security_handler_routine_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<error_code>%UInt32;</error_code>
+</security_handler_routine_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{a1b63871-8636-4a29-9973-151bf2b987e2}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<context_switch_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<task_address>%Pointer;</task_address>
+<transition>%UInt32;</transition>
+</context_switch_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{4774f721-91a1-45a0-81e8-f068b857335e}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<worker_state_callback_executed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<worker_address>%Pointer;</worker_address>
+<callback_type>%UInt32;</callback_type>
+</worker_state_callback_executed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1b3a5831-5e6f-4b17-bda1-1254a99d24a2}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<function_hook_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<unhook_count>%UInt32;</unhook_count>
+<action>%UInt32;</action>
+<dll_name>%String;</dll_name>
+<function_name>%AnsiString;</function_name>
+</function_hook_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{ba5a9453-da0a-4300-bd55-d14eb0540554}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_stalled_dispatcher_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<worker>%Pointer;</worker>
+<yields>%UInt64;</yields>
+<worker_utilization>%UInt32;</worker_utilization>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_stalled_dispatcher_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{ba5a9453-da0a-4300-bd55-d14eb0540554}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<scheduler_monitor_stalled_dispatcher_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<opcode>%UInt32;</opcode>
+<node_id>%UInt16;</node_id>
+<worker>%Pointer;</worker>
+<yields>%UInt64;</yields>
+<worker_utilization>%UInt32;</worker_utilization>
+<process_utilization>%UInt32;</process_utilization>
+<system_idle>%UInt32;</system_idle>
+<user_mode_time>%UInt64;</user_mode_time>
+<kernel_mode_time>%UInt64;</kernel_mode_time>
+<page_faults>%UInt32;</page_faults>
+<working_set_delta>%UInt64;</working_set_delta>
+<memory_utilization>%UInt32;</memory_utilization>
+<call_stack>%CountedString;</call_stack>
+</scheduler_monitor_stalled_dispatcher_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8825af37-891d-44f0-8f13-3cfca44f31c4}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<node_created>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<node_id>%UInt16;</node_id>
+<cpu_mask>%UInt64;</cpu_mask>
+<affinity_mask>%UInt64;</affinity_mask>
+</node_created>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8825af37-891d-44f0-8f13-3cfca44f31c4}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<node_created>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<node_id>%UInt16;</node_id>
+<cpu_mask>%UInt64;</cpu_mask>
+<affinity_mask>%UInt64;</affinity_mask>
+<cpu_group>%UInt16;</cpu_group>
+</node_created>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{69b45167-ee8a-4a25-aa74-f67fd9f3fb32}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cpu_config_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<old_cpu_mask>%UInt64;</old_cpu_mask>
+<new_cpu_mask>%UInt64;</new_cpu_mask>
+</cpu_config_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{69b45167-ee8a-4a25-aa74-f67fd9f3fb32}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<cpu_config_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<old_cpu_mask>%UInt64;</old_cpu_mask>
+<new_cpu_mask>%UInt64;</new_cpu_mask>
+<cpu_group>%UInt16;</cpu_group>
+</cpu_config_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{f1aa0a53-feed-410f-b2d5-ffab0d624fa8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<multiple_tasks_enqueued>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<tasks_count>%UInt32;</tasks_count>
+<execution_flags>%UInt32;</execution_flags>
+<requested_affinity_mask>%UInt64;</requested_affinity_mask>
+<enqueued_affinity_mask>%UInt64;</enqueued_affinity_mask>
+</multiple_tasks_enqueued>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{f1aa0a53-feed-410f-b2d5-ffab0d624fa8}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<multiple_tasks_enqueued>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<tasks_count>%UInt32;</tasks_count>
+<execution_flags>%UInt32;</execution_flags>
+</multiple_tasks_enqueued>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{4d4f4e86-e23a-4ec2-847b-ecffb57f1001}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<node_affinity_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt16;</id>
+<old_affinity_mask>%UInt64;</old_affinity_mask>
+<new_affinity_mask>%UInt64;</new_affinity_mask>
+</node_affinity_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{4d4f4e86-e23a-4ec2-847b-ecffb57f1001}">
+<diagnosticInstance version="2">
+<classification subType="Info" />
+<template>
+<node_affinity_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt16;</id>
+<old_affinity_mask>%UInt64;</old_affinity_mask>
+<new_affinity_mask>%UInt64;</new_affinity_mask>
+</node_affinity_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{aa8d6ff5-aff6-432a-8e72-a4d4bd45c9d9}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<scheduler_online_state_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<is_online>%Boolean;</is_online>
+</scheduler_online_state_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{992caa1d-ef90-4278-9821-ebdd0180db0c}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<wait_info>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<wait_type>%UInt64;</wait_type>
+<opcode>%UInt32;</opcode>
+<duration>%UInt64;</duration>
+<max_duration>%UInt64;</max_duration>
+<total_duration>%UInt64;</total_duration>
+<signal_duration>%UInt64;</signal_duration>
+<completed_count>%UInt64;</completed_count>
+</wait_info>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{749f148a-3bab-4ede-91b1-fcf69523f372}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<wait_info_external>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<wait_type>%UInt64;</wait_type>
+<opcode>%UInt32;</opcode>
+<duration>%UInt64;</duration>
+<max_duration>%UInt64;</max_duration>
+<total_duration>%UInt64;</total_duration>
+<completed_count>%UInt64;</completed_count>
+</wait_info_external>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1a479b23-3ab5-48a2-80e7-72477424eea5}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<memory_node_oom_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<memory_utilization_pct>%UInt32;</memory_utilization_pct>
+<total_physical_memory_kb>%UInt64;</total_physical_memory_kb>
+<available_physical_memory_kb>%UInt64;</available_physical_memory_kb>
+<total_page_file_kb>%UInt64;</total_page_file_kb>
+<available_page_file_kb>%UInt64;</available_page_file_kb>
+<total_virtual_address_space_kb>%UInt64;</total_virtual_address_space_kb>
+<available_virtual_address_space_kb>%UInt64;</available_virtual_address_space_kb>
+<available_extended_virtual_address_space_kb>%UInt64;</available_extended_virtual_address_space_kb>
+<memory_node_id>%Int32;</memory_node_id>
+<reserved_kb>%UInt64;</reserved_kb>
+<committed_kb>%UInt64;</committed_kb>
+<shared_committed_kb>%UInt64;</shared_committed_kb>
+<awe_kb>%UInt64;</awe_kb>
+<single_pages_kb>%UInt64;</single_pages_kb>
+<multiple_pages_kb>%UInt64;</multiple_pages_kb>
+<failure>%UInt32;</failure>
+<resources>%UInt64;</resources>
+<task>%Pointer;</task>
+<pool_metadata_id>%UInt32;</pool_metadata_id>
+<call_stack>%CountedString;</call_stack>
+</memory_node_oom_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{7319278e-6e46-4fae-886e-c3105a627b48}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<assert_fired>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<assert_type>%UInt32;</assert_type>
+<line_number>%UInt32;</line_number>
+<expression>%AnsiString;</expression>
+<file_path>%AnsiString;</file_path>
+<description>%AnsiString;</description>
+</assert_fired>
+</template>
+</diagnosticInstance>
+</event>
+</events>
+</instrumentation>
+</assembly>

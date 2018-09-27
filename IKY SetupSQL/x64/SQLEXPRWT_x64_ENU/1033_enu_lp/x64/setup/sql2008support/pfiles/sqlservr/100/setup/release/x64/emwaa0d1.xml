@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+
+    <Page
+    ID="RunGlobalRules">
+      <Title ResourceID="SystemConfigurationCheckTitle"></Title>
+      <Subtitle ResourceID="SystemConfigurationCheckSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>  
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunScenarioGlobalRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+        <HelpGUID>168c0445-5651-42fc-91f4-d9f27d9e2281</HelpGUID>
+    </Page>
+
+    <Page
+      ID="InstanceSelection">
+      <Title ResourceID="InstanceSelectionTitle"></Title>
+      <Subtitle ResourceID="InstanceSelectionSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstanceSelectionController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>79d5989f-2fb1-424b-be50-d89c8e39c51b</HelpGUID>
+      <PageLeftAction>CALCULATEREPAIR</PageLeftAction>
+    </Page>
+
+    <Page
+      ID="RunRepairRules">
+      <Title ResourceID="RunRepairRulesTitle"></Title>
+      <Subtitle ResourceID="RunRepairRulesSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunFeatureSpecificRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>653b15db-a984-4b4b-b224-81b0285b099b</HelpGUID>
+    </Page>
+
+    <Page
+      ID="Summary" PageType="Summary">
+      <Title ResourceID="RepairSummaryTitle"></Title>
+      <Subtitle ResourceID="RepairSummarySubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Next">
+          <Text ResourceID="RepairButton"></Text>
+        </Button>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.SummaryController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>4dd5d5b7-01b7-4b51-9589-764f69bdb7ae</HelpGUID>
+    </Page>
+
+    <Page
+      ID="RepairProgressPage"  PageType="Progress">
+      <Title ResourceID="RepairProgressPageTitle"></Title>
+      <Subtitle ResourceID="RepairProgressPageSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false "/>
+        <Button ID="Next" Visible ="true" Enabled="false"/>
+        <Button ID="Cancel" Visible="true" Enabled="true"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ExecutionProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>326f675a-bead-48d3-9088-539e9f9c3fc9</HelpGUID>
+    </Page>
+
+    <Page
+      ID="RepairCompletionPage" PageType="Finish" >
+      <Title ResourceID="PostRepairTitle"></Title>
+      <Subtitle ResourceID="PostRepairSubTitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false"/>
+        <Button ID="Next" Visible ="false"/>
+        <Button ID="Cancel">
+          <Text ResourceID="CloseButton"></Text>
+        </Button>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PostInstallController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>eb7ddb23-12d0-4c81-9609-4046ccaca7d2</HelpGUID>
+    </Page>
+  </Pages>
+
+  <Appearance>
+    <Title ResourceID="RepairWizardTitle"></Title>
+    <Icon>
+      <Name>MaintenanceRepair</Name>
+      <ResourceType>Microsoft.SqlServer.Configuration.InstallWizard.Resources, Microsoft.SqlServer.Configuration.InstallWizard</ResourceType>
+    </Icon>
+  </Appearance>
+</UIHost>

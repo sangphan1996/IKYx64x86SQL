@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mappings xmlns="http://www.microsoft.com/SqlServer/Dts/UpgradeMapping.xsd">
+  <!-- Connection Managers -->
+  <ConnectionManagerMapping tag="MSOLAP - Analysis Services connections" 
+                            oldValue="MSOLAP90"
+                            newValue="MSOLAP100" />
+  
+  <!-- Extensions -->
+  <ExtensionMapping tag="mycustom extension"
+                    oldAssemblyStrongName="MyCustomAssembly.MyCustomTask, MyCustomAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+                    newAssemblyStrongName="MyCustomAssembly.MyCustomTask, MyCustomAssembly, Version=2.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+
+  <!-- Providers -->
+  <ProviderMapping tag="SQL Native Client - Version dependent" 
+                   oldValue="sqlncli.1"
+                   newValue="sqlncli10.1" />
+  <ProviderMapping tag="SQL Native Client - Version independent"
+                   oldValue="sqlncli"
+                   newValue="sqlncli10" />
+  <ProviderMapping tag="MSOLAP - Analysis Services connections"
+                   oldValue="msolap.3"
+                   newValue="msolap.4" />
+</Mappings>

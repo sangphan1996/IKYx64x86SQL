@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<dtm:ProviderDescriptors
+	xmlns:dtm="http://www.microsoft.com/SqlServer/Dts/ProviderDescriptors.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<dtm:ProviderDescriptor	SourceType="System.Data.OleDb.OleDbConnection">
+		
+		<dtm:SchemaNames
+			TablesSchemaName="Tables"
+			ColumnsSchemaName="Columns" 
+			ViewsSchemaName="Views" 
+		/>
+
+		<dtm:TableSchemaAttributes
+			TableCatalogColumnName="TABLE_CATALOG"
+			TableSchemaColumnName="TABLE_SCHEMA"
+			TableNameColumnName="TABLE_NAME"
+			TableTypeColumnName="TABLE_TYPE"
+			TableDescriptor="TABLE"
+			ViewDescriptor="VIEW"
+			SynonymDescriptor="SYNONYM"
+			NumberOfTableRestrictions="4"
+		/>
+
+		<dtm:ColumnSchemaAttributes
+			NameColumnName = "COLUMN_NAME"
+			OrdinalPositionColumnName="ORDINAL_POSITION"
+			DataTypeColumnName = "DATA_TYPE"
+			MaximumLengthColumnName = "CHARACTER_MAXIMUM_LENGTH"
+			NumericPrecisionColumnName = "NUMERIC_PRECISION"
+			NumericScaleColumnName = "NUMERIC_SCALE"
+			NullableColumnName="IS_NULLABLE"
+			DateTimePrecisionColumnName="DATETIME_PRECISION" 
+			NumberOfColumnRestrictions="4"
+		/>
+
+		<dtm:Literals
+			PrefixQualifier="&quot;"
+			SuffixQualifier="&quot;"
+			CatalogSeparator="."
+			SchemaSeparator="."
+		/>
+	</dtm:ProviderDescriptor>
+
+	<dtm:ProviderDescriptor	SourceType="System.Data.SqlClient.SqlConnection">
+
+		<dtm:SchemaNames
+			TablesSchemaName="Tables"
+			ColumnsSchemaName="Columns" 
+			ViewsSchemaName="Views" 
+		/>
+		
+		<dtm:TableSchemaAttributes
+			TableCatalogColumnName="TABLE_CATALOG"
+			TableSchemaColumnName="TABLE_SCHEMA"
+			TableNameColumnName="TABLE_NAME"
+			TableTypeColumnName="TABLE_TYPE"
+			TableDescriptor="BASE TABLE"
+			ViewDescriptor="VIEW"
+			SynonymDescriptor ="SYNONYM"
+			NumberOfTableRestrictions="4"
+		/>
+
+		<dtm:ColumnSchemaAttributes
+			NameColumnName = "COLUMN_NAME"
+			OrdinalPositionColumnName="ORDINAL_POSITION"
+			DataTypeColumnName = "DATA_TYPE"
+			MaximumLengthColumnName = "CHARACTER_MAXIMUM_LENGTH"
+			NumericPrecisionColumnName = "NUMERIC_PRECISION"
+			NumericScaleColumnName = "NUMERIC_SCALE"
+			NullableColumnName="IS_NULLABLE"
+			DateTimePrecisionColumnName="DATETIME_PRECISION" 
+			NumberOfColumnRestrictions="4"
+		/>
+
+		<dtm:Literals
+			PrefixQualifier="&quot;"
+			SuffixQualifier="&quot;"
+			CatalogSeparator="."
+			SchemaSeparator="."
+		/>
+	</dtm:ProviderDescriptor>
+
+	<dtm:ProviderDescriptor	SourceType="System.Data.OracleClient.OracleConnection">
+
+		<dtm:SchemaNames
+			TablesSchemaName="Tables"
+			ColumnsSchemaName="Columns" 
+			ViewsSchemaName="Views" 
+		/>
+
+		<dtm:TableSchemaAttributes
+			TableCatalogColumnName=""
+			TableSchemaColumnName="OWNER"
+			TableNameColumnName="TABLE_NAME"
+			TableTypeColumnName="TYPE"
+			TableDescriptor="User"
+			ViewDescriptor="VIEW"
+			SynonymDescriptor ="SYNONYM"
+			NumberOfTableRestrictions="3"
+		/>
+
+		<dtm:ColumnSchemaAttributes
+			NameColumnName = "COLUMN_NAME"
+			OrdinalPositionColumnName="ID"
+			DataTypeColumnName = "DATATYPE"
+			MaximumLengthColumnName = "LENGTH"
+			NumericPrecisionColumnName = "PRECISION"
+			NumericScaleColumnName = "SCALE"
+			NullableColumnName="NULLABLE"
+			NumberOfColumnRestrictions="3"
+		/>
+
+		<dtm:Literals
+			PrefixQualifier="&quot;"
+			SuffixQualifier="&quot;"
+			CatalogSeparator="."
+			SchemaSeparator="."
+		/>
+	</dtm:ProviderDescriptor>
+
+	<dtm:ProviderDescriptor	SourceType="System.Data.Odbc.OdbcConnection">
+
+		<dtm:SchemaNames
+			TablesSchemaName="Tables"
+			ColumnsSchemaName="Columns" 
+			ViewsSchemaName="Views" 
+		/>
+
+		<dtm:TableSchemaAttributes
+			TableCatalogColumnName="TABLE_CAT"
+			TableSchemaColumnName="TABLE_SCHEM"
+			TableNameColumnName="TABLE_NAME"
+			TableTypeColumnName="TABLE_TYPE"
+			TableDescriptor="TABLE"
+			ViewDescriptor="VIEW"
+			SynonymDescriptor ="SYNONYM"
+			NumberOfTableRestrictions="3"
+		/>
+
+		<dtm:ColumnSchemaAttributes
+			NameColumnName = "COLUMN_NAME"
+			OrdinalPositionColumnName="ORDINAL_POSITION"
+			DataTypeColumnName = "TYPE_NAME"
+			MaximumLengthColumnName = "COLUMN_SIZE"
+			NumericPrecisionColumnName = "COLUMN_SIZE"
+			NumericScaleColumnName = "DECIMAL_DIGITS"
+			NullableColumnName="NULLABLE"
+			NumberOfColumnRestrictions="4"
+		/>
+
+		<dtm:Literals
+			PrefixQualifier="&quot;"
+			SuffixQualifier="&quot;"
+			CatalogSeparator="."
+			SchemaSeparator="."
+		/>
+	</dtm:ProviderDescriptor>
+
+	<dtm:ProviderDescriptor	SourceType="Microsoft.HostIntegration.MsDb2Client.MsDb2Connection">
+
+		<dtm:SchemaNames
+			TablesSchemaName="Tables"
+			ColumnsSchemaName="Columns" 
+			ViewsSchemaName="" 
+		/>
+
+		<dtm:TableSchemaAttributes
+			TableCatalogColumnName="TableCatalog"
+			TableSchemaColumnName="TableSchema"
+			TableNameColumnName="TableName"
+			TableTypeColumnName="TableType"
+			TableDescriptor="TABLE"
+			ViewDescriptor="VIEW"
+			SynonymDescriptor ="SYNONYM"
+			NumberOfTableRestrictions="4"
+		/>
+
+		<dtm:ColumnSchemaAttributes
+			NameColumnName = "ColumnName"
+			OrdinalPositionColumnName="Ordinal"
+			DataTypeColumnName = "DataType"
+			MaximumLengthColumnName = "Length"
+			NumericPrecisionColumnName = "Precision"
+			NumericScaleColumnName = "Scale"
+			NullableColumnName="Nullable"
+			NumberOfColumnRestrictions="4"
+		/>
+
+		<dtm:Literals
+			PrefixQualifier="&quot;"
+			SuffixQualifier="&quot;"
+			CatalogSeparator="."
+			SchemaSeparator="."
+		/>
+	</dtm:ProviderDescriptor>
+
+</dtm:ProviderDescriptors>

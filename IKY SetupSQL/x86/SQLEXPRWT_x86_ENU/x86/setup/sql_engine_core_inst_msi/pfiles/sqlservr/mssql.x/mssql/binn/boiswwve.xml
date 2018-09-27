@@ -1,0 +1,3729 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<assembly xmlns:xe="http://schemas.microsoft.com/SQL/2007/01/events" xmlns="http://www.w3.org/TR/xhtml1/strict" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<instrumentation>
+<events><event guid="{FA2A4F64-8B9A-4DD3-AD6B-DB3CBD1EC525}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_activation_stored_procedure_invoked>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</broker_activation_stored_procedure_invoked>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8E4A6AF5-E2FE-4690-819D-0506ACD1D496}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_activation_task_limit_reached>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</broker_activation_task_limit_reached>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{E7BB3FAB-2820-4FFF-A15E-ED4C087D8636}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_activation_task_aborted>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</broker_activation_task_aborted>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{31B40D53-07DB-4975-A6C9-C2F08F779ADB}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_activation_task_started>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</broker_activation_task_started>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{E8B363F1-CB25-4BE7-88DB-5DF50768ECDC}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_manager_database_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+</buffer_manager_database_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{290EF709-7CA2-4AE4-92B7-A29B42222ADA}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_manager_free_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+</buffer_manager_free_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{20960f60-5a70-40bb-aa83-62fdf22da03c}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_manager_page_life_expectancy>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+</buffer_manager_page_life_expectancy>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{900391BE-C396-4C00-86F4-D63E3F9C5737}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_manager_stolen_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+</buffer_manager_stolen_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{74CE12CC-2B87-40BC-9AEC-2F8F1024656B}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_manager_target_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+</buffer_manager_target_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{A18C34FD-2DA7-4E4D-8FFF-1B1D183C8789}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_manager_total_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+</buffer_manager_total_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{a54ff743-eb52-47b9-b9de-74993fe8857d}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_node_database_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<node_id>%UInt32;</node_id>
+</buffer_node_database_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{f3da400d-bdfc-4e66-8d0b-7f0a9636bbf6}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_node_free_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<node_id>%UInt32;</node_id>
+</buffer_node_free_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{cfb669ea-96f3-4950-bb1b-aaba5cd1c467}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_node_page_life_expectancy>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<node_id>%UInt32;</node_id>
+</buffer_node_page_life_expectancy>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{24f283ce-e002-4402-aabf-736869da3e45}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_node_stolen_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<node_id>%UInt32;</node_id>
+</buffer_node_stolen_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{feed82d7-dac4-4eab-b64c-37a1bb641660}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_node_target_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<node_id>%UInt32;</node_id>
+</buffer_node_target_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{3d4059f9-219e-4e6c-a32a-9a85dc35b251}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_node_total_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<node_id>%UInt32;</node_id>
+</buffer_node_total_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{734b6942-7b38-40b7-90eb-7933f66d9ab0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_partition_free_list_empty>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<partition_id>%UInt32;</partition_id>
+</buffer_partition_free_list_empty>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{fd8a6deb-df0a-4644-b2de-19ecaf25648b}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_partition_free_list_requests>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<partition_id>%UInt32;</partition_id>
+</buffer_partition_free_list_requests>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{0607cd0c-a4e0-4cfc-9a8c-686061f7a6b6}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_partition_free_pages>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<partition_id>%UInt32;</partition_id>
+</buffer_partition_free_pages>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{23C800FD-E765-43B5-9CA1-A97BF0A12829}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<catalog_metadata_cache_entry_added>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</catalog_metadata_cache_entry_added>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{6EE0F2C9-CFA1-4ACC-B4EA-213CBD1C0CA1}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<catalog_metadata_cache_entry_removed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</catalog_metadata_cache_entry_removed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{FF4C5FB5-2F39-4B29-A82B-29CD61D49D02}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<catalog_metadata_cache_entry_pinned>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</catalog_metadata_cache_entry_pinned>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{AF97C47E-3A34-4B16-8223-6CEDD804121F}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<catalog_metadata_cache_entry_unpinned>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</catalog_metadata_cache_entry_unpinned>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{5A734119-AB36-491B-B64F-B4BA09914BE5}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<catalog_metadata_cache_hit>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</catalog_metadata_cache_hit>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{A7D9E0EE-88D6-4199-88FF-AEB6C79F7548}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cursor_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cursor_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{2CB440D3-BE0E-47C6-80F0-1B5F2C399740}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cursor_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cursor_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{D5C453A1-7F3D-48DA-A8E8-4951C4E2C46F}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cursor_cache_hit>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cursor_cache_hit>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{B462FBA4-E87C-4948-BCD5-D003049D4AA6}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cached_cursor_added>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cached_cursor_added>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{6726259E-A346-49B8-A9FB-6209FFDECD05}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cached_cursor_removed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cached_cursor_removed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{de4e3ac9-5335-4251-a0a0-32d5324ff31a}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cursor_memory_usage>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cursor_memory_usage>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8B13F74B-6053-48F1-AA60-2B7CE645CAA9}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cursor_worktable_use_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cursor_worktable_use_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{91814C0F-0AFA-4DF7-AC96-1C62F888C72F}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cursor_worktable_use_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cursor_worktable_use_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1D5E385B-A67E-4D94-A5F8-00076AB985C5}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cursor_plan_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cursor_plan_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{A9267D96-1126-42D2-82FE-EE0BF0B3F900}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cursor_plan_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cursor_plan_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{44CD0D25-8477-40CF-A364-40ACBCD47FCD}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<database_transaction_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+</database_transaction_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{54FC3C2F-02F5-49D9-A68D-365FB1C30BD6}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<database_transaction_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+</database_transaction_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{cdfcdf14-5178-44fa-a1fb-68414d31365a}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_backup_restore_throughput>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<database_id>%UInt16;</database_id>
+</databases_backup_restore_throughput>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{B77017A7-0C88-4E1C-AA31-7759463FC347}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_bulk_copy_rows>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<database_id>%UInt16;</database_id>
+</databases_bulk_copy_rows>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{C0624AB8-66C2-4928-9E70-0ABF3E7A29B8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_bulk_copy_throughput>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<database_id>%UInt16;</database_id>
+</databases_bulk_copy_throughput>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9C4949AE-3C00-4A24-9A84-47DECEF6BA07}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_data_file_size_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</databases_data_file_size_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{6CCB4909-9E30-4905-BA84-CBD06A091D4B}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_dbcc_logical_scan>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<database_id>%UInt16;</database_id>
+</databases_dbcc_logical_scan>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{BD596484-E053-4DA4-8344-3D9823948B0C}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_log_cache_hit>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</databases_log_cache_hit>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{BF283DA2-E587-458F-8C79-2DF03291E685}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_log_cache_read>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</databases_log_cache_read>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{811B1DF8-2074-434A-98DF-2F4508147FA0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_log_file_size_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<database_id>%UInt16;</database_id>
+</databases_log_file_size_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{56D3131A-870A-4BEB-ACF5-C1B4B9326B56}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_log_file_used_size_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</databases_log_file_used_size_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{B7C1E909-8146-4F67-AD50-6C4FEA17D020}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_log_flush_wait>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</databases_log_flush_wait>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{C5E4FC0B-4BC6-4490-98B5-B4C4D0E492A1}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_log_flush>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</databases_log_flush>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{543C0DD2-9F4D-44C5-85DD-BEE76221CA0C}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_log_growth>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</databases_log_growth>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{AD1239BA-BAB3-4A38-8736-0EFA77238730}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_log_shrink>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</databases_log_shrink>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{2BAE30B2-C645-45A0-AF16-664528E41B86}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_log_truncation>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<database_id>%UInt16;</database_id>
+</databases_log_truncation>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9A68AF7C-56B6-401E-9FBF-81FCB6C1F929}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<databases_shrink_data_movement>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<database_id>%UInt16;</database_id>
+</databases_shrink_data_movement>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8517805E-E85B-4303-AE92-653C03BA8CC8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<locks_lock_timeouts_greater_than_0>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<lock_type>%UInt64;</lock_type>
+</locks_lock_timeouts_greater_than_0>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{03182F70-B33D-4B2A-971C-9996F48CA361}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<locks_lock_timeouts>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<lock_type>%UInt64;</lock_type>
+</locks_lock_timeouts>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{969fe884-3fa1-44bc-98a9-6d2e839ad188}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<locks_lock_waits>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<lock_type>%UInt64;</lock_type>
+</locks_lock_waits>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{90CEAB66-0358-4D76-B022-4DD0FBAD297B}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<plan_cache_cache_hit>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cache_entry_type>%UInt64;</cache_entry_type>
+</plan_cache_cache_hit>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{B2AF8177-4AED-4980-B023-3511CD21BD6C}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<user_settable>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<increment>%Int64;</increment>
+<user_counter>%UInt64;</user_counter>
+</user_settable>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{40BFA6DF-B111-41CD-A1E6-12209E618B8D}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<sql_statement_starting>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<source_database_id>%UInt16;</source_database_id>
+<object_id>%UInt32;</object_id>
+<object_type>%UInt16;</object_type>
+<state>%UInt32;</state>
+<offset>%Int32;</offset>
+<offset_end>%Int32;</offset_end>
+<nest_level>%Int32;</nest_level>
+</sql_statement_starting>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{CDFD84F9-184E-49A4-BB71-1614A9D30416}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<sql_statement_completed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<source_database_id>%UInt16;</source_database_id>
+<object_id>%UInt32;</object_id>
+<object_type>%UInt16;</object_type>
+<cpu>%UInt32;</cpu>
+<duration>%Int64;</duration>
+<reads>%UInt64;</reads>
+<writes>%UInt64;</writes>
+</sql_statement_completed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{2B46B9D3-2E73-4FB9-9D62-01DB82A89CE9}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<sp_statement_starting>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<source_database_id>%UInt16;</source_database_id>
+<object_id>%UInt32;</object_id>
+<object_type>%UInt16;</object_type>
+<state>%UInt32;</state>
+<offset>%Int32;</offset>
+<offset_end>%Int32;</offset_end>
+<nest_level>%Int32;</nest_level>
+</sp_statement_starting>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{EF689B3D-8F37-416F-8A28-49620A604877}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<sp_statement_completed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<source_database_id>%UInt16;</source_database_id>
+<object_id>%UInt32;</object_id>
+<object_type>%UInt16;</object_type>
+<cpu>%UInt32;</cpu>
+<duration>%Int64;</duration>
+<reads>%UInt64;</reads>
+<writes>%UInt64;</writes>
+</sp_statement_completed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{FD10D08D-6777-41A8-92A9-76F0796EEEB2}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<rpc_starting>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+</rpc_starting>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{F1574C94-2B93-4716-A3C1-90F1E1FE2DB8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<rpc_completed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<cpu>%UInt64;</cpu>
+<duration>%Int64;</duration>
+<reads>%UInt64;</reads>
+<writes>%UInt64;</writes>
+</rpc_completed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{d20bcde5-b094-43e4-81a9-fc1251915c47}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<latch_acquired>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<mode>%UInt32;</mode>
+<class>%UInt32;</class>
+<keep_count>%UInt32;</keep_count>
+<shared_count>%UInt32;</shared_count>
+<update_count>%UInt32;</update_count>
+<exclusive_count>%UInt32;</exclusive_count>
+<destroy_count>%UInt32;</destroy_count>
+<has_waiters>%Boolean;</has_waiters>
+<is_superlatch>%Boolean;</is_superlatch>
+<is_poisoned>%Boolean;</is_poisoned>
+</latch_acquired>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{5427ddc5-1906-4e24-9ceb-45ed7f214fd0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<latch_released>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<mode>%UInt32;</mode>
+<class>%UInt32;</class>
+<keep_count>%UInt32;</keep_count>
+<shared_count>%UInt32;</shared_count>
+<update_count>%UInt32;</update_count>
+<exclusive_count>%UInt32;</exclusive_count>
+<destroy_count>%UInt32;</destroy_count>
+<has_waiters>%Boolean;</has_waiters>
+<is_superlatch>%Boolean;</is_superlatch>
+<is_poisoned>%Boolean;</is_poisoned>
+</latch_released>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{D2CFC3EA-266A-49B3-96D3-1A1C84D93650}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<ghost_cleanup>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<file_id>%UInt16;</file_id>
+<page_id>%UInt32;</page_id>
+</ghost_cleanup>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{6D74001D-F4F9-425E-9DAE-7706FD43F980}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<lock_acquired>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<resource_type>%UInt32;</resource_type>
+<mode>%UInt32;</mode>
+<owner_type>%UInt32;</owner_type>
+<transaction_id>%Int64;</transaction_id>
+<database_id>%UInt16;</database_id>
+<lockspace_workspace_id>%Pointer;</lockspace_workspace_id>
+<lockspace_sub_id>%UInt32;</lockspace_sub_id>
+<lockspace_nest_id>%UInt32;</lockspace_nest_id>
+<resource_0>%UInt32;</resource_0>
+<resource_1>%UInt32;</resource_1>
+<resource_2>%UInt32;</resource_2>
+</lock_acquired>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{A322A468-9B93-4D39-A1ED-ACE193C51A8A}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<lock_released>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<resource_type>%UInt32;</resource_type>
+<mode>%UInt32;</mode>
+<owner_type>%UInt32;</owner_type>
+<transaction_id>%Int64;</transaction_id>
+<database_id>%UInt16;</database_id>
+<lockspace_workspace_id>%Pointer;</lockspace_workspace_id>
+<lockspace_sub_id>%UInt32;</lockspace_sub_id>
+<lockspace_nest_id>%UInt32;</lockspace_nest_id>
+<resource_0>%UInt32;</resource_0>
+<resource_1>%UInt32;</resource_1>
+<resource_2>%UInt32;</resource_2>
+</lock_released>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{AA54BE9B-8D6B-4254-A9E6-D60E5100224A}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<lock_deadlock>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<resource_type>%UInt32;</resource_type>
+<mode>%UInt32;</mode>
+<owner_type>%UInt32;</owner_type>
+<transaction_id>%Int64;</transaction_id>
+<database_id>%UInt16;</database_id>
+<lockspace_workspace_id>%Pointer;</lockspace_workspace_id>
+<lockspace_sub_id>%UInt32;</lockspace_sub_id>
+<lockspace_nest_id>%UInt32;</lockspace_nest_id>
+<resource_0>%UInt32;</resource_0>
+<resource_1>%UInt32;</resource_1>
+<resource_2>%UInt32;</resource_2>
+<deadlock_id>%UInt32;</deadlock_id>
+</lock_deadlock>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{047E111F-37A7-4C67-8155-898AF079F483}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<page_split>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<file_id>%UInt16;</file_id>
+<page_id>%UInt32;</page_id>
+</page_split>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{34EF6F7C-F15D-40A1-B399-14DE8806E143}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<physical_page_read>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<file_id>%UInt16;</file_id>
+<page_id>%UInt32;</page_id>
+</physical_page_read>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{36622C34-95B0-42EC-B9C2-145257EADC46}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<physical_page_write>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<file_id>%UInt16;</file_id>
+<page_id>%UInt32;</page_id>
+</physical_page_write>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{f0bdd0b0-cccb-493f-bf94-9a9643e0c983}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<latch_suspend_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<mode>%UInt32;</mode>
+<class>%UInt32;</class>
+<keep_count>%UInt32;</keep_count>
+<shared_count>%UInt32;</shared_count>
+<update_count>%UInt32;</update_count>
+<exclusive_count>%UInt32;</exclusive_count>
+<destroy_count>%UInt32;</destroy_count>
+<has_waiters>%Boolean;</has_waiters>
+<is_superlatch>%Boolean;</is_superlatch>
+<is_poisoned>%Boolean;</is_poisoned>
+<timeout>%UInt32;</timeout>
+</latch_suspend_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{881a763a-0da3-4b79-a9ed-050f6efb0745}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<latch_suspend_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<mode>%UInt32;</mode>
+<class>%UInt32;</class>
+<keep_count>%UInt32;</keep_count>
+<shared_count>%UInt32;</shared_count>
+<update_count>%UInt32;</update_count>
+<exclusive_count>%UInt32;</exclusive_count>
+<destroy_count>%UInt32;</destroy_count>
+<has_waiters>%Boolean;</has_waiters>
+<is_superlatch>%Boolean;</is_superlatch>
+<is_poisoned>%Boolean;</is_poisoned>
+<success>%Boolean;</success>
+</latch_suspend_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{beeec925-7ba5-4feb-a242-d642c3b4bd1f}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<latch_promoted>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<class>%UInt32;</class>
+<keep_count>%UInt32;</keep_count>
+<shared_count>%UInt32;</shared_count>
+<update_count>%UInt32;</update_count>
+<exclusive_count>%UInt32;</exclusive_count>
+<destroy_count>%UInt32;</destroy_count>
+<has_waiters>%Boolean;</has_waiters>
+<is_superlatch>%Boolean;</is_superlatch>
+<is_poisoned>%Boolean;</is_poisoned>
+</latch_promoted>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{cd8ca5c3-a82e-4326-9a4e-e4db6d3e24d1}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<latch_demoted>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<class>%UInt32;</class>
+<keep_count>%UInt32;</keep_count>
+<shared_count>%UInt32;</shared_count>
+<update_count>%UInt32;</update_count>
+<exclusive_count>%UInt32;</exclusive_count>
+<destroy_count>%UInt32;</destroy_count>
+<has_waiters>%Boolean;</has_waiters>
+<is_superlatch>%Boolean;</is_superlatch>
+<is_poisoned>%Boolean;</is_poisoned>
+</latch_demoted>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{ddb3297b-9ffe-4c90-95f1-a4a26152ccea}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<plan_cache_cache_attempt>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cache_entry_type>%UInt64;</cache_entry_type>
+</plan_cache_cache_attempt>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{267d38b8-def7-43ab-9a85-ffd07c53231b}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cursor_manager_cursor_cache_attempt>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count>%UInt64;</count>
+<cursor_type>%UInt32;</cursor_type>
+</cursor_manager_cursor_cache_attempt>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{bff5b15e-7314-4029-b27f-a10c21ac6b2e}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<flush_file_buffers>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<file_handle>%Pointer;</file_handle>
+<succeeded>%Boolean;</succeeded>
+</flush_file_buffers>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{521d231a-85c1-4791-8c35-4c5c0f51d0c0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<file_read>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<mode>%UInt32;</mode>
+<file_handle>%Pointer;</file_handle>
+<offset>%UInt64;</offset>
+<database_id>%UInt16;</database_id>
+<file_id>%UInt16;</file_id>
+<file_group_id>%UInt16;</file_group_id>
+<path>%String;</path>
+</file_read>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9f72e2fb-2874-4fa2-b348-6862bc6fb41c}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<file_written>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<mode>%UInt32;</mode>
+<file_handle>%Pointer;</file_handle>
+<offset>%UInt64;</offset>
+<database_id>%UInt16;</database_id>
+<file_id>%UInt16;</file_id>
+<file_group_id>%UInt16;</file_group_id>
+<path>%String;</path>
+<io_data>%CountedString;</io_data>
+</file_written>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{e4b53496-919d-4766-904f-07049e9b6129}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<file_read_completed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<mode>%UInt32;</mode>
+<duration>%UInt64;</duration>
+<file_handle>%Pointer;</file_handle>
+<offset>%UInt64;</offset>
+<database_id>%UInt16;</database_id>
+<file_id>%UInt16;</file_id>
+<file_group_id>%UInt16;</file_group_id>
+<path>%String;</path>
+<io_data>%CountedString;</io_data>
+</file_read_completed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{d4901105-a95c-4f87-bdfc-520213b64c7a}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<file_write_completed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<mode>%UInt32;</mode>
+<duration>%UInt64;</duration>
+<file_handle>%Pointer;</file_handle>
+<offset>%UInt64;</offset>
+<database_id>%UInt16;</database_id>
+<file_id>%UInt16;</file_id>
+<file_group_id>%UInt16;</file_group_id>
+<path>%String;</path>
+</file_write_completed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{99ca2b70-a594-4250-9ca6-b761a9486fd2}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<checkpoint_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt16;</database_id>
+</checkpoint_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{43694edc-2f3b-4e10-b13f-14393f3bd9d6}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<checkpoint_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt16;</database_id>
+</checkpoint_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{012b0b90-febc-45d9-b26c-a4fd19de6cc5}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<app_domain_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<app_domain_address>%Pointer;</app_domain_address>
+<database_id>%UInt16;</database_id>
+<owner_id>%UInt32;</owner_id>
+<generation>%Int32;</generation>
+<references>%UInt32;</references>
+<weak_references>%UInt32;</weak_references>
+<task_address>%Pointer;</task_address>
+<action>%String;</action>
+<type>%String;</type>
+<state>%String;</state>
+<call_stack>%CountedString;</call_stack>
+</app_domain_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{767976cf-67f7-4736-90f1-35de8df6ee74}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<host_task_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<host_task_address>%Pointer;</host_task_address>
+<thread_affinity_count>%Int32;</thread_affinity_count>
+<leave_runtime_count>%Int32;</leave_runtime_count>
+<non_yielding_count>%Int32;</non_yielding_count>
+<action>%String;</action>
+<state>%String;</state>
+<abort_state>%String;</abort_state>
+<call_stack>%CountedString;</call_stack>
+</host_task_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{757e6281-b8b7-47b8-bbe0-3d4944fcc16a}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<error_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<session_id>%Int16;</session_id>
+<error_code>%UInt32;</error_code>
+<api_name>%String;</api_name>
+<calling_api_name>%String;</calling_api_name>
+<call_stack>%CountedString;</call_stack>
+</error_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9b1a3866-5e60-403d-b614-1dc6c8f9c53f}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<allocation_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<event>%Byte;</event>
+<session_id>%Int16;</session_id>
+<ec_id>%Byte;</ec_id>
+<file_id>%Int16;</file_id>
+<page_id>%Int32;</page_id>
+<au_id_long>%Int32;</au_id_long>
+<au_id_short>%Int16;</au_id_short>
+<ls_ws_id>%UInt64;</ls_ws_id>
+<ls_sub_id>%UInt32;</ls_sub_id>
+<ls_nest_id>%UInt32;</ls_nest_id>
+<call_stack>%CountedString;</call_stack>
+</allocation_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{a9130cfe-f0a0-483a-80d7-62582ed8daf7}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<errorlog_written>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<message>%String;</message>
+</errorlog_written>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{b6dbcde1-f1a8-4564-ad61-1824c148b6be}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<constant_page_corruption_detected>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt16;</database_id>
+<file_id>%UInt16;</file_id>
+<page_id>%UInt32;</page_id>
+<file_path>%String;</file_path>
+</constant_page_corruption_detected>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{248cd648-c674-4741-ba0d-1032fcd33a37}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<database_attached>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt16;</database_id>
+</database_attached>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{c0e4203a-8d5c-4d00-8dce-0a020bab8755}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<database_detached>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt16;</database_id>
+</database_detached>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{56b89946-e94b-4c22-a588-12598c7c572e}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<database_started>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt16;</database_id>
+</database_started>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1398523a-dd87-45d5-8faa-24f0d0ae0c79}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<database_stopped>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt16;</database_id>
+</database_stopped>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{142beaac-9a34-42ae-849a-3c2051bf13e7}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<trace_flag_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<flag>%UInt32;</flag>
+<type>%UInt32;</type>
+<new_value>%UInt32;</new_value>
+</trace_flag_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{D878EAE3-68D7-48FB-868E-8422E6D8A18F}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<change_tracking_cleanup>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<dbid>%UInt32;</dbid>
+<objid>%Int32;</objid>
+<status>%UInt32;</status>
+<cleanup_id>%UInt32;</cleanup_id>
+<value>%String;</value>
+</change_tracking_cleanup>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{ee44762d-6e6d-4f0c-bf6b-a16f862f33d4}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<error_reported>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<error>%Int32;</error>
+<severity>%Int32;</severity>
+<state>%Int32;</state>
+<user_defined>%Boolean;</user_defined>
+<message>%String;</message>
+</error_reported>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{35bb81f9-8858-4bc1-b720-df3324d461b0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<trace_print>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<message>%String;</message>
+</trace_print>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{bce30e88-3af6-11dc-bd05-4d0f56d89593}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<deadlock_monitor_perf_stats>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count_cycles>%UInt64;</count_cycles>
+<prev_cycle_start_time>%UInt64;</prev_cycle_start_time>
+<prev_cycle_duration>%UInt64;</prev_cycle_duration>
+<curr_cycle_end_cause>%UInt16;</curr_cycle_end_cause>
+<prev_cycle_deadlock_participant_count>%UInt32;</prev_cycle_deadlock_participant_count>
+<count_cycles_with_deadlock>%UInt64;</count_cycles_with_deadlock>
+<count_cycles_with_deadlock_ended_normally>%UInt64;</count_cycles_with_deadlock_ended_normally>
+<count_cycles_with_deadlock_failed_deadlock_resolution_prep>%UInt64;</count_cycles_with_deadlock_failed_deadlock_resolution_prep>
+<count_cycles_with_deadlock_out_of_memory>%UInt64;</count_cycles_with_deadlock_out_of_memory>
+<count_cycles_with_deadlock_timeout>%UInt64;</count_cycles_with_deadlock_timeout>
+<avg_cycle_duration>%UInt64;</avg_cycle_duration>
+<max_cycle_duration>%UInt64;</max_cycle_duration>
+<avg_deadlock_participant_count>%UInt32;</avg_deadlock_participant_count>
+<max_deadlock_participant_count>%UInt32;</max_deadlock_participant_count>
+</deadlock_monitor_perf_stats>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{e3857ef4-3ee8-11df-bdb3-82ae55d89593}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<deadlock_monitor_mem_stats>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count_cycles>%UInt64;</count_cycles>
+<peak_mem_util>%UInt32;</peak_mem_util>
+<vertex_primary_pool_cap>%UInt32;</vertex_primary_pool_cap>
+<vertex_secondary_pool_cap>%UInt32;</vertex_secondary_pool_cap>
+<vertex_avg_alloc_count>%UInt32;</vertex_avg_alloc_count>
+<vertex_max_alloc_count>%UInt32;</vertex_max_alloc_count>
+<edge_primary_pool_cap>%UInt32;</edge_primary_pool_cap>
+<edge_secondary_pool_cap>%UInt32;</edge_secondary_pool_cap>
+<edge_avg_alloc_count>%UInt32;</edge_avg_alloc_count>
+<edge_max_alloc_count>%UInt32;</edge_max_alloc_count>
+<scc_primary_pool_cap>%UInt32;</scc_primary_pool_cap>
+<scc_secondary_pool_cap>%UInt32;</scc_secondary_pool_cap>
+<scc_avg_alloc_count>%UInt32;</scc_avg_alloc_count>
+<scc_max_alloc_count>%UInt32;</scc_max_alloc_count>
+<vertex_hash_primary_pool_cap>%UInt32;</vertex_hash_primary_pool_cap>
+<vertex_hash_secondary_pool_cap>%UInt32;</vertex_hash_secondary_pool_cap>
+<vertex_hash_avg_alloc_count>%UInt32;</vertex_hash_avg_alloc_count>
+<vertex_hash_max_alloc_count>%UInt32;</vertex_hash_max_alloc_count>
+</deadlock_monitor_mem_stats>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{403c3f44-3eed-11dc-a813-901356d89593}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<deadlock_monitor_state_transition>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count_cycles>%UInt64;</count_cycles>
+<prev_state>%UInt16;</prev_state>
+<new_state>%UInt16;</new_state>
+</deadlock_monitor_state_transition>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{44dd455e-3ef5-11dc-bc6c-226d56d89593}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<deadlock_monitor_pmo_status>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count_cycles>%UInt64;</count_cycles>
+<checkpoint>%UInt16;</checkpoint>
+<pmo_mark>%Pointer;</pmo_mark>
+<pmo_pages_alloc>%UInt32;</pmo_pages_alloc>
+<ringbuffer_pmo_pages_alloc>%UInt32;</ringbuffer_pmo_pages_alloc>
+<xml_deadlock_report_pmo_pages_alloc>%UInt32;</xml_deadlock_report_pmo_pages_alloc>
+</deadlock_monitor_pmo_status>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{cea6bf44-3ef6-11dc-bbac-627456d89593}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<deadlock_monitor_serialized_local_wait_for_graph>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<count_cycles>%UInt64;</count_cycles>
+<id>%UInt16;</id>
+<obj>%CountedString;</obj>
+</deadlock_monitor_serialized_local_wait_for_graph>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{a711cf1e-287a-4f06-b6dc-f60fcb95a808}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<buffer_pool_ring_buffer_recorded>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<id>%UInt32;</id>
+<timestamp>%UInt64;</timestamp>
+<memory_utilization_pct>%UInt32;</memory_utilization_pct>
+<total_physical_memory_kb>%UInt64;</total_physical_memory_kb>
+<available_physical_memory_kb>%UInt64;</available_physical_memory_kb>
+<total_page_file_kb>%UInt64;</total_page_file_kb>
+<available_page_file_kb>%UInt64;</available_page_file_kb>
+<total_virtual_address_space_kb>%UInt64;</total_virtual_address_space_kb>
+<available_virtual_address_space_kb>%UInt64;</available_virtual_address_space_kb>
+<available_extended_virtual_address_space_kb>%UInt64;</available_extended_virtual_address_space_kb>
+<failure_type>%UInt32;</failure_type>
+<task>%Pointer;</task>
+<committed_count>%UInt32;</committed_count>
+<committed_target>%UInt32;</committed_target>
+<free_count>%UInt32;</free_count>
+<hashed_count>%UInt32;</hashed_count>
+<stolen_count>%UInt32;</stolen_count>
+<reserved_count>%UInt32;</reserved_count>
+<call_stack>%CountedString;</call_stack>
+</buffer_pool_ring_buffer_recorded>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{978a8ca7-2e69-4755-84a4-b33a9b1e3cba}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<page_compression_attempt_failed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt32;</database_id>
+<file_id>%UInt16;</file_id>
+<page_id>%UInt32;</page_id>
+<rowset_id>%UInt64;</rowset_id>
+<failure_reason>%Byte;</failure_reason>
+</page_compression_attempt_failed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{DA5B447A-38BC-42B6-BCF0-2B30488A372D}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<page_compression_tracing>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<opcode>%UInt32;</opcode>
+<database_id>%UInt32;</database_id>
+<file_id>%UInt16;</file_id>
+<page_id>%UInt32;</page_id>
+<rowset_id>%UInt64;</rowset_id>
+<call_duration>%UInt64;</call_duration>
+</page_compression_tracing>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{85e7b283-6475-4ec9-9604-dabee1f54411}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<long_io_detected>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<occurrences>%UInt32;</occurrences>
+<longer_than_sec>%UInt64;</longer_than_sec>
+<database_id>%UInt16;</database_id>
+<file_handle>%Pointer;</file_handle>
+<last_long_io_offset>%UInt64;</last_long_io_offset>
+<file_path>%String;</file_path>
+</long_io_detected>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{a85c6145-0131-4c0b-a63d-3ed4de618112}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<sort_statistics_tracing>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<rowset_id>%UInt64;</rowset_id>
+<allocation_unit_id>%UInt64;</allocation_unit_id>
+<database_id>%UInt16;</database_id>
+<filegroup_id>%UInt16;</filegroup_id>
+<input_phase_max_buffers>%UInt32;</input_phase_max_buffers>
+<input_phase_max_fanout>%UInt32;</input_phase_max_fanout>
+<input_phase_max_io>%UInt32;</input_phase_max_io>
+<input_phase_bobs>%UInt32;</input_phase_bobs>
+<merge_phase_max_buffers>%UInt32;</merge_phase_max_buffers>
+<merge_phase_max_fanout>%UInt32;</merge_phase_max_fanout>
+<merge_phase_bobs>%UInt32;</merge_phase_bobs>
+<max_memory_grant>%UInt32;</max_memory_grant>
+<estimate_total_rows>%UInt64;</estimate_total_rows>
+<is_fast_key_optimized>%Boolean;</is_fast_key_optimized>
+<is_unique>%Boolean;</is_unique>
+<is_partitioned>%Boolean;</is_partitioned>
+<is_manual>%Boolean;</is_manual>
+</sort_statistics_tracing>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9b51ca5a-586e-4a3c-8824-b697397ea8a5}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<sort_add_run_tracing>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<rowset_id>%UInt64;</rowset_id>
+<allocation_unit_id>%UInt64;</allocation_unit_id>
+<database_id>%UInt16;</database_id>
+<filegroup_id>%UInt16;</filegroup_id>
+<run_id>%UInt32;</run_id>
+<run_length_in_pages>%UInt32;</run_length_in_pages>
+<run_first_page_file_id>%UInt16;</run_first_page_file_id>
+<run_first_page_page_id>%UInt32;</run_first_page_page_id>
+</sort_add_run_tracing>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{714c92f6-24f7-4843-877d-c911212f5c48}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<sort_state_change_tracing>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<rowset_id>%UInt64;</rowset_id>
+<allocation_unit_id>%UInt64;</allocation_unit_id>
+<database_id>%UInt16;</database_id>
+<filegroup_id>%UInt16;</filegroup_id>
+<event_id>%UInt32;</event_id>
+</sort_state_change_tracing>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{0bf34831-9f30-4ecc-8026-aff22891b01b}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<sort_memory_grant_adjustment>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<rowset_id>%UInt64;</rowset_id>
+<allocation_unit_id>%UInt64;</allocation_unit_id>
+<database_id>%UInt16;</database_id>
+<filegroup_id>%UInt16;</filegroup_id>
+<previous_grant_in_pages>%UInt32;</previous_grant_in_pages>
+<requested_grant_in_pages>%UInt32;</requested_grant_in_pages>
+<grant_delta_in_pages>%UInt32;</grant_delta_in_pages>
+<new_grant_in_pages>%UInt32;</new_grant_in_pages>
+</sort_memory_grant_adjustment>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{3F800DA0-0B7F-4095-BC41-F3248DA0E90C}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<sec_ekm_provider_called>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<cred_prov_result>%Int32;</cred_prov_result>
+<cred_prov_name>%String;</cred_prov_name>
+<cred_prov_api>%String;</cred_prov_api>
+</sec_ekm_provider_called>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{594133eb-4253-4b4d-af7d-c7d7f6e272c1}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<module_start>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<source_database_id>%UInt16;</source_database_id>
+<object_id>%Int32;</object_id>
+<object_type>%AnsiString;</object_type>
+<object_name>%String;</object_name>
+</module_start>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{b4b44aca-4a04-47af-beee-0928ac02dd88}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<module_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<source_database_id>%UInt16;</source_database_id>
+<object_id>%Int32;</object_id>
+<duration>%UInt64;</duration>
+<row_count>%UInt64;</row_count>
+<object_type>%AnsiString;</object_type>
+<object_name>%String;</object_name>
+</module_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{c4d2f45a-c4d5-4198-b0fe-033e8fc57ce6}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<filestream_file_io_request>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<workitem_description>%String;</workitem_description>
+<transaction_id>%CountedString;</transaction_id>
+<correlation_ids>%String;</correlation_ids>
+<logical_path>%String;</logical_path>
+<physical_path>%String;</physical_path>
+<original_path>%String;</original_path>
+</filestream_file_io_request>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{d083ca0c-9dd9-46d5-9626-f9ae2b8400b8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<filestream_file_io_response>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<status>%UInt32;</status>
+<satisfied>%Boolean;</satisfied>
+<workitem_description>%String;</workitem_description>
+<transaction_id>%CountedString;</transaction_id>
+<correlation_ids>%String;</correlation_ids>
+<logical_path>%String;</logical_path>
+<physical_path>%String;</physical_path>
+<original_path>%String;</original_path>
+</filestream_file_io_response>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{af723f47-22b2-4433-bbf0-cb437d211b17}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<filestream_file_io_failure>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<hresult>%UInt32;</hresult>
+<location>%Guid;</location>
+<description>%String;</description>
+<message>%String;</message>
+<workitem_description>%String;</workitem_description>
+<transaction_id>%CountedString;</transaction_id>
+<correlation_ids>%String;</correlation_ids>
+<logical_path>%String;</logical_path>
+<physical_path>%String;</physical_path>
+<original_path>%String;</original_path>
+</filestream_file_io_failure>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{d9282fce-5998-4472-9232-21efde7ee4f2}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<filestream_file_io_trace>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<verbosity>%Byte;</verbosity>
+<component>%UInt32;</component>
+<location>%Guid;</location>
+<message>%String;</message>
+<workitem_description>%String;</workitem_description>
+<transaction_id>%CountedString;</transaction_id>
+<correlation_ids>%String;</correlation_ids>
+<logical_path>%String;</logical_path>
+<physical_path>%String;</physical_path>
+<original_path>%String;</original_path>
+</filestream_file_io_trace>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{0d607346-32e4-4943-98e0-deebf3a050ef}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<filestream_file_io_dump>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<description>%String;</description>
+<data>%CountedString;</data>
+</filestream_file_io_dump>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8A7E5DF0-BFE2-11DC-878F-68B855D89593}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<xml_deadlock_report>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<xml_report>%String;</xml_report>
+</xml_deadlock_report>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{04cbd3a5-1876-4edb-931b-1147387bb098}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<leaf_page_disfavored>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt16;</database_id>
+<file_id>%UInt16;</file_id>
+<page_id>%UInt32;</page_id>
+</leaf_page_disfavored>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8e440d52-1374-4bea-975d-856c00753bdb}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<prefetch_extent>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt16;</database_id>
+<file_id>%UInt16;</file_id>
+<extent_id>%UInt32;</extent_id>
+</prefetch_extent>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{5B0108E6-BB06-487e-8AC2-8BE59B026649}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_deliverysm_event_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<event>%Int32;</event>
+<state>%Int32;</state>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_deliverysm_event_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{C1F40843-FAB3-425f-A1D3-8460C27E2D51}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_timer_set>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<timer>%Int32;</timer>
+<expires>%UInt32;</expires>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_timer_set>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{723A69C4-BA2A-4d3a-918B-C197FE8CCF8D}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_timer_reset>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<timer>%Int32;</timer>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_timer_reset>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1DC58D44-47C8-49f2-833E-540AA0A1A8DF}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_timer_fire>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<timer>%Int32;</timer>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_timer_fire>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{AD345406-6D1B-4fef-854F-E2636D90EF29}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_lazyflusher_submit>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_lazyflusher_submit>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{EDA910EE-4977-4a8f-8C30-E9B83EC7A7D1}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_lazyflusher_processing_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+</broker_transmission_lazyflusher_processing_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{D4E1634B-AEBF-4903-93AC-EAFBF5960D1E}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_lazyflusher_processing_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<objects_flushed>%UInt32;</objects_flushed>
+<sleep_time>%UInt32;</sleep_time>
+</broker_transmission_lazyflusher_processing_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{37DE02F2-53F8-4fca-A7DE-42E73553790C}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_timer_armed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<timer>%Int32;</timer>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_timer_armed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{F6BBBA99-AC48-4fec-B67D-F3201A57AA87}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_lazyflusher_remove>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_lazyflusher_remove>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{F8343218-1075-4455-B8C0-B74CE41749F4}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_object_get>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<is_from_worktable>%Boolean;</is_from_worktable>
+<is_new_object>%Boolean;</is_new_object>
+<is_get_only>%Boolean;</is_get_only>
+<exception_occurred>%Boolean;</exception_occurred>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_object_get>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{33C17FB7-D393-46ec-8064-890F741FDEEC}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_object_worktable_load_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_object_worktable_load_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{FF994DCD-70EF-44fb-99F4-A0A40E846385}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_object_worktable_load_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<result>%Int32;</result>
+<unique_id>%UInt64;</unique_id>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_object_worktable_load_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{F8717D11-2297-419e-A3D4-8AE8CFAF2970}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_object_worktable_save_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_object_worktable_save_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{3C0E72DF-0ACB-4ac8-851A-184F575A7001}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_object_worktable_save_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<is_saved>%Boolean;</is_saved>
+<is_new_record>%Boolean;</is_new_record>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_object_worktable_save_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8E5C5DBF-A3E6-47f1-BA24-DF70F9CA5F02}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_object_delete_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_object_delete_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{D02F2C7A-F454-46e1-ADF1-2A2A320E1CEF}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_object_delete_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<removed_from_worktable>%Boolean;</removed_from_worktable>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_object_delete_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{B3DD1F49-9864-4ffe-8DF3-3264546A2CFD}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_reclassification_phase_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<phase>%UInt32;</phase>
+</broker_transmitter_reclassification_phase_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{01120624-30B0-4fbf-8DFD-4703C8D48565}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_reclassification_phase_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<phase>%UInt32;</phase>
+</broker_transmitter_reclassification_phase_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{CF6AF34E-9B3D-4d74-B266-74516C22D4BA}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_event_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<event>%Int32;</event>
+<state>%Int32;</state>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_event_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{408EA5F7-902B-4bf6-B0A3-4454FB01D4EE}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_action_fire>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<event>%Int32;</event>
+<action>%Int32;</action>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_action_fire>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{FDC8A107-D878-49a8-8100-203B13046731}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_event_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<event>%Int32;</event>
+<state>%Int32;</state>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_event_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{16C2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_outgoing_connect_attempt>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<endpoint_type>%Int32;</endpoint_type>
+<port>%UInt16;</port>
+<address>%String;</address>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_outgoing_connect_attempt>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{9E7DBE36-C135-4646-A417-280752458E3B}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_dns_lookup>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<result>%Int32;</result>
+<error>%String;</error>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_dns_lookup>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{352039D4-FB47-4e9e-B0BD-4B73C8C2A1AC}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_winsock_connect_attempt>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%AnsiString;</address>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_winsock_connect_attempt>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{356B02D8-E449-4e99-97CA-525B8A8460AB}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_winsock_connect_fail>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<error>%String;</error>
+<address>%AnsiString;</address>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_winsock_connect_fail>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{F30F31F7-5872-4b09-A787-A518BAE88E5E}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_winsock_connect_success>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%AnsiString;</address>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_winsock_connect_success>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{551A254C-EC28-4a94-94BD-820C37F1A282}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_acksm_event_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<event>%Int32;</event>
+<state>%Int32;</state>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_acksm_event_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{C49DB76C-6F24-4532-947B-048B372521C0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_acksm_action_fire>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<event>%Int32;</event>
+<action>%Int32;</action>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_acksm_action_fire>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{74BC9999-8561-4038-8259-6DEB316CED6A}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_acksm_event_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<event>%Int32;</event>
+<state>%Int32;</state>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_acksm_event_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{95D1475D-47C4-4d02-A1B2-0F58A0E216A7}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_close>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<stream_status>%Int32;</stream_status>
+<connection_id>%Guid;</connection_id>
+<error>%String;</error>
+</broker_transport_connection_close>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{5CA49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_read_complete>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<control_block_address>%Pointer;</control_block_address>
+<error>%String;</error>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_read_complete>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{5CF30F85-AC9C-475b-AAF9-4181A7D3CD22}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_global_message_add>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<pending_messages>%UInt32;</pending_messages>
+</broker_transport_global_message_add>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{E94275D0-E4E2-4b88-A3AF-889847F6E0C0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_global_message_delete>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<pending_messages>%UInt32;</pending_messages>
+</broker_transport_global_message_delete>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{567B87DA-D091-4d5b-9CC9-67DF55591A93}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_message_add>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<pending_messages>%UInt32;</pending_messages>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_message_add>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8672A4E8-DED9-450d-9CD3-33C67A9FA4DD}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_message_delete>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<pending_messages>%UInt32;</pending_messages>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_message_delete>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{BB4F49AF-5DB0-4d5b-914A-4B35F1737F6C}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_winsock_read>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<control_block_address>%Pointer;</control_block_address>
+<connection_id>%Guid;</connection_id>
+<error>%String;</error>
+</broker_transport_connection_winsock_read>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{8EF1A9E7-2AF3-466b-AFAB-8FB02F5E03FC}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_receive_io_complete>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<receive_post_count>%UInt32;</receive_post_count>
+<fill_factor>%UInt32;</fill_factor>
+<bytes_received>%UInt32;</bytes_received>
+<control_block_address>%Pointer;</control_block_address>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_receive_io_complete>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{ADD8FF82-8F52-48eb-A949-55EC14D8F519}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_process_receive_control_block>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<control_block_address>%Pointer;</control_block_address>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_process_receive_control_block>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{E33FBE7A-0EFE-411f-9BD6-765787A7C833}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_delimit_message>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<remaining_bytes>%UInt32;</remaining_bytes>
+<result>%Int32;</result>
+<control_block_address>%Pointer;</control_block_address>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_delimit_message>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{AEF49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_write_complete>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<boxcar_address>%Pointer;</boxcar_address>
+<error>%String;</error>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_write_complete>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{BEF49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_send_io_complete>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<boxcar_address>%Pointer;</boxcar_address>
+<leaving_flow_control>%Boolean;</leaving_flow_control>
+<let_ready_boxcar_go>%Boolean;</let_ready_boxcar_go>
+<let_ready_boxcar_sit>%Boolean;</let_ready_boxcar_sit>
+<inline_send>%Boolean;</inline_send>
+<in_cleanup_task>%Boolean;</in_cleanup_task>
+<error>%String;</error>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_send_io_complete>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{CEF49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_transport_stream_update>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<transport_stream_update>%Int32;</transport_stream_update>
+<transport_stream_status>%Int32;</transport_stream_status>
+<status_version>%Int64;</status_version>
+<connection_id>%Guid;</connection_id>
+<error>%String;</error>
+</broker_transmitter_transport_stream_update>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{DEF49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_destination_process_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<destination_id>%Int64;</destination_id>
+<target_address>%String;</target_address>
+</broker_transmitter_destination_process_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{EEF49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_destination_process_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<destination_id>%Int64;</destination_id>
+<processed>%Boolean;</processed>
+<target_address>%String;</target_address>
+</broker_transmitter_destination_process_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{FEF49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_destination_process_sender_process>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<destination_id>%Int64;</destination_id>
+<processed>%Boolean;</processed>
+<sender_address>%Pointer;</sender_address>
+<target_address>%String;</target_address>
+</broker_transmitter_destination_process_sender_process>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{FFF49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_destination_connect>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<destination_id>%Int64;</destination_id>
+<transport_stream_status>%Int32;</transport_stream_status>
+<connection_id>%Guid;</connection_id>
+<target_address>%String;</target_address>
+<error>%String;</error>
+</broker_transmitter_destination_connect>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{F0F49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_destination_event_fire>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<destination_id>%Int64;</destination_id>
+<event>%Int32;</event>
+<state_old>%Int32;</state_old>
+<state_new>%Int32;</state_new>
+<transport_stream_status>%Int32;</transport_stream_status>
+<target_address>%String;</target_address>
+</broker_transmitter_destination_event_fire>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{F1F49847-8D25-4acc-B627-53779FC2C809}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_destination_reference>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<destination_id>%Int64;</destination_id>
+<is_successful>%Boolean;</is_successful>
+<target_address>%String;</target_address>
+</broker_transmitter_destination_reference>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{D471AF0C-CE15-4c36-81DD-00E33E0A0924}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_deliverysm_event_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<event>%Int32;</event>
+<state>%Int32;</state>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_deliverysm_event_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{B1A3B64F-738B-423c-BBD5-F59FE60D0F96}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmission_deliverysm_action_fire>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<unique_id>%UInt64;</unique_id>
+<event>%Int32;</event>
+<action>%Int32;</action>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmission_deliverysm_action_fire>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{edbbcdc0-d40b-4ade-a4b7-19a545f079ff}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_process_boxcar>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<boxcar_address>%Pointer;</boxcar_address>
+<message_count>%Int32;</message_count>
+<boxcar_size>%UInt32;</boxcar_size>
+<inline_send>%Boolean;</inline_send>
+</broker_transport_process_boxcar>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{fdbbcdc0-d40b-4ade-a4b7-19a545f079ff}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_send>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<message_class_id>%Int32;</message_class_id>
+<protocol_id>%Int32;</protocol_id>
+<reserved_message_size>%UInt32;</reserved_message_size>
+<transport_stream_status>%Int32;</transport_stream_status>
+<message_reference_address>%Pointer;</message_reference_address>
+<boxcar_address>%Pointer;</boxcar_address>
+<connection_id>%Guid;</connection_id>
+</broker_transport_send>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{abbbcdc0-d40b-4ade-a4b7-19a545f079ff}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_destination_subscribe>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<destination_id>%UInt64;</destination_id>
+<sender_address>%Pointer;</sender_address>
+<target_address>%String;</target_address>
+</broker_transmitter_destination_subscribe>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{bbbbcdc0-d40b-4ade-a4b7-19a545f079ff}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_destination_unsubscribe>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<destination_id>%UInt64;</destination_id>
+<sender_address>%Pointer;</sender_address>
+<target_address>%String;</target_address>
+</broker_transmitter_destination_unsubscribe>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{dbbbcdc0-d40b-4ade-a4b7-19a545f079ff}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_service_create>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<service_address>%Pointer;</service_address>
+<service_id>%UInt64;</service_id>
+<route_type>%Int32;</route_type>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<dialog_id>%Guid;</dialog_id>
+<to_service_name>%String;</to_service_name>
+<to_broker_instance>%String;</to_broker_instance>
+</broker_transmitter_service_create>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{ebbbcdc0-d40b-4ade-a4b7-19a545f079ff}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_service_match>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<service_address>%Pointer;</service_address>
+<service_id>%UInt64;</service_id>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<dialog_id>%Guid;</dialog_id>
+<to_service_name>%String;</to_service_name>
+<to_broker_instance>%String;</to_broker_instance>
+</broker_transmitter_service_match>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{fbbbcdc0-d40b-4ade-a4b7-19a545f079ff}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_task_idempotent_submit>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<task_type>%Int32;</task_type>
+<task_address>%Pointer;</task_address>
+<task_state_old>%Int32;</task_state_old>
+<scheduled_tasks>%Int32;</scheduled_tasks>
+</broker_task_idempotent_submit>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{a0bbcdc0-d40b-4ade-a4b7-19a545f079ff}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_task_idempotent_invoke_begin>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<handler_address>%Pointer;</handler_address>
+<task_type>%Int32;</task_type>
+<task_address>%Pointer;</task_address>
+<scheduled_tasks>%Int32;</scheduled_tasks>
+<task_description>%String;</task_description>
+</broker_task_idempotent_invoke_begin>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{a1bbcdc0-d40b-4ade-a4b7-19a545f079ff}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_task_idempotent_invoke_end>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<handler_address>%Pointer;</handler_address>
+<task_type>%Int32;</task_type>
+<task_address>%Pointer;</task_address>
+<task_state_old>%Int32;</task_state_old>
+<scheduled_tasks>%Int32;</scheduled_tasks>
+<task_description>%String;</task_description>
+</broker_task_idempotent_invoke_end>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{17C2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_connection_incoming_connect_attempt>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<endpoint_type>%Int32;</endpoint_type>
+<address>%String;</address>
+<connection_id>%Guid;</connection_id>
+</broker_transport_connection_incoming_connect_attempt>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{18C2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_service_send>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<service_id>%UInt64;</service_id>
+<destination_id>%UInt64;</destination_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<asb_id>%UInt64;</asb_id>
+<database_id>%UInt32;</database_id>
+<message_reference_address>%Pointer;</message_reference_address>
+<message_sequence_number>%UInt64;</message_sequence_number>
+<message_fragment_number>%Int32;</message_fragment_number>
+<is_sequenced>%Boolean;</is_sequenced>
+<dialog_id>%Guid;</dialog_id>
+<connection_id>%Guid;</connection_id>
+<to_service_name>%String;</to_service_name>
+<to_broker_instance>%String;</to_broker_instance>
+</broker_transmitter_service_send>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{19C2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_dialog_register>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<session_address>%Pointer;</session_address>
+<service_id>%UInt64;</service_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<result>%Int32;</result>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmitter_dialog_register>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1AC2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_dialog_unregister>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<session_address>%Pointer;</session_address>
+<service_id>%UInt64;</service_id>
+<initiator_flag>%Boolean;</initiator_flag>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmitter_dialog_unregister>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1BC2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_service_reclassify>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<service_id>%UInt64;</service_id>
+<to_service_name>%String;</to_service_name>
+<to_broker_instance>%String;</to_broker_instance>
+</broker_transmitter_service_reclassify>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1DC2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transmitter_dialog_reclassify>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<session_address>%Pointer;</session_address>
+<initiator_flag>%Boolean;</initiator_flag>
+<service_id>%UInt64;</service_id>
+<to_service_name>%String;</to_service_name>
+<to_broker_instance>%String;</to_broker_instance>
+<dialog_id>%Guid;</dialog_id>
+</broker_transmitter_dialog_reclassify>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1EC2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_transport_flow_control>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<is_flow_controlled>%Boolean;</is_flow_controlled>
+<connection_id>%Guid;</connection_id>
+</broker_transport_flow_control>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{20C2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_dialog_state_change>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%Int32;</database_id>
+<state>%Int32;</state>
+<is_initiator>%Boolean;</is_initiator>
+<initiator_service_name>%String;</initiator_service_name>
+<target_service_name>%String;</target_service_name>
+<initiator_broker_instance>%String;</initiator_broker_instance>
+<target_broker_instance>%String;</target_broker_instance>
+<contract_name>%String;</contract_name>
+<dialog_id>%Guid;</dialog_id>
+<dialog_handle>%Guid;</dialog_handle>
+</broker_dialog_state_change>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{21C2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_dialog_transmission_queue_enqueue>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%Int32;</database_id>
+<message_sequence_number>%UInt64;</message_sequence_number>
+<is_initiator>%Boolean;</is_initiator>
+<from_service_name>%String;</from_service_name>
+<to_service_name>%String;</to_service_name>
+<from_broker_instance>%String;</from_broker_instance>
+<to_broker_instance>%String;</to_broker_instance>
+<message_type>%String;</message_type>
+<dialog_id>%Guid;</dialog_id>
+</broker_dialog_transmission_queue_enqueue>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{22C2F627-7211-40b3-BD08-453B3DAF00C8}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<broker_dialog_transmission_queue_dequeue>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%Int32;</database_id>
+<message_sequence_number>%UInt64;</message_sequence_number>
+<is_initiator>%Boolean;</is_initiator>
+<from_service_name>%String;</from_service_name>
+<to_service_name>%String;</to_service_name>
+<from_broker_instance>%String;</from_broker_instance>
+<to_broker_instance>%String;</to_broker_instance>
+<message_type>%String;</message_type>
+<dialog_id>%Guid;</dialog_id>
+</broker_dialog_transmission_queue_dequeue>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{3de05588-4043-4fc3-8f98-21baac3b8afb}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<deprecation_announcement>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<feature>%String;</feature>
+<message>%String;</message>
+</deprecation_announcement>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{b26a7e27-cde0-4dae-9ad9-5b0aaf86e358}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<deprecation_final_support>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<feature>%String;</feature>
+<message>%String;</message>
+</deprecation_final_support>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{32BE64E4-1E0C-439E-85F6-2B42B4D92A69}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<fastloadcontext_enabled>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<database_id>%UInt32;</database_id>
+<rowset_id>%UInt64;</rowset_id>
+<state>%Byte;</state>
+</fastloadcontext_enabled>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{E7902D45-5A7D-447C-A189-55B339C3BCA6}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<logreader_process_text_info>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<op_code>%UInt32;</op_code>
+<rowset_id>%UInt64;</rowset_id>
+<text_pointer_timestamp>%UInt64;</text_pointer_timestamp>
+<text_pointer_file_id>%UInt16;</text_pointer_file_id>
+<text_pointer_page_id>%UInt32;</text_pointer_page_id>
+<text_pointer_slot_id>%UInt16;</text_pointer_slot_id>
+<coloffset>%Int32;</coloffset>
+<text_info_flags>%UInt32;</text_info_flags>
+<text_size>%UInt64;</text_size>
+<offset>%UInt64;</offset>
+<old_size>%UInt64;</old_size>
+<new_size>%UInt64;</new_size>
+<current_lsn>%String;</current_lsn>
+</logreader_process_text_info>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{E4A3CAFA-588A-4CE2-BCFC-CC1CB6482400}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<logreader_process_text_ptr>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<op_code>%UInt32;</op_code>
+<rowset_id>%UInt64;</rowset_id>
+<text_pointer_timestamp>%UInt64;</text_pointer_timestamp>
+<text_pointer_file_id>%UInt16;</text_pointer_file_id>
+<text_pointer_page_id>%UInt32;</text_pointer_page_id>
+<text_pointer_slot_id>%UInt16;</text_pointer_slot_id>
+<current_lsn>%String;</current_lsn>
+</logreader_process_text_ptr>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{6ECD9A46-32C8-4F30-BA81-36A4B9D4BC62}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<logreader_process_filestream_info>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<op_code>%UInt32;</op_code>
+<fsi_rowset_id>%UInt64;</fsi_rowset_id>
+<fsi_txt_file_id_low>%UInt64;</fsi_txt_file_id_low>
+<fsi_txt_file_id_high>%UInt64;</fsi_txt_file_id_high>
+<fsi_col_offset>%Int32;</fsi_col_offset>
+<fsi_current_lsn>%UInt64;</fsi_current_lsn>
+<fsi_base_lsn>%UInt64;</fsi_base_lsn>
+<fsi_filegroup_id>%UInt16;</fsi_filegroup_id>
+<fsi_db_id>%UInt32;</fsi_db_id>
+<fsi_info_flags>%UInt32;</fsi_info_flags>
+<fsi_size>%UInt64;</fsi_size>
+<fsi_offset>%UInt64;</fsi_offset>
+<fsi_old_size>%UInt64;</fsi_old_size>
+<fsi_new_size>%UInt64;</fsi_new_size>
+<log_rowset_id>%UInt64;</log_rowset_id>
+<log_txt_file_id_low>%UInt64;</log_txt_file_id_low>
+<log_txt_file_id_high>%UInt64;</log_txt_file_id_high>
+<log_current_lsn>%UInt64;</log_current_lsn>
+<log_base_lsn>%UInt64;</log_base_lsn>
+<log_filegroup_id>%UInt16;</log_filegroup_id>
+<log_db_id>%UInt32;</log_db_id>
+<begin_lsn>%String;</begin_lsn>
+<end_lsn>%String;</end_lsn>
+</logreader_process_filestream_info>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{1CD7767B-6331-437C-9D82-DED4549407FE}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<logreader_add_compensation_range>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<xdesid_low>%UInt32;</xdesid_low>
+<xdesid_high>%UInt16;</xdesid_high>
+<last_op_code>%UInt32;</last_op_code>
+<first_lsn>%String;</first_lsn>
+<last_lsn>%String;</last_lsn>
+</logreader_add_compensation_range>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{0F0D6117-E946-4021-AE52-503E1110E7AE}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<logreader_add_eor>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<xdesid_low>%UInt32;</xdesid_low>
+<xdesid_high>%UInt16;</xdesid_high>
+<db_id>%UInt16;</db_id>
+<originator_db_version>%UInt32;</originator_db_version>
+<originator_pubid>%UInt32;</originator_pubid>
+<originator>%String;</originator>
+<originator_db>%String;</originator_db>
+<originator_lsn>%CountedString;</originator_lsn>
+<current_lsn>%String;</current_lsn>
+</logreader_add_eor>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{0F0D6117-E946-4021-AE52-503E1110E7AF}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<logreader_add_tran_info>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<xdesid_low>%UInt32;</xdesid_low>
+<xdesid_high>%UInt16;</xdesid_high>
+<num_hashed_trans>%UInt32;</num_hashed_trans>
+<num_compensated_trans>%UInt32;</num_compensated_trans>
+<db_id>%UInt16;</db_id>
+<begin_xact_lsn>%String;</begin_xact_lsn>
+<last_xact_lsn>%String;</last_xact_lsn>
+<hardened_lsn>%String;</hardened_lsn>
+<first_begin_xact_lsn>%String;</first_begin_xact_lsn>
+<last_end_xact_lsn>%String;</last_end_xact_lsn>
+</logreader_add_tran_info>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{3E7E7095-732C-4787-B2F5-63861C9D50FB}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<logreader_apply_filter_proc>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<db_id>%UInt16;</db_id>
+<filter_proc_id>%UInt32;</filter_proc_id>
+<use_row>%Boolean;</use_row>
+<current_lsn>%String;</current_lsn>
+</logreader_apply_filter_proc>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{B9396CBC-72C0-4c79-9F8D-A14E19AF7264}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cdc_session>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<session_id>%UInt32;</session_id>
+<duration>%Int64;</duration>
+<error_count>%Int32;</error_count>
+<tran_count>%Int64;</tran_count>
+<log_record_count>%Int64;</log_record_count>
+<schema_change_count>%Int64;</schema_change_count>
+<command_count>%Int64;</command_count>
+<latency>%Int64;</latency>
+<empty_scan_count>%Int64;</empty_scan_count>
+<failed_sessions_count>%Int32;</failed_sessions_count>
+<start_time>%Uint64;</start_time>
+<end_time>%Uint64;</end_time>
+<last_commit_time>%Uint64;</last_commit_time>
+<last_commit_cdc_time>%Uint64;</last_commit_cdc_time>
+<start_lsn>%String;</start_lsn>
+<current_lsn>%String;</current_lsn>
+<end_lsn>%String;</end_lsn>
+<last_commit_lsn>%String;</last_commit_lsn>
+<first_begin_cdc_lsn>%String;</first_begin_cdc_lsn>
+<last_commit_cdc_lsn>%String;</last_commit_cdc_lsn>
+</cdc_session>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{4626C7A0-15C5-44d8-8CC2-AE0F453B7D54}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<cdc_error>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<session_id>%UInt32;</session_id>
+<phase_number>%Int32;</phase_number>
+<error_number>%Int32;</error_number>
+<error_severity>%Int32;</error_severity>
+<error_state>%Int32;</error_state>
+<entry_time>%Uint64;</entry_time>
+<error_message>%String;</error_message>
+<start_lsn>%String;</start_lsn>
+<begin_lsn>%String;</begin_lsn>
+<sequence_value>%String;</sequence_value>
+</cdc_error>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{268c5088-ea00-465f-9224-2a4b9fe34bd5}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<group_commit_value_changed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<waiters_per_flush>%UInt32;</waiters_per_flush>
+<duration_ms>%UInt64;</duration_ms>
+<waiters>%UInt32;</waiters>
+<flushes_per_sec>%UInt32;</flushes_per_sec>
+<next_sample_duration_ms>%UInt32;</next_sample_duration_ms>
+<next_sample_index>%UInt32;</next_sample_index>
+</group_commit_value_changed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{d9b42c24-fb8a-4744-80f6-9b15149173a1}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<log_flush_requested>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<reason>%Int32;</reason>
+<waiters>%UInt32;</waiters>
+<log_block_id>%UInt64;</log_block_id>
+</log_flush_requested>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{455e9012-2a18-4131-b6bf-1391e93d7acd}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<log_buffer_allocated>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<size>%UInt32;</size>
+<type>%Int32;</type>
+<current_count>%UInt32;</current_count>
+</log_buffer_allocated>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{44802c4c-63dd-4d54-8e23-e6b04d66ab64}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<log_buffer_freed>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<address>%Pointer;</address>
+<current_count>%UInt32;</current_count>
+</log_buffer_freed>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{3917182b-98d0-4452-b68f-a0fcff55fdeb}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<latch_acquire_time>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<latch_address>%Pointer;</latch_address>
+<duration_cycles>%UInt64;</duration_cycles>
+<sample_count>%UInt32;</sample_count>
+<reference_count>%UInt32;</reference_count>
+<total_duration_cycles>%UInt64;</total_duration_cycles>
+<promotion_threshold_cycles>%UInt64;</promotion_threshold_cycles>
+<file_id>%UInt16;</file_id>
+<page_id>%UInt32;</page_id>
+<status>%UInt32;</status>
+</latch_acquire_time>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{d9eec9e7-a0e9-4948-a077-a96404f60134}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<failed_hresult>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<hresult>%Int32;</hresult>
+</failed_hresult>
+</template>
+</diagnosticInstance>
+</event>
+<event guid="{db4b8a86-ef93-409d-949e-d08be6b794f0}">
+<diagnosticInstance version="1">
+<classification subType="Info" />
+<template>
+<failed_hresult_msg>
+<FragmentId>%Uint32;</FragmentId>
+<RemainingLength>%Uint32;</RemainingLength>
+<ActivityId>%Guid;</ActivityId>
+<SequenceNumber>%Uint32;</SequenceNumber>
+<hresult>%Int32;</hresult>
+<description>%String;</description>
+</failed_hresult_msg>
+</template>
+</diagnosticInstance>
+</event>
+</events>
+</instrumentation>
+</assembly>

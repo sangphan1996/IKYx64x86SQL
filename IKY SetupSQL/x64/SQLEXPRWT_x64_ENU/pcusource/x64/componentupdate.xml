@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+
+    <Page
+      ID="LanguageSelection">
+      <Title ResourceID="LanguageSelectionTitle"></Title>
+      <Subtitle  ResourceID="LanguageSelectionSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.LanguageSelectionController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="PIDValidation">
+      <Title ResourceID="PIDValidationTitle"></Title>
+      <Subtitle  ResourceID="PIDValidationSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.CuPidVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PidValidationController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+	   <!-- Help is disabled since the CHM cannot be loaded when remote -->
+           <!-- <HelpGUID>2e39bd3f-6246-4b60-9774-0a427ba2a26c</HelpGUID>   -->
+    </Page>
+
+    <Page
+      ID="EULAPid" PageType="Page" >
+      <Title ResourceID="EULAPidTitle"></Title>
+      <Subtitle ResourceID="EULAPidSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.CuEulaVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.EULAPidController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+	   <!-- Help is disabled since the CHM cannot be loaded when remote -->
+           <!-- <HelpGUID>08dd739d-5817-4418-bcff-74ab7f8bbd33</HelpGUID>-->
+    </Page>
+
+    <Page
+      ID="ComponentUpdate" PageType="InPlaceProgress">
+      <Title ResourceID="ComponentUpdateTitle"></Title>
+      <Subtitle ResourceID="ComponentUpdateSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>		  
+        <Button ID="Next" Enabled="true">
+          <Text ResourceID="InstallButton"></Text>
+        </Button>        
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ComponentUpdateController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+           <!-- Help is disabled since the CHM cannot be loaded when remote -->
+      	   <!-- <HelpGUID>cd1454dc-2585-4b14-83b3-ee9aec6f7e75</HelpGUID>-->
+    </Page>
+  </Pages>
+
+  <Appearance>
+    <Title ResourceID="InstallWizardTitle"></Title>
+    <Icon>
+      <Name>Install</Name>
+      <ResourceType>Microsoft.SqlServer.Configuration.InstallWizard.Resources, Microsoft.SqlServer.Configuration.InstallWizard</ResourceType>
+    </Icon>
+    <ButtonDefaults>
+      <Button ID="Help" Enabled="false" Visible="false"/>
+    </ButtonDefaults>    
+  </Appearance>
+</UIHost>

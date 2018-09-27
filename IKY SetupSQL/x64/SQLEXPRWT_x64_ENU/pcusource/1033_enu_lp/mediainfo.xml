@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaInfo>
+  <Properties>
+    <!-- Language is empty for SP package contains multiple language packages -->
+    <Property Id="Language" Value="1033"></Property>
+    <Property Id="MediaLayout" Value="Core"></Property>
+    <Property Id="PatchType" Value="SP"/>
+  </Properties>
+</MediaInfo>

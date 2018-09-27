@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.SqlServer.TransferErrorMessagesTask</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask">
+			<summary>The <see cref="N:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask" /> allows the transfer error messages from one instance of SQL Server to another.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists">
+			<summary>Contains values used by the <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.IfObjectExists" /> property of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask" /> to determine how to handle a transfer when the error message exists at the destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists.FailTask">
+			<summary>Causes the task to fail if the same error message exists at the destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists.Overwrite">
+			<summary>Overwrites the error message if the same error message exists at the destination.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists.Skip">
+			<summary>Skips the transfer of an error message if the same error message exists at the destination.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask">
+			<summary>Provides the ability to copy one or more SQL Server user-defined error messages to another instance of SQL Server. This class cannot be inherited. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+			<summary>Allows the task to create, remove, and check the status of breakpoints. This method is called by the run-time engine when a task or container is created and is not used in code.</summary>
+			<param name="manager">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> to use for controlling breakpoints on this task or container.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+			<summary>Runs the task as part of a package workflow.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration that indicates the outcome of the execution.</returns>
+			<param name="connections">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> collection for the container.</param>
+			<param name="variableDispenser">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> collection for the container.</param>
+			<param name="events">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface to raise events.</param>
+			<param name="log">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+			<param name="transaction">The transaction object that the container is a part of, depending on the value found in the <see cref="P:Microsoft.SqlServer.Dts.Runtime.DtsContainer.TransactionOption" /> property. This value can be null.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+			<summary>Initializes the properties associated with the task. This method is called by the runtime and is not used in code.</summary>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface.</param>
+			<param name="log">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" /> collection.</param>
+			<param name="eventInfos">A collection that contains events to be raised during execution of the task.</param>
+			<param name="logEntryInfos">A collection of log entries.</param>
+			<param name="refTracker">An object reference tracker.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To load a package saved as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="rootNode">The XmlElement that contains the information to be loaded.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for firing events (errors, warnings, and so on) during persistence.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.ResumeExecution">
+			<summary>Resumes execution of the task after pausing. The task is resumed by the run-time engine. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To save a package as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="doc">The XML document to which to save the information.</param>
+			<param name="events">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.SuspendExecution">
+			<summary>Called by the run-time engine when the executable needs to suspend. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+			<summary>Allows the container to determine if it contains invalid settings that will prevent it from executing successfully.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration that indicates the outcome of the validation. </returns>
+			<param name="connections">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> collection for the container.</param>
+			<param name="variableDispenser">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> collection for the container.</param>
+			<param name="events">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface to raise events.</param>
+			<param name="log">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.DebugMode">
+			<summary>Gets or sets a Boolean indicating whether a task should determine whether breakpoints are enabled.</summary>
+			<returns>true if the task should determine whether breakpoints are enabled; false if the task can ignore all breakpoints.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.DestinationConnection">
+			<summary>Gets or sets a String containing the name of the SMO connection manager for the destination database.</summary>
+			<returns>A String that contains the SMO connection manager.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.ErrorMessageLanguagesList">
+			<summary>Gets or sets a StringCollection containing the user-defined error messages to transfer.</summary>
+			<returns>A StringCollection that lists the user-defined error messages to transfer.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.ErrorMessagesList">
+			<summary>Gets or sets a StringCollection containing the IDs of the languages to transfer.</summary>
+			<returns>A StringCollection that lists the language IDs of error messages to transfer. </returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.ExecutionValue">
+			<summary>Returns an object containing the number of error messages that were transferred.</summary>
+			<returns>An object that contains the number of error messages that were transferred.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.IfObjectExists">
+			<summary>Gets or sets a value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists" /> enumeration indicating indicating if the task should fail, overwrite, or skip the transfer of the errror message if an error message with the same name exists at the destination. </summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.IfObjectExists" /> enumeration indicating whether the task should fail, ignore the existing error message, or skip the transfer of the error message, if an error message of the same name exists at the destination.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.SourceConnection">
+			<summary>Gets or sets a String containing the name of the SMO connection manager for the source database.</summary>
+			<returns>A String that contains the SMO connection for the source database.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.SuspendRequired">
+			<summary>Gets or sets a Boolean indicating whether a task should suspend if it encounters a breakpoint. This value is set by the run-time engine for the tasks and containers when a breakpoint is encountered.</summary>
+			<returns>true if the task suspends when it encounters a breakpoint; false if the breakpoint can be ignored.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.TransferAllErrorMessages">
+			<summary>Gets or sets a Boolean indicating whether all user-defined error messages at the source should be transferred, or only the specified error messages.</summary>
+			<returns>true if all user-defined error messages are transferred. </returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.TransferErrorMessagesTask.TransferErrorMessagesTask.DtsTransferErrorMessagesException">
+			<summary>The exception that is thrown at load time if the persisted name of the XML root node of the task is corrupt.</summary>
+		</member>
+	</members>
+</doc>

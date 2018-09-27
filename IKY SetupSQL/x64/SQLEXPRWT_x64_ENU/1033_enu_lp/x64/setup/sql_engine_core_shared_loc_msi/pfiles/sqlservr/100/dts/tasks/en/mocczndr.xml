@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>Microsoft.SqlServer.WebServiceTask</name>
+	</assembly>
+	<members>
+		<member name="N:Microsoft.SqlServer.Dts.Tasks.WebServiceTask">
+			<summary>The <see cref="N:Microsoft.SqlServer.Dts.Tasks.WebServiceTask" /> namespace contains the classes and members used to run a web method and store the results in a specified location.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue">
+			<summary>Holds the value of a parameter when the parameter is of type <see cref="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Array" />.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.#ctor(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> class, and initializes the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> of the array elements. </summary>
+			<param name="paramType">A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> enumeration. Represents the parameter type of the parameters in the array.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.Clone">
+			<summary>Creates an instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> class that is identical to the current <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" />.</summary>
+			<returns>An object whose properties are identical to those of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" />.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.Equals(System.Object)">
+			<summary>Determines whether two object instances are equal.</summary>
+			<returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+			<param name="obj">The object to compare with the current object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.GetHashCode">
+			<summary>Returns the hash code for an instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue" /> class.</summary>
+			<returns>A 32-bit signed integer hash code.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.Elements">
+			<summary>Gets or sets the elements of an array.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection" /> collection that contains the elements in the array.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ArrayValue.ParamType">
+			<summary>Gets a parameter type. </summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> enumeration.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty">
+			<summary>Encapsulates the information about one property of a complex type parameter.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.#ctor(System.String,System.String,Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> class, and initializes the name, datatype, and parameter type of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />.</summary>
+			<param name="name">The name of the property.</param>
+			<param name="datatype">The data type of the property.</param>
+			<param name="type">The <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> of the property.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.Clone">
+			<summary>Creates an instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> class that is identical to the current <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />.</summary>
+			<returns>An object whose properties are identical to those of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" />.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.Equals(System.Object)">
+			<summary>Determines whether two object instances are equal.</summary>
+			<returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+			<param name="obj">The object to compare with the current object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.GetHashCode">
+			<summary>Returns the hash code for an instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> class.</summary>
+			<returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.DataType">
+			<summary>Gets the data type of a property.</summary>
+			<returns>The data type of the property.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.Name">
+			<summary>Gets the name of a property.</summary>
+			<returns>The name of the property.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.ParamType">
+			<summary>Gets the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> of a parameter.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> enumeration that indicates the parameter type.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty.ParamValue">
+			<summary>Gets or sets the value of a property.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> object that contains the value of the property.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue">
+			<summary>Encapsulates the value of a complex type parameter.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.#ctor(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty[])">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> class, and initializes the properties of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />. </summary>
+			<param name="properties">The properties to initialize the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> with.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.Clone">
+			<summary>Creates an instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> class that is identical to the current <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />.</summary>
+			<returns>An object whose properties are identical to those of this <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" />.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.Equals(System.Object)">
+			<summary>Determines whether two object instances are equal.</summary>
+			<returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+			<param name="obj">The object to compare with the current object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.GetHashCode">
+			<summary>Returns the hash code of this object.</summary>
+			<returns>A 32-bit signed integer hash code.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue.Properties">
+			<summary>Gets an array of properties for the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexValue" /> class.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.ComplexProperty" /> array.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType">
+			<summary>Classifies the storage location of the result of a Web method invocation. The result of the Web method can be stored either in a file or in a variable.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType.File">
+			<summary>Store the result in a file.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType.Variable">
+			<summary>Store the result in a variable.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo">
+			<summary>Creates an instance of a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> class that corresponds to one parameter of a Web method.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.#ctor(System.String,System.String,Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType,System.Int32)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> class, using information about the parameter passed to the method. </summary>
+			<param name="name">The name of the parameter.</param>
+			<param name="datatype">The data type of the parameter.</param>
+			<param name="type">The type of the parameter. This is a value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType" /> enumeration.</param>
+			<param name="sequenceNumber">The sequence number of the parameter in the method signature.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.Clone">
+			<summary>Creates an instance of  <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> that is identical to the current <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" />. This class cannot be inherited.</summary>
+			<returns>An object whose properties are identical to those of this <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" />.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.Equals(System.Object)">
+			<summary>Determines whether two object instances are equal.</summary>
+			<returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+			<param name="obj">The object to compare with the current object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.GetHashCode">
+			<summary>Returns the hash code for this object.</summary>
+			<returns>A 32-bit signed integer hash code.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.DataType">
+			<summary>Gets the data type of a parameter.</summary>
+			<returns>The data type of the parameter.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.Name">
+			<summary>Gets the name of a parameter.</summary>
+			<returns>The name of the parameter.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.ParamType">
+			<summary>Gets the type of a parameter.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> enumeration that indicates the type of the parameter.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.ParamValue">
+			<summary>Gets or sets the value of a parameter. </summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> enumeration that indicates the value of the parameter. This could represent a complex value, primitive value, array value or enumeration value.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo.SequenceNumber">
+			<summary>Gets the sequence number of a parameter in a method signature.</summary>
+			<returns>A value that indicates the sequence number of the parameter in the method signature.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType">
+			<summary>Defines the type of the parameter that passed to a Web service method.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Array">
+			<summary>Specifies that the parameter is an array.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Complex">
+			<summary>Specifies that the parameter is a complex type.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Enum">
+			<summary>Specifies that the parameter is an enumeration value.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Primitive">
+			<summary>Specifies that the parameter is a primitive type.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Variable">
+			<summary>Specifies that the parameter value is contained in a variable.</summary>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue">
+			<summary>Defines an abstract base class that represents the value of a parameter passed to a Web method.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue.Clone">
+			<summary>Creates an instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> class that is identical to the current <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> class.</summary>
+			<returns>An object. </returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection">
+			<summary>Represents a collection of <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> objects.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Add(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+			<summary>Adds a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> to the end of a collection.</summary>
+			<param name="paramValue">The <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> to add to the collection.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Clone">
+			<summary>Creates a deep copy of a collection. This method cannot be inherited. </summary>
+			<returns>A deep copy of the collection.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Contains(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+			<summary>Indicates whether the items in a collection can be accessed by using indexing without throwing an exception.</summary>
+			<returns>true if the collection can be accessed by using the syntax DTSParamValueCollection [index]; false if indexing cannot be used to retrieve items from the collection.</returns>
+			<param name="paramValue">The name, identity, ID, or index of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> object to locate in the collection.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Equals(System.Object)">
+			<summary>Determines whether two object instances are equal.</summary>
+			<returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+			<param name="obj">The object to compare with the current object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.GetHashCode">
+			<summary>Returns the hash code for this object.</summary>
+			<returns>A 32-bit signed integer hash code.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.IndexOf(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+			<summary>Returns the zero-based index of the first occurrence of a value in a collection.</summary>
+			<returns>The index of the first occurrence of the specified value within the collection, if found; otherwise, this method returns -1.</returns>
+			<param name="value">The <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> to locate in the collection.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Insert(System.Int32,Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue)">
+			<summary>Adds a new <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> object into a collection at the location specified by the index.</summary>
+			<param name="index">The location in the collection to put the new <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> object.</param>
+			<param name="paramValue">The <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> object to insert into the collection.</param>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValueCollection.Item(System.Int32)">
+			<summary>Gets an element at a specified index.</summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> object.</returns>
+			<param name="index">The name, ID, or index of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" /> object to return from the collection.</param>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo">
+			<summary>Encapsulates the details of a web method. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.#ctor(System.String,System.String,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> class, using the specified method name, message name, and documentation for the method. </summary>
+			<param name="methodName">The name of the method.</param>
+			<param name="messageName">The name of the message.</param>
+			<param name="doc">The documentation for the method.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Clone">
+			<summary>Creates an instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> class that is identical to the current object.</summary>
+			<returns>An object whose properties are identical to those of the current object.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Equals(System.Object)">
+			<summary>Determines whether two object instances are equal.</summary>
+			<returns>true if the object instances are equal; otherwise, false.</returns>
+			<param name="obj">The object to compare with the current object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.GetHashCode">
+			<summary>Returns the hash code for this object.</summary>
+			<returns>A 32-bit signed integer hash code.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Documentation">
+			<summary>Gets the documentation.</summary>
+			<returns>The documentation.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.MessageName">
+			<summary>Gets the name of a message.</summary>
+			<returns>The name of the message.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.MethodName">
+			<summary>Gets the name of a method.</summary>
+			<returns>The name of the method.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.ParamInfos">
+			<summary>Gets or sets an array that contains all the parameter information for a method. </summary>
+			<returns>An array of <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamInfo" /> objects, one instance per parameter.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo.Supported">
+			<summary>Gets a value that indicates whether a Web method is supported or not. </summary>
+			<returns>true if the Web method is supported; otherwise, false.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue">
+			<summary>Holds the value of a parameter when the parameter type is <see cref="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Enum" />.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.#ctor(System.String[])">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" /> class, using an array that contains all possible values of the enumeration. </summary>
+			<param name="enumValues">An array that contains all possible values of the enumeration.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.Clone">
+			<summary>Creates an instance of <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" /> class that is identical to the current <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" />.</summary>
+			<returns>An object whose properties are identical to those of this <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue" />.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.Equals(System.Object)">
+			<summary>Determines whether two object instances are equal.</summary>
+			<returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+			<param name="obj">The object to compare with the current object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.GetHashCode">
+			<summary>Returns the hash code this object.</summary>
+			<returns>A 32-bit signed integer hash code.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.EnumValues">
+			<summary>Gets the possible values of an enumeration object.</summary>
+			<returns>An array of type String that contains the possible values of the enumeration object.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.EnumValue.SelectedValue">
+			<summary>Gets or sets the value of a parameter.</summary>
+			<returns>The value of the parameter.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper">
+			<summary>Contains methods to identify a primitive data type and map the primitive type to a Microsoft .NET Framework system type. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.CompareArrays(System.Object[],System.Object[])">
+			<summary>Compares two arrays. </summary>
+			<returns>true if both arrays are null; false is returned if either array is null, their lengths are different, or an element in one is different that the matching element in the other array.</returns>
+			<param name="a">The first array to have in the comparison.</param>
+			<param name="b">The second array that you want to compare to the first.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.GetDotNetType(System.String)">
+			<summary>Gets the full name of the Microsoft .NET Framework System.Type that corresponds to the value type.</summary>
+			<returns>The full name of the .NET Framework System.Type that corresponds to the value type.</returns>
+			<param name="primitiveType">The type name, as in value type.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.IsPrimitiveType(System.String)">
+			<summary>Indicates if a data type is a value type. </summary>
+			<returns>true if the data type is a value type; otherwise, false.</returns>
+			<param name="typeName">The name of the type to verify the data type of.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.Validate(System.String,System.String)">
+			<summary>Indicates whether a value can be converted to the specified primitive data type.</summary>
+			<returns>true if the value can be converted to the primitive data type; otherwise, false.</returns>
+			<param name="datatype">The primitive data type.</param>
+			<param name="valueToValidate">The value to validate.</param>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue">
+			<summary>Encapsulates a specific <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamValue" />, the <see cref="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSParamType.Primitive" /> type.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.Clone">
+			<summary>Creates a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" /> class that is identical to the current <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" />.</summary>
+			<returns>An object whose properties are identical to those of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue" />.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.Equals(System.Object)">
+			<summary>Determines whether two object instances are equal.</summary>
+			<returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+			<param name="obj">The object to compare with the current object.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.GetHashCode">
+			<summary>Returns the hash code of this object.</summary>
+			<returns>A 32-bit signed integer hash code.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.PrimitiveValue.AssignedValue">
+			<summary>Gets or sets the value of the parameter.</summary>
+			<returns>The value of the parameter.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask">
+			<summary>Runs a Web method and stores the result in a specified location. This class cannot be inherited. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.#ctor">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask" /> class. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)">
+			<summary>Passes a <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> to the task. The task will use the breakpoint manager to create, remove, and check the status of breakpoints. This method is called by the runtime and is not used in code.</summary>
+			<param name="breakPointMgr">The breakpoint manager for this task.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)">
+			<summary>Runs the web service task.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration.</returns>
+			<param name="connections">A collection of connections used by the task,</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+			<param name="txn">The transaction object that the container is a part of. This value can be null.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)">
+			<summary>Initializes the properties associated with the web service task. This method is called by the runtime and is not used in code.</summary>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+			<param name="eventInfos">A collection that contains events to be raised during execution of the task.</param>
+			<param name="logEntryInfos">A collection of log entries.</param>
+			<param name="refTracker">An object reference tracker.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To load a package saved as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="element">The node that contains the information to load.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> interface for firing events during persistence.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.ResumeExecution">
+			<summary>Resumes execution of the task after pausing. The task or container is resumed by the runtime engine. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)">
+			<summary>This method is not callable by your application code. To save a package as .xml, use the <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> method.</summary>
+			<param name="doc">The Xml document to save the information to.</param>
+			<param name="events">The node within the above document to save the information to.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.SuspendExecution">
+			<summary>Indicates that the executable needs to suspend. This method is called by the runtime engine. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)">
+			<summary>Verifies that the web service component is properly configured.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> enumeration.</returns>
+			<param name="connections">A collection of connections used by the task.</param>
+			<param name="variableDispenser">A <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> object for locking variables.</param>
+			<param name="events">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> interface.</param>
+			<param name="log">An object that implements the <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> interface.</param>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.Connection">
+			<summary>Gets or sets the name of the connection to use.</summary>
+			<returns>The name of the connection to use.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.DebugMode">
+			<summary>Gets or sets a Boolean that indicates if the task is in debug mode. The <see cref="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.DebugMode" /> property can be accessed by multiple threads at the same time. To ensure thread safety and avoid concurrency problems, the Interlocked class from the Microsoft .NET Framework is used.</summary>
+			<returns>true if the task is in debug mode; otherwise, false.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.OutputLocation">
+			<summary>Gets or sets the output location of the results of the Web method. </summary>
+			<returns>The output location of the results of the Web method.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.OutputType">
+			<summary>Gets or sets a value that indicates the storage location of the result of the Web method invocation.</summary>
+			<returns>A value from the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSOutputType" /> that indicates the location to store the results of the Web method.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.OverwriteWsdlFile">
+			<summary>Gets or sets a value that indicates if the Web Services Description Language (WDSL) file will be overwritten. </summary>
+			<returns>true indicates that the WSDL file will be overwritten; false indicates that the file will not be overwritten.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.ServiceName">
+			<summary>Gets or sets the name of the Web service. </summary>
+			<returns>The name of the Web service.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.SuspendRequired">
+			<summary>Gets or sets a Boolean that indicates if tasks should suspend when they encounter a breakpoint. This value is set by the runtime engine for tasks and containers when a breakpoint is encountered.</summary>
+			<returns>true if the task suspends when it encounters a breakpoint.</returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.WebMethodInfo">
+			<summary>Gets or sets a <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> object. </summary>
+			<returns>A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> object. </returns>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask.WsdlFile">
+			<summary>Gets or sets the name of a Web Services Description Language (WSDL) file that is to be read from either a file URL or an HTTP URL.</summary>
+			<returns>The name of the WSDL file to be downloaded from the specified URL.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException">
+			<summary>Contains the definition for exceptions used by the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTask" />.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.#ctor(System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException" /> class, initializing the error message string. </summary>
+			<param name="errorMessage">The error message string to be used in the exception.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException" /> class, initializing the SerializationInfo and StreamingContext. </summary>
+			<param name="info">The SerializationInfo that holds the serialized object data about the exception being thrown.</param>
+			<param name="context">The StreamingContext that contains contextual information about the source or destination.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.#ctor(System.String,System.Int32)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException" /> class, intializing the error message and error code.</summary>
+			<param name="errorMessage">The error message to use in the exception.</param>
+			<param name="errorCode">The error code to use in the exception.</param>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.DEFAULT_CODE">
+			<summary>Specifies the default value of the error code.</summary>
+		</member>
+		<member name="F:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.NOTSUPPORTED_CODE">
+			<summary>Specifies the error code used when the task encounters something that is not supported. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+			<summary>Sets the SerializationInfo with information about the exception.</summary>
+			<param name="info">The SerializationInfo that holds the serialized object data about the exception being thrown.</param>
+			<param name="context">The StreamingContext that contains contextual information about the source or destination.</param>
+		</member>
+		<member name="P:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebserviceTaskException.ErrorCode">
+			<summary>Gets an error code.</summary>
+			<returns>The error code.</returns>
+		</member>
+		<member name="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil">
+			<summary>Accesses and invokes the Web services. This class is used by both the <see cref="N:Microsoft.SqlServer.Dts.Tasks.WebServiceTask" /> and its user interface as a reusable library of functions. </summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.#ctor(System.Object,System.String)">
+			<summary>Initializes a new instance of the <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil" /> class, initializing the HTTP connection and Web Services Description Language (WSDL) file to download.</summary>
+			<param name="connection">The HTTP connection.</param>
+			<param name="downloadedWSDL">The fully-qualified path for WSDL file to be downloaded.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.CleanUp">
+			<summary>Releases all the resources used to parse the Web Services Description Language (WSDL) and invoke the Web method.</summary>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.GetServices">
+			<summary>Returns an array that contains all the services available in the Web Services Description Language (WSDL).</summary>
+			<returns>An array of type String that contains a list of all the services.</returns>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.GetWebMethodInfos(System.String)">
+			<summary>Gets an array that contains all the methods available in a service.</summary>
+			<returns>An array of type <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" />.</returns>
+			<param name="serviceName">The name of the service.</param>
+		</member>
+		<member name="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.WebServiceTaskUtil.Invoke(Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo,System.String,System.Object,Microsoft.SqlServer.Dts.Runtime.VariableDispenser)">
+			<summary>Calls the specified Web method with the supplied parameters.</summary>
+			<returns>The results from the call to the Web method.</returns>
+			<param name="methodInfo">A <see cref="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.DTSWebMethodInfo" /> that provides information about the Web method to be called.</param>
+			<param name="serviceName">The name of the service.</param>
+			<param name="connection">An <see cref="T:Microsoft.SqlServer.Dts.Runtime.HttpClientConnection" /> that provides the URL for the Web service.</param>
+			<param name="taskVariableDispenser">The <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.VariableDispenser" /> associated with the task.</param>
+		</member>
+	</members>
+</doc>

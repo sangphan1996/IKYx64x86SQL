@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+
+    <Page
+      ID="RunGlobalRules">
+      <Title ResourceID="PatchWelcomeTitle"></Title>
+      <Subtitle ResourceID="PatchWelcomSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunScenarioGlobalRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>a6457a2c-18ca-4ffb-97d4-e72a80d57b45</HelpGUID>
+    </Page>
+
+    <Page
+      ID="EULAPid" PageType="Page" >
+      <Title ResourceID="PatchEULAPidTitle"></Title>
+      <Subtitle ResourceID="ServicePackEULAPidSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Help" Visible="true"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.EULAPidController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>36f7da07-f008-4b02-922b-4a28ca93018e</HelpGUID>
+    </Page>
+
+    <Page
+      ID="FeatureTree">
+      <Title ResourceID="PatchFeatureTreeTitle"></Title>
+      <Subtitle ResourceID="PatchFeatureTreeSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Back" Enabled="true"/>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PatchFeatureSelectionController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>0badc544-c187-40f9-b0cc-14d6ebec345e</HelpGUID>
+      <PageLeftAction></PageLeftAction>
+    </Page>
+
+    <Page
+      ID="FilesInUse">
+      <Title ResourceID="PatchFilesInUseTitle"></Title>
+      <Subtitle ResourceID="PatchFilesInUseSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.FilesInUseController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>ccd65867-d4c0-43b2-8361-7fd41c6f79ac</HelpGUID>
+      <PageLeftAction></PageLeftAction>
+    </Page>
+
+
+    <Page
+      ID="Summary" PageType="Summary">
+      <Title ResourceID="PatchSummaryTitle"></Title>
+      <Subtitle ResourceID="PatchSummarySubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Next">
+          <Text ResourceID="PatchButton"></Text>
+        </Button>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.SummaryController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>674055e0-006e-48b4-881b-5d4bd1a6ad58</HelpGUID>
+    </Page>
+
+    <Page
+      ID="ProgressPage"  PageType="Progress">
+      <Title ResourceID="PatchProgressPageTitle"></Title>
+      <Subtitle ResourceID="PatchProgressPageSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false "/>
+        <Button ID="Next" Visible ="true" Enabled="false"/>
+        <Button ID="Cancel" Visible="true" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ExecutionProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>cbc4270e-6045-45b2-b429-2aec841ef758</HelpGUID>
+    </Page>
+
+    <Page
+      ID="Completion" PageType="Finish" >
+      <Title ResourceID="PatchCompleteTitle"></Title>
+      <Subtitle ResourceID="PatchCompleteSubTitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false"/>
+        <Button ID="Next" Visible ="false"/>
+        <Button ID="Cancel">
+          <Text ResourceID="CloseButton"></Text>
+        </Button>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PostInstallController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>95a14506-db11-490f-b5c3-61dea7fd247c</HelpGUID>
+    </Page>
+  </Pages>
+
+  <Appearance>
+    <Title ResourceID="ServicePackWizardTitle"></Title>
+    <Icon>
+      <Name>Upgrade</Name>
+      <ResourceType>Microsoft.SqlServer.Configuration.InstallWizard.Resources, Microsoft.SqlServer.Configuration.InstallWizard</ResourceType>
+    </Icon>
+  </Appearance>
+</UIHost>

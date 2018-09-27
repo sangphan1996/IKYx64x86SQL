@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+
+    <Page
+      ID="RunGlobalRules">
+      <Title ResourceID="RemovePatchWelcomeTitle"></Title>
+      <Subtitle ResourceID="RemovePatchWelcomeSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunScenarioGlobalRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>a6457a2c-18ca-4ffb-97d4-e72a80d57b45</HelpGUID>
+    </Page>
+
+    <Page
+      ID="FeatureTree">
+      <Title ResourceID="RemovePatchFeatureTreeTitle"></Title>
+      <Subtitle ResourceID="RemovePatchFeatureTreeSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Back" Enabled="true"/>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Help" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PatchFeatureSelectionController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>0badc544-c187-40f9-b0cc-14d6ebec345e</HelpGUID>
+      <PageLeftAction></PageLeftAction>
+    </Page>
+
+<Page
+      ID="FilesInUse">
+      <Title ResourceID="PatchFilesInUseTitle"></Title>
+      <Subtitle ResourceID="PatchFilesInUseSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.FilesInUseController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>ccd65867-d4c0-43b2-8361-7fd41c6f79ac</HelpGUID>
+      <PageLeftAction></PageLeftAction>
+    </Page>
+
+    <Page
+      ID="Summary" PageType="Summary">
+      <Title ResourceID="RemovePatchSummaryTitle"></Title>
+      <Subtitle ResourceID="RemovePatchSummarySubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Next">
+          <Text ResourceID="RemovePatchButton"></Text>
+        </Button>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.SummaryController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>674055e0-006e-48b4-881b-5d4bd1a6ad58</HelpGUID>
+    </Page>
+
+    <Page
+      ID="RemovePatchProgressPage"  PageType="Progress">
+      <Title ResourceID="RemovePatchProgressPageTitle"></Title>
+      <Subtitle ResourceID="RemovePatchProgressPageSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false "/>
+        <Button ID="Next" Visible ="true" Enabled="false"/>
+        <Button ID="Cancel" Visible="true" Enabled="false"/>
+        <Button ID="Help" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ExecutionProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>cbc4270e-6045-45b2-b429-2aec841ef758</HelpGUID>
+    </Page>
+
+    <Page
+      ID="Completion" PageType="Finish" >
+      <Title ResourceID="RemovePatchCompleteTitle"></Title>
+      <Subtitle ResourceID="RemovePatchCompleteSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false"/>
+        <Button ID="Next" Visible ="false"/>
+        <Button ID="Cancel">
+          <Text ResourceID="CloseButton"></Text>
+        </Button>
+        <Button ID="Help" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PostInstallController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <HelpGUID>95a14506-db11-490f-b5c3-61dea7fd247c</HelpGUID>
+    </Page>
+  </Pages>
+
+  <Appearance>
+    <Title ResourceID="RemoveServicePackWizardTitle"></Title>
+    <Icon>
+      <Name>Uninstall</Name>
+      <ResourceType>Microsoft.SqlServer.Configuration.InstallWizard.Resources, Microsoft.SqlServer.Configuration.InstallWizard</ResourceType>
+    </Icon>
+  </Appearance>
+</UIHost>
